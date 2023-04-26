@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost&family=Nunito&family=Nunito+Sans&family=Signika&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.production.css" type="text/css">
+    <title>Contact Ilse Gaertner</title>
+
+</head>
+
+<body class="contactpage">
+    <header class="page-header">
+        <img src="img/logo_small.png" alt="" class="page-header__item">
+        <nav class="main navigation page-header__item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation"><a href="./index.html" role="menuitem"
+                        class="navigation-list__item navigation-list__item">Home</a></li>
+                <li role="presentation"><a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+                </li>
+                <li role="presentation"><a href="work.html" role="menuitem" class="navigation-list__item">Work</a></li>
+                <li role="presentation"><a href="contact.html" role="menuitem"
+                        class="navigation-list__item--active">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="headingclass_contact">Contact</h1>
+    <section class="contact-section">
+
+
+        <address class="address">
+            Ilse Gaertner<br>
+            Badstr. 61<br>
+            13352 Berlin<br>
+            Deutschland<br>
+            <br>
+            Tel: <a href="tel:+493048492016" aria-label="close">+49 30 4849 2016</a><br>
+            Skype <a href="skype:hello.careerfoundry"> hello.careerfoundry</a><br>
+            <a href="mailto:ilsegaertner@gmail.com">ilsegaertner@gmail.com</a> <br>
+            <a href="mailto:ilsegaertner@gmail.com">Contact me</a>
+        </address>
+
+        <!----<hr>-->
+
+        <div class="formpart">
+
+            <h2 class="h-inline">Leave us a message</h2>
+            <form action="#" method="post" id="request">
+                <label for="email" class="standard-label">Your email-address</label>
+                <input type="email" id="email" required placeholder="...">
+                <label for="telephone" class="standard-label">Your telephone number
+                </label>
+                <input type="tel" id="telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                <label for="message" class="standard-label"></label>
+                <textarea id="message" rows="10" cols="10" placeholder="Your Message..." maxlength="240"
+                    required></textarea>
+                <input type="submit" value="Send" id="submit">
+            </form>
+
+
+            <h2>Test for buttons</h2>
+
+            <button type="button" class="button__secondary">Press here</button>
+            <button type="button" class="button__secondary--2">Press here</button>
+
+        </div>
+    </section>
+    <footer class="page-footer">
+        <p class="findme">Find me on</p>
+        <div class="social-media">
+            <img src="img/683981_github_square_connection_network_share_icon.svg"
+                alt="Logo and Link for the Github platform" width="30" height="30"><span><img
+                    src="img/4362955_twitter_logo_social_media_icon.svg" alt="Logo and Link for the Twitter platform"
+                    width="30" height="30"></span><span><img src="img/4362961_linkedin_social_media_icon.svg"
+                    alt="Logo and Link for the LinkedIn platform" width="30" height="30"></span>
+        </div>
+    </footer>
+
+    <script src="js/tota11y.min.js"></script>
+
+</body>
+
+</html>
