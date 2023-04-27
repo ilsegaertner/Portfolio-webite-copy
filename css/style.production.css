@@ -80,6 +80,10 @@ article {
   display: inline-block;
 }
 
+.project-images {
+  width: 100%;
+}
+
 input {
   font-family: inherit;
   border: none;
