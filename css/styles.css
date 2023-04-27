@@ -88,6 +88,16 @@ article {
   display: inline-block;
 }
 
+.project-images {
+  width: 100%;
+  transition: all 0.1s ease-in-out;
+}
+
+.project-images:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 input,
 button,
 .button__secondary,
