@@ -9,6 +9,7 @@
   --background: #181817;
   --accent: green;
   --hover: #fcc;
+  --heavygrey: #1e1e1e;
   --neonshadow-one: #f00;
   --neonshadow-two: #00f;
   --one-border: #00000080;
@@ -225,7 +226,7 @@ button:hover,
   bottom: 0;
   width: 100%;
   padding-bottom: 10px;
-  background-color: var(--neonshadow-two);
+  background-color: var(--heavygrey);
   border-radius: 50px;
   margin-bottom: -20px;
 
