@@ -259,6 +259,7 @@ button:hover,
   display: inline;
   margin-bottom: auto;
   padding: 4px;
+  padding-top: 7px;
 }
 
 .social-media {
