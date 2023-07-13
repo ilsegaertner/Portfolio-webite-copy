@@ -389,7 +389,7 @@ button:hover,
 /* end grid fallback */
 
 .project-list__item {
-  background-color: #0000004a;
+  /* background-color: #0000004a; */
   padding: 20px;
   width: auto;
   min-height: auto;
@@ -652,7 +652,7 @@ th {
   }
 
   .project-list__item {
-    background-color: #0905126e;
+    /* background-color: #0905126e; */
   }
 
   address {
@@ -687,7 +687,7 @@ th {
   }
 
   .project-list__item {
-    background-color: #26222285;
+    /* background-color: #26222285; */
   }
 
   address {
