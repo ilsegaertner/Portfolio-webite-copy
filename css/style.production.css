@@ -286,6 +286,8 @@ button:hover,
   left: 0;
   top: 0;
   max-width: 150px;
+  border-radius: 50%;
+  border: 35px solid rgba(255, 0, 0, 0);
 }
 
 .page-header__item:last-child {
