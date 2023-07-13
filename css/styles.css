@@ -58,9 +58,14 @@ a:active {
   color: var(--grey);
 }
 
+.img {
+  padding: 5px;
+}
+
 p {
   font-size: 15px;
   line-height: var(--normal);
+  padding: 5px;
 }
 
 h2 {
@@ -217,6 +222,8 @@ button:hover,
   left: 0;
   top: 0;
   max-width: 150px;
+  border-radius: 50%;
+  border: 30px solid rgba(255, 0, 0, 0);
 }
 
 .page-header__item:last-child {
@@ -237,7 +244,6 @@ button:hover,
   width: 100%;
   padding-bottom: 10px;
   background-color: var(--heavygrey);
-  border-radius: 50px;
   margin-bottom: -20px;
 
   /*
