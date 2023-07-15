@@ -67,10 +67,15 @@ p {
   line-height: var(--normal);
 }
 
+.text {
+  margin-top: -7px;
+}
+
 h2 {
   font-size: 22px;
   line-height: var(--normal);
   font-weight: 500;
+  margin-bottom: 15px;
   font-family: 'Courier New', Courier, monospace;
 }
 
