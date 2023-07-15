@@ -21,7 +21,7 @@
 body {
   background-color: var(--secondary-color);
   color: var(--primary-color);
-  font-size: 15px; /* font-family: 'Merriweather Sans', Sans-Serif;
+  font-size: 18px; /* font-family: 'Merriweather Sans', Sans-Serif;
   font-family: 'Signika', sans-serif;
   font-family: 'Nunito Sans', sans-serif;
   font-family: 'Nunito', sans-serif; */
@@ -33,6 +33,7 @@ body {
 h1 {
   font-size: 65px;
   font-weight: 550;
+  color: #e6e6e6;
 }
 
 h1:hover {
@@ -63,7 +64,7 @@ a:active {
 }
 
 p {
-  font-size: 15px;
+  font-size: 18px;
   line-height: var(--normal);
 }
 
