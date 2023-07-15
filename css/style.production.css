@@ -87,9 +87,20 @@ article {
   transition: all 0.1s ease-in-out;
 }
 
+.pic {
+  max-width: 300px;
+  overflow: hidden;
+}
+
 .project-images:hover {
+  -webkit-transition: 0.2s ease all;
+  -o-transition: 0.5s ease all;
+  -o-object-fit: cover;
+  object-fit: cover;
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
+  transition: 0.5s ease all;
+  width: 100%;
   transform: scale(1.1);
   cursor: pointer;
 }
