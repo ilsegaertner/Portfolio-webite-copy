@@ -61,6 +61,12 @@ a:active {
 
 .img {
   padding: 5px;
+  opacity: 0.9;
+}
+
+.img:hover {
+  padding: 5px;
+  opacity: 1;
 }
 
 p {
