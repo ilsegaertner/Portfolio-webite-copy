@@ -17,7 +17,7 @@ body {
   font-family: 'Signika', sans-serif;
   font-family: 'Nunito Sans', sans-serif;
   font-family: 'Nunito', sans-serif; */
-  font-family: 'Times New Roman', Times, serif
+  font-family: "Times New Roman", Times, serif;
   padding: 20px;
   width: auto;
 }
@@ -67,7 +67,7 @@ h2 {
   font-weight: 500;
   color: #ddd0c3;
   margin-bottom: 15px;
-  font-family: 'Times New Roman', Times, serif
+  font-family: "Times New Roman", Times, serif;
 }
 
 h2:hover {
@@ -84,7 +84,7 @@ article {
 }
 
 .skills {
-  font-family: 'Times New Roman', Times, serif
+  font-family: "Times New Roman", Times, serif;
   display: inline-block;
 }
 
@@ -263,8 +263,8 @@ button:hover,
 }
 
 .me {
-  margin: 0 auto;
-  padding: 30px;
+  margin: 114px auto;
+  padding: 11px;
   display: inline-block;
 }
 
