@@ -526,23 +526,27 @@ th {
 }
 
 .mainpage {
-  /* balternative background-color: #27291f96; */
-  background-color: #181817;
+  /* balternative background-color: #27291f96;
+  background-color: #181817; */
+  background-color: #fff;
 }
 
 .workpage {
-  background-color: #27291ff7;
-  background-color: #181817;
+  /* background-color: #27291ff7;
+  background-color: #181817; */
+  background-color: #fff;
 }
 
 .contactpage {
-  background-color: #48482f;
+  /* background-color: #48482f; */
+  background-color: #fff;
   color: #ff4e0a;
 }
 
 .aboutpage {
-  background-color: #141414;
-  background-color: #181817;
+  /* background-color: #141414;
+  background-color: #181817; */
+  background-color: #fff;
 }
 
 .body {
