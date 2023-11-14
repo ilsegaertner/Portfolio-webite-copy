@@ -36,6 +36,7 @@ h1:hover {
 
 a {
   color: #fff;
+  font-size: 16px;
 }
 
 a:visited {
@@ -366,7 +367,8 @@ button:hover,
 }
 
 .findme {
-  font-size: inherit;
+  /* font-size: inherit; */
+  font-size: 16px;
   display: inline;
   margin-bottom: auto;
   padding: 4px;
@@ -428,6 +430,7 @@ button:hover,
   width: auto;
   min-height: auto;
   border-radius: 2%;
+  border: 1px solid #eee;
 }
 
 /* doesnt work with media-queries?
@@ -692,6 +695,7 @@ th {
 
   .project-list__item {
     /* background-color: #0905126e; */
+    border: 1px solid #eee;
   }
 
   address {
@@ -727,6 +731,7 @@ th {
 
   .project-list__item {
     /* background-color: #26222285; */
+    border: 1px solid #eee;
   }
 
   address {
