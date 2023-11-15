@@ -25,7 +25,9 @@ body {
 h1 {
   font-size: 65px;
   font-weight: 550;
-  color: #e6e6e6;
+  /* color: #e6e6e6; */
+  /* color: transparent;
+  text-shadow: 0 0 8px #ded0c23d; */
 }
 
 h1:hover {
@@ -275,6 +277,10 @@ button:hover,
   display: inline-block;
 }
 
+.me > p {
+  font-size: 26px;
+}
+
 .img {
   padding: 5px;
   opacity: 0.9;
@@ -357,6 +363,7 @@ button:hover,
   padding-bottom: 10px;
   background-color: #1e1e1e;
   margin-bottom: -20px;
+  box-shadow: 0px -3px 6px #1e1e1e;
 
   /*
   background: rgb(24,24,23);
@@ -375,7 +382,8 @@ button:hover,
   padding: 4px;
   margin-top: 4px;
   padding-top: 10px;
-  color: #ff4e0a;
+  /* color: #ff4e0a; */
+  color: #ddd0c2;
 }
 
 .social-media {
@@ -430,8 +438,10 @@ button:hover,
   padding: 20px;
   width: auto;
   min-height: auto;
-  border-radius: 2%;
-  border: 1px solid #eee;
+
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  border: 1px solid #ddd0c2;
 }
 
 /* doesnt work with media-queries?
@@ -446,19 +456,25 @@ button:hover,
 */
 
 .headingclass_about {
-  margin-top: 133px;
+  margin-top: -133px;
+  color: transparent;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0);
 }
 
 .headingclass_work {
   max-width: 500px;
   text-align: center;
-  margin: 133px auto 114px;
+  margin: 0px auto 114px;
+  color: transparent;
+  text-shadow: 0 0 8px #ded0c200;
 }
 
 .headingclass_contact {
   max-width: 500px;
   text-align: center;
-  margin: 133px auto 92px;
+  margin: 0px auto 92px;
+  color: transparent;
+  text-shadow: 0 0 8px #ded0c200;
 }
 
 address {
@@ -503,7 +519,7 @@ address {
 
 hr {
   margin: 35px;
-  border: 0.2px solid #ff4e0a;
+  border: 0.2px solid #ded0c2;
 }
 
 .skills {
