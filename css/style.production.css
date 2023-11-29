@@ -380,6 +380,7 @@ button:hover,
   left: 0;
   bottom: 0;
   width: 100%;
+  height: 42px;
   flex-wrap: nowrap;
   align-content: center;
   align-items: center;
@@ -406,6 +407,7 @@ button:hover,
 }
 
 .social-media {
+  margin-bottom: -5px;
 }
 
 .social-media:nth-child(1) {
