@@ -334,6 +334,7 @@ button:hover,
   padding-right: 27px;
   position: fixed;
   top: 0;
+  mix-blend-mode: luminosity;
   right: 0;
   background-color: white;
 }
