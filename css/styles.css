@@ -25,7 +25,7 @@ body {
   font-family: 'Signika', sans-serif;
   font-family: 'Nunito Sans', sans-serif;
   font-family: 'Nunito', sans-serif; */
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   padding: 20px;
   width: auto;
 }
@@ -83,7 +83,7 @@ h2 {
   line-height: var(--normal);
   font-weight: 500;
   margin-bottom: 15px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 h2:hover {
@@ -100,7 +100,7 @@ article {
 }
 
 .skills {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   display: inline-block;
 }
 
@@ -213,7 +213,8 @@ button:hover,
   float: left;
   width: 100%;
   margin-right: 40px;
-  margin-bottom: 53px;
+  /* margin-bottom: 53px; */
+  margin-bottom: -67px;
   max-width: 335px;
   border-radius: 50%;
 }
