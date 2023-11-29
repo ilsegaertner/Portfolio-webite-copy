@@ -370,7 +370,7 @@ button:hover,
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 100px;
@@ -380,9 +380,11 @@ button:hover,
   left: 0;
   bottom: 0;
   width: 100%;
-  padding-bottom: 10px;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
   background-color: #1e1e1e;
-  margin-bottom: -20px;
   box-shadow: 0px -3px 6px #1e1e1e;
 
   /*
@@ -395,22 +397,15 @@ button:hover,
 }
 
 .findme {
-  /* font-size: inherit; */
   font-size: 15px;
-  display: inline;
-  margin-bottom: auto;
-  padding: 4px;
-  margin-top: 4px;
-  padding-top: 10px;
   color: #ff4e0a;
+  margin-right: 13px;
   /* color: #ddd0c2; */
   /* color: #d6d6d6; */
   /* color: #98d2b5; */
 }
 
 .social-media {
-  display: inline-block;
-  margin-bottom: 20px;
 }
 
 .social-media:nth-child(1) {
@@ -592,8 +587,8 @@ th {
 .mainpage {
   /* balternative background-color: #27291f96;
   background-color: #181817; */
-  /* background-color: #fff; */
-  background-color: #747b7c;
+  background-color: #fff;
+  /* background-color: #747b7c; */
 }
 
 .workpage {
