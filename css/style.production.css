@@ -34,7 +34,8 @@ body {
 }
 
 h1 {
-  font-size: 65px;
+  /* font-size: 65px; */
+  font-size: 17px;
   font-weight: 550;
   color: #161613;
   /* color: #e6e6e6; */
@@ -392,7 +393,7 @@ button:hover,
   flex-wrap: nowrap;
   align-content: center;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   background-color: #1e1e1e;
   box-shadow: 0px -3px 6px #1e1e1e;
 
@@ -409,7 +410,8 @@ button:hover,
   font-size: 15px;
   /* color: #ff4e0a; */
   /* color: #ff9f4b; */
-  color: #c2e1e0;
+  /* color: #c2e1e0; */
+  color: red;
   margin-right: 13px;
   /* color: #ddd0c2; */
   /* color: #d6d6d6; */
@@ -500,25 +502,40 @@ button:hover,
 */
 
 .headingclass_about {
-  margin-top: -133px;
-  color: transparent;
+  margin-top: 9px;
+  /* color: transparent; */
+  color: #ff0606;
+  text-transform: lowercase;
+  position: fixed;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0);
 }
 
 .headingclass_work {
   max-width: 500px;
   text-align: center;
-  margin: 0px auto 114px;
-  color: transparent;
+  margin: 9px auto 114px;
+  color: #ff0606;
+  text-transform: lowercase;
+  position: fixed;
   text-shadow: 0 0 8px #ded0c200;
 }
 
 .headingclass_contact {
-  max-width: 500px;
-  text-align: center;
-  margin: 0px auto 92px;
-  color: transparent;
-  text-shadow: 0 0 8px #ded0c200;
+  margin-top: 9px;
+  /* color: transparent; */
+  color: #ff0606;
+  text-transform: lowercase;
+  position: fixed;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0);
+}
+
+.hello-world {
+  margin-top: 9px;
+  /* color: transparent; */
+  color: #ff0606;
+  text-transform: lowercase;
+  position: fixed;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0);
 }
 
 .myname {
@@ -591,7 +608,7 @@ caption {
 }
 
 .contact-section {
-  margin: 0 50px;
+  margin: 120px 50px;
   max-width: 100%;
   text-align: center;
   display: block;
@@ -858,7 +875,8 @@ th {
   }
 
   h1 {
-    color: #ff9f4b;
+    /* color: #ff9f4b; */
+    color: #c9ff80;
   }
 
   .project-list:last-child {
@@ -871,7 +889,7 @@ th {
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 17px;
   }
 
   .contactpage {
