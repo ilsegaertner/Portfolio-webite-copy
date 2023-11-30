@@ -408,7 +408,8 @@ button:hover,
 .findme {
   font-size: 15px;
   /* color: #ff4e0a; */
-  color: #ff9f4b;
+  /* color: #ff9f4b; */
+  color: #c2e1e0;
   margin-right: 13px;
   /* color: #ddd0c2; */
   /* color: #d6d6d6; */
@@ -417,6 +418,8 @@ button:hover,
 
 .social-media {
   margin-bottom: -5px;
+  flex-basis: 100px;
+  mix-blend-mode: exclusion;
 }
 
 .social-media:nth-child(1) {
@@ -626,7 +629,7 @@ th {
 .aboutpage {
   /* background-color: #141414;
   background-color: #181817; */
-  background-color: #fbfbfb;
+  /* background-color: #fbfbfb; */
 }
 
 .body {
@@ -773,6 +776,15 @@ th {
     /* border: 1px solid #eee; */
   }
 
+  .project-list__item > .text > a,
+  .project-list__item > .text > p > a {
+    color: #babcff;
+  }
+
+  .project-list__item > .text > a:visited {
+    color: #c2e1e0;
+  }
+
   .me {
     /* color: #a2a2a2; */
     color: #afafaf;
@@ -839,6 +851,10 @@ th {
 @media all and (max-width: 750px) {
   .project-list {
     grid-gap: 10px;
+  }
+
+  .myname > a {
+    color: #babcff;
   }
 
   h1 {
