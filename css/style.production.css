@@ -36,6 +36,7 @@ body {
 h1 {
   font-size: 65px;
   font-weight: 550;
+  color: #161613;
   /* color: #e6e6e6; */
   /* color: transparent;
   text-shadow: 0 0 8px #ded0c23d; */
@@ -49,14 +50,16 @@ h1:hover {
 
 a {
   /* color: #fff; */
-  color: #ef4a0f;
+  /* color: #ef4a0f; */
+  color: #161613;
   font-size: 17px;
   text-decoration: none;
 }
 
 a:visited {
   /* color: #ddd0c3; */
-  color: #ff4e0a;
+  /* color: #ff4e0a; */
+  color: #161613;
 }
 
 a:hover,
@@ -102,6 +105,10 @@ article {
 
 .address {
   line-height: 1.3;
+}
+
+.address > a {
+  color: white;
 }
 
 .skills {
@@ -400,7 +407,8 @@ button:hover,
 
 .findme {
   font-size: 15px;
-  color: #ff4e0a;
+  /* color: #ff4e0a; */
+  color: #ff9f4b;
   margin-right: 13px;
   /* color: #ddd0c2; */
   /* color: #d6d6d6; */
@@ -467,6 +475,14 @@ button:hover,
   /* border-top-right-radius: 16px;
   border-top-left-radius: 16px; */
   /* border: 1px solid #ddd0c2; */
+}
+
+.project-list__item > .text > a {
+  color: #216758;
+}
+
+.project-list__item > .text > a:visited {
+  color: #216758b5;
 }
 
 /* doesnt work with media-queries?
@@ -603,7 +619,8 @@ th {
 .contactpage {
   /* background-color: #48482f; */
   background-color: #fff;
-  color: #ff4e0a;
+  /* color: #ff4e0a; */
+  color: #ff9f4c;
 }
 
 .aboutpage {
@@ -822,6 +839,10 @@ th {
 @media all and (max-width: 750px) {
   .project-list {
     grid-gap: 10px;
+  }
+
+  h1 {
+    color: #ff9f4b;
   }
 
   .project-list:last-child {
