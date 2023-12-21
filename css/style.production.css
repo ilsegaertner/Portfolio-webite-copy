@@ -420,6 +420,7 @@ button:hover,
   left: 0;
   bottom: 0;
   width: 100%;
+  mix-blend-mode: difference;
   height: 42px;
   flex-wrap: nowrap;
   align-content: center;
