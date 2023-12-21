@@ -105,6 +105,11 @@ h2:hover {
   text-shadow: 0 0 0 #f00, 0 0 1px #050559;
 }
 
+.project-list__item > .text > p,
+.project-list__item > h2 {
+  color: white;
+}
+
 article {
   line-height: 1.3;
 }
@@ -286,11 +291,14 @@ button:hover,
 
 .navigation-list {
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .navigation-list li {
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 18px;
 }
 
 .navigation-list__item:hover {
@@ -357,13 +365,17 @@ button:hover,
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding: 8px;
-  padding-right: 15px;
+  /* padding: 8px; */
+  /* padding-right: 15px; */
+  padding-left: 20px;
+  padding-right: 31px;
   position: fixed;
+  padding-top: 10px;
   top: 0;
-  mix-blend-mode: luminosity;
+  /* mix-blend-mode: luminosity; */
   right: 0;
   background-color: white;
+  align-items: baseline;
 }
 
 .page-header__item {
@@ -372,7 +384,7 @@ button:hover,
   flex: 0 1 150px;
 }
 
-.page-header__item:first-child {
+/* .page-header__item:first-child {
   margin-left: -33px;
   margin-top: -33px;
   position: fixed;
@@ -381,7 +393,7 @@ button:hover,
   max-width: 150px;
   border-radius: 50%;
   border: 30px solid rgba(255, 0, 0, 0);
-}
+} */
 
 .page-header__item:last-child {
   -webkit-box-flex: 1;
@@ -412,7 +424,7 @@ button:hover,
   flex-wrap: nowrap;
   align-content: center;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   /* background-color: #1e1e1e;
   box-shadow: 0px -3px 6px #1e1e1e; */
 
@@ -458,10 +470,13 @@ button:hover,
 }
 
 .worklink {
-  display: block;
+  /* display: block; */
   margin-top: 20px;
   /* color: #ff4e0a; */
   color: red;
+  display: initial;
+  border-radius: 20px;
+  background-color: black;
 }
 
 .worklink:hover {
@@ -495,6 +510,9 @@ button:hover,
   display: flex;
   flex-direction: column;
   border-top-left-radius: 16px;
+  padding: 10px;
+  border-radius: 27px;
+  background-color: black;
 }
 
 .project-list__item > .text > a {
@@ -517,39 +535,42 @@ button:hover,
 */
 
 .headingclass_about {
-  margin-top: 6px;
+  /* margin-top: 6px; */
   /* color: transparent; */
   color: #ff0606;
+  margin-left: 10px;
   text-transform: lowercase;
-  position: fixed;
+  /* position: fixed; */
   text-shadow: 0 0 8px rgba(255, 255, 255, 0);
 }
 
 .headingclass_work {
-  max-width: 500px;
+  /* max-width: 500px; */
   text-align: center;
-  margin: 6px auto 114px;
+  /* margin: 6px auto 114px; */
   color: #ff0606;
+  margin-left: 10px;
   text-transform: lowercase;
-  position: fixed;
+  /* position: fixed; */
   text-shadow: 0 0 8px #ded0c200;
 }
 
 .headingclass_contact {
-  margin-top: 6px;
+  /* margin-top: 6px; */
   /* color: transparent; */
   color: #ff0606;
+  margin-left: 10px;
   text-transform: lowercase;
-  position: fixed;
+  /* position: fixed; */
   text-shadow: 0 0 8px rgba(255, 255, 255, 0);
 }
 
 .hello-world {
-  margin-top: 6px;
-  /* color: transparent; */
+  /* margin-top: 6px; */
   color: #ff0606;
   text-transform: lowercase;
-  position: fixed;
+  margin-left: 10px;
+  /* position: fixed; */
   text-shadow: 0 0 8px rgba(255, 255, 255, 0);
 }
 
@@ -576,13 +597,15 @@ address {
   border-radius: 50%; */
   /* padding: 101px; */
   margin-top: 81px;
+  padding: 10px;
 }
 
 .formpart {
   display: inline-block;
   max-width: 305px;
-  text-align: start;
-  margin: 99px 18vh 423px 75px;
+  margin-top: 140px;
+  /* text-align: start;
+  margin: 99px 18vh 423px 75px; */
 }
 
 #submit {
@@ -829,11 +852,14 @@ th {
   }
 
   address {
-    /* padding: 60px; */
-    background-color: #181817;
-    text-align: center;
-    /* margin: 0 auto; */
-    float: none;
+    text-align: justify;
+    /* float: left; */
+    margin-bottom: 70px;
+    /* background-color: #00f; */
+    /* padding: 43px; */
+    margin-top: 76px;
+
+    padding: 10px;
   }
 
   .headingclass_contact {
@@ -843,6 +869,7 @@ th {
   .formpart {
     margin: 0 auto;
     text-align: center;
+    margin-top: 36px;
   }
 
   .intro {
@@ -930,6 +957,6 @@ th {
 
 @media all and (max-width: 369px) {
   address {
-    margin-top: 99px;
+    margin-top: 140px;
   }
 }
