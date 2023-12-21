@@ -509,6 +509,8 @@ button:hover,
   padding: 10px;
   /* border-radius: 27px;
   background-color: black; */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .project-list__item > .text > a {
