@@ -342,6 +342,15 @@ button:hover,
   opacity: 1;
 }
 
+.needle {
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolut;
+  margin: -14px;
+}
+
 .profile__portrait {
   float: left;
   width: 100%;
@@ -514,6 +523,9 @@ button:hover,
   padding: 16px;
   border-radius: 27px;
   background-color: black;
+
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .project-list__item > .text > a {
