@@ -84,6 +84,21 @@ p {
   flex-basis: 113px;
 }
 
+.text > button {
+  font-family: inherit;
+  border: none;
+  display: inline-block;
+  background-color: #3c3c3c;
+  color: #eeeeee;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 23px;
+  border-bottom: 2px solid #00000080;
+  -webkit-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
 .text {
   margin-top: -7px;
   display: flex;
@@ -934,7 +949,7 @@ th {
 
 @media all and (max-width: 750px) {
   .project-list {
-    grid-gap: 10px;
+    grid-gap: 70px;
   }
 
   .myname > a {
