@@ -516,11 +516,13 @@ button:hover,
 }
 
 .project-list__item > .text > a {
-  color: #216758;
+  /* color: #216758; */
+  color: #95ffe8db;
 }
 
 .project-list__item > .text > a:visited {
-  color: #216758b5;
+  /* color: #216758b5; */
+  color: #a1bdb7b5;
 }
 
 /* doesnt work with media-queries?
