@@ -105,11 +105,6 @@ h2:hover {
   text-shadow: 0 0 0 #f00, 0 0 1px #050559;
 }
 
-.project-list__item > .text > p,
-.project-list__item > h2 {
-  color: white;
-}
-
 article {
   line-height: 1.3;
 }
@@ -511,8 +506,8 @@ button:hover,
   flex-direction: column;
   border-top-left-radius: 16px;
   padding: 10px;
-  border-radius: 27px;
-  background-color: black;
+  /* border-radius: 27px;
+  background-color: black; */
 }
 
 .project-list__item > .text > a {
