@@ -144,12 +144,31 @@
         <div class="project-list__item">
           <h2>*Chat App</h2>
           <div class="pic">
-            <a href="" target="_blank"
-              ><img
+            <a href="" target="_blank">
+              <!-- <img
                 src="img/screen-example.webp"
-                alt="Image of the project called Cinderella"
+                alt="Image of the project called Chat app"
                 class="project-images"
-            /></a>
+            /> -->
+
+              <picture>
+                <source
+                  srcset="img/screen-example.webp"
+                  type="image/webp"
+                  class="project-images"
+                />
+                <source
+                  srcset="img/screen-example.png"
+                  type="image/png"
+                  class="project-images"
+                />
+                <img
+                  src="img/screen-example.png"
+                  alt="Image of the project called Chat app"
+                  class="project-images"
+                />
+              </picture>
+            </a>
           </div>
           <div class="text">
             <p>
