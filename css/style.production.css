@@ -704,6 +704,22 @@ th {
   background-color: black;
 }
 
+.aboutpage > .page-header {
+  background-color: black;
+}
+
+.aboutpage .navigation-list__item {
+  color: white;
+}
+
+.aboutpage .navigation-list__item-active {
+  color: white;
+}
+
+.aboutpage .navigation-list__item--active {
+  color: white;
+}
+
 .body {
   background-color: #181817;
 }
