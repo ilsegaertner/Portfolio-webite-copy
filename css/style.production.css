@@ -8,6 +8,7 @@
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: Geist, sans-serif;
 }
 
 body {
@@ -24,6 +25,17 @@ body {
   width: auto;
 }
 
+@font-face {
+  font-family: Geist;
+  src: url("/img/Geist/Geist-Regular.woff2") format("woff");
+}
+
+@font-face {
+  font-family: FK Grotesk Neue;
+  src: url("/img/FK-Grotesk-Neue-Font/FKGroteskNeueTrial-Thin-BF6576818c2a14c.otf")
+    format("otf");
+}
+
 #widthAndHeight {
   position: fixed;
   top: 0;
@@ -38,6 +50,7 @@ h1 {
   font-size: 19px;
   font-weight: 550;
   color: #161613;
+  /* font-family: Geist, sans-serif; */
   /* color: #e6e6e6; */
   /* color: transparent;
   text-shadow: 0 0 8px #ded0c23d; */
