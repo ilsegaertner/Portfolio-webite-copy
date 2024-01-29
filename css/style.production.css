@@ -401,6 +401,7 @@ button:hover,
   /* color: #d6d6d6; */
   /* color: black; */
   color: #565656;
+  display: flex;
 }
 
 .me > p {
@@ -427,7 +428,9 @@ button:hover,
   /* margin-bottom: -67px; */
   max-width: 556px;
   border-radius: 50%;
-  padding: 20px;
+  padding: 34px;
+  backdrop-filter: blur(9px);
+  clip-path: polygon(0 0, 50% 0, 65% 100%, 25% 10%);
   /* -webkit-filter: brightness(1.15);
   filter: brightness(1.15); */
 }
@@ -506,7 +509,7 @@ button:hover,
   /* mix-blend-mode: difference; */
   align-content: center;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   /* background-color: #1e1e1e;
   box-shadow: 0px -3px 6px #1e1e1e; */
 
@@ -519,8 +522,20 @@ button:hover,
  */
 }
 
+.mailbutton {
+  border-radius: 31px;
+  border: 0px solid black;
+  background-color: #75dcc6;
+  padding: 0px;
+  font-weight: 300;
+}
+
+.mailbutton:hover {
+  cursor: pointer;
+}
+
 .findme {
-  font-size: 15px;
+  font-size: 17px;
   /* color: #ff4e0a; */
   /* color: #ff9f4b; */
   /* color: #c2e1e0; */
@@ -528,12 +543,16 @@ button:hover,
   margin-right: 13px;
   /* color: #ddd0c2; */
   /* color: #d6d6d6; */
-  /* color: #98d2b5; */
+  /* color: #aec6c1; */
+  color: black;
 }
 
 .social-media {
   margin-bottom: -5px;
-  flex-basis: 100px;
+  background-color: #ff0405;
+  flex-basis: 130px;
+  border-radius: 20px;
+  padding: 20px;
   mix-blend-mode: exclusion;
 }
 
@@ -546,7 +565,7 @@ button:hover,
 }
 
 .profile {
-  margin: 28vh auto;
+  margin: 10vh auto;
   /* padding: 30px; */
   max-width: 1055px;
   display: grid;
@@ -577,13 +596,33 @@ button:hover,
   margin: 0 auto 177px;
 }
 
+.addressbutton {
+  background-color: #75ddc6;
+  border: 0px solid red;
+  border-radius: 31px;
+  width: 42px;
+  margin-left: -76px;
+}
+
+.addressbutton2 {
+  background-color: #050559;
+  border: 0px solid red;
+  border-radius: 31px;
+  width: 42px;
+  margin-left: -76px;
+}
+
 .project-list {
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-  grid-gap: 20px;
-  padding-top: 200px;
-  max-width: 932px;
+  grid-gap: 50px;
+  /* padding-top: 200px; */
+  max-width: 1232px;
+  border-radius: 31px;
+  margin-top: 591px;
+  padding: 20px;
+  box-shadow: 0px 0px 6px #9c9c9c80;
 }
 
 .project-list h2 {
@@ -615,7 +654,7 @@ button:hover,
   /* color: #216758; */
   color: #95ffe8db;
   border: 0.01px solid #414b96;
-  padding: 6px;
+  /* padding: 6px; */
   border-radius: 31px;
   margin-bottom: 5px;
   font-weight: 600;
@@ -696,7 +735,7 @@ button:hover,
   color: #161613;
   /* margin-top: 179px; */
   /* padding: 184px; */
-  /* margin-left: 575px; */
+  margin-left: 492px;
   padding: 20px;
   font-size: 1.15em;
   line-height: 1.3em;
@@ -787,7 +826,7 @@ caption {
 }
 
 .contact-section {
-  /* margin: 120px 50px; */
+  margin: 84px 0px;
   /* max-width: 100%; */
   /* text-align: center; */
   /* display: block; */
@@ -1000,8 +1039,6 @@ thead {
   }
 
   .me {
-    /* color: #a2a2a2; */
-    color: #afafaf;
   }
 
   .headingclass_contact {
