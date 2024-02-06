@@ -342,45 +342,64 @@
           </div>
         </div>
       </div>
+
+      <div class="contact-grid">
+        <section class="contact-section">
+          <button class="addressbutton"></button>
+          <button class="addressbutton2"></button>
+          <address class="address">
+            Joachim Prügl<br />
+            Badstr. 64<br />
+            13357 Berlin<br />
+            Deutschland<br />
+            <br />
+            <span class="contact-span">Tel:</span>
+            <a href="tel:+491788683698" aria-label="close">+49 178 8683698</a
+            ><br />
+            <span class="contact-span">Email</span>
+            <a href="mailto:joachimpruegl@gmail.com"
+              >contact@joachimpruegl.de</a
+            >
+            <br />
+            <br />
+          </address>
+
+          <div class="formpart">
+            <h2 class="h-inline">
+              Leave me a message or
+              <button class="mailbutton">
+                <a href="mailto:joachimpruegl@gmail.com">write me an email</a>
+              </button>
+            </h2>
+            <form action="#" method="post" id="request" class="form-action">
+              <label for="email" class="standard-label"
+                >Your email-address</label
+              >
+              <input type="email" id="email" required placeholder="..." />
+              <label for="telephone" class="standard-label"
+                >Your telephone number
+              </label>
+              <input
+                type="tel"
+                id="telephone"
+                pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+              />
+              <label for="message" class="standard-label"></label>
+              <textarea
+                id="message"
+                rows="10"
+                cols="10"
+                placeholder="Your Message..."
+                maxlength="240"
+                required
+              ></textarea>
+              <input type="submit" value="Send" id="submit" />
+            </form>
+          </div>
+        </section>
+      </div>
     </section>
 
-    <!-- <section class="project-section">
-      <div class="project-list">
-        <div class="project-list__item">
-          <div class="project-list__item">
-            <h2>*Drawings</h2>
-            <div class="pic">
-              <a href="" target="_blank">
-                <picture>
-                  <source
-                    srcset="img/solo3.webp"
-                    type="image/webp"
-                    class="project-images"
-                  />
-                  <source
-                    srcset="img/solo3.jpg"
-                    type="image/png"
-                    class="project-images"
-                  />
-                  <img
-                    src="img/solo3.jpg"
-                    alt="Image of the project called Monografie Code"
-                    class="project-images"
-                  />
-                </picture>
-              </a>
-            </div>
-            <div class="text">
-              <a
-                href="https://github.com/ilsegaertner/Portfolio-website-copy"
-                target="_blank"
-                >See project on Github</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
     <footer class="page-footer">
       <p class="findme">Find me on</p>
       <div class="social-media">

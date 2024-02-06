@@ -60,7 +60,7 @@ body {
 
 h1 {
   /* font-size: 65px; */
-  font-size: 19px;
+  font-size: 1.5rem;
   font-weight: 550;
   color: #161613;
   /* font-family: Geist, sans-serif; */
@@ -107,8 +107,9 @@ p {
 }
 
 .text {
-  margin-top: -7px;
+  /* margin-top: -7px; */
   display: flex;
+  font-size: 1rem;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -121,9 +122,9 @@ p {
 }
 
 .text p {
-  font-size: 1.15em;
+  font-size: 1.5rem;
   line-height: 1.3;
-  margin-top: 47px;
+  margin-top: 2rem;
 }
 
 .text a:nth-child(2),
@@ -134,7 +135,7 @@ p {
 h2 {
   font-size: 19px;
   /* line-height: 1.3; */
-  font-weight: 300;
+  font-weight: 400;
   /* color: #ddd0c3; */
   /* color: #050559; */
   color: #616161;
@@ -160,6 +161,7 @@ h4 {
   color: #c9c9c9;
   font-weight: 400;
   font-family: "Geist-Light", sans-serif;
+  font-size: 1.3rem;
 }
 
 article {
@@ -168,11 +170,22 @@ article {
 
 .address {
   line-height: 1.3;
+  font-size: 1.5rem;
+  color: #3b3343;
 }
 
 .address > a {
   /* color: white; */
   color: black;
+  font-size: 1.5rem;
+}
+
+.contact-span {
+  color:#3737ba;
+}
+
+.form-action {
+  color: #3737ba;
 }
 
 .skills {
@@ -191,17 +204,17 @@ article {
 
 .pic {
   max-width: 100%;
-  height: 246px;
+  height: 16rem;
   overflow: hidden;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   /* flex-basis: 36%; */
-  border: 0.2px solid black;
+  /* border: 0.2px solid black; */
   background: #dfdfdf;
-  border-radius: 9px;
-  box-shadow: 0px 0px 616px #e0e0e0b0;
+  border-radius: 3px;
+  box-shadow: 0px 0px 616px #e0e0e080;
 }
 
 .pic:hover {
@@ -374,11 +387,16 @@ button:hover,
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  margin: 0;
 }
 
 .navigation-list li {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 2rem;
+}
+
+.navigation-list a {
+  font-size: 1.5rem;
 }
 
 .navigation-list__item:hover {
@@ -449,6 +467,7 @@ button:hover,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /* border: 2px solid black; */
   /* flex-direction: row-reverse; */
   width: 100%;
   /* padding: 8px; */
@@ -494,6 +513,7 @@ button:hover,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /* border: 2px solid black; */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -502,13 +522,15 @@ button:hover,
   -webkit-box-flex: 1;
   -ms-flex: 1 1 100px;
   flex: 1 1 100px;
+  background-color: #d8d8d8;
   position: fixed;
   color: #3aa4d7;
   left: 0;
   bottom: 0;
   width: 100%;
+  height: 3rem;
   /* background-color: aliceblue; */
-  height: 42px;
+  /* height: 42px; */
   flex-wrap: nowrap;
   /* mix-blend-mode: difference; */
   align-content: center;
@@ -536,6 +558,10 @@ button:hover,
 
 .mailbutton:hover {
   cursor: pointer;
+}
+
+.mailbutton a {
+  font-size: 1.5rem;
 }
 
 .findme {
@@ -597,7 +623,13 @@ button:hover,
 
 .project-section {
   /* max-width: 1200px; */
-  margin: 0 auto 177px;
+  /* margin: 0 auto 177px; */
+  display: grid;
+  /* max-width: 1266px; */
+  grid-template-columns: 73.5% 27.5%;
+  /* border: 2px solid black; */
+  /* padding: 20px; */
+  margin-bottom: 24rem;
 }
 
 .addressbutton {
@@ -617,21 +649,21 @@ button:hover,
 }
 
 .project-list {
-  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-  grid-gap: 50px;
-  /* padding-top: 200px; */
-  max-width: 1232px;
-  border-radius: 31px;
-  margin-top: 591px;
-  padding: 20px;
-  box-shadow: 0px 0px 6px #9c9c9c80;
+  grid-gap: 16rem;
+  /* grid-template-columns: 49% 48%; */
+  margin-top: 15rem;
+  /* padding: 20px; */
+  /* background-color: aquamarine; */
+  /* border: 2px solid black; */
+  border-radius: 18px;
+  justify-content: space-evenly;
+  /* box-shadow: 5px 9px 15px black; */
 }
 
 .project-list h2 {
-  font-size: 1.6em;
-  margin-bottom: -25px;
+  font-size: 1.5rem;
+  margin-bottom: -1.3rem;
 }
 
 /* start grid fallback */
@@ -644,14 +676,11 @@ button:hover,
 /* end grid fallback */
 
 .project-list__item {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  /* border-radius: 27px;
-  background-color: black; */
+  width: 66%;
+  padding: 21px;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+  /* border: 2px solid black; */
 }
 
 .project-list__item > .text > a {
@@ -660,7 +689,7 @@ button:hover,
   border: 0.01px solid #414b96;
   /* padding: 6px; */
   border-radius: 31px;
-  margin-bottom: 5px;
+  margin-bottom: 1rem;
   font-weight: 600;
 }
 
@@ -669,16 +698,11 @@ button:hover,
   color: #a1bdb7b5;
 }
 
-/* doesnt work with media-queries?
-
-.project-list__item:last-child {
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
+.contact-grid {
+  /* margin-top: 15rem; */
+  /* background-color: red; */
+  background-color: #c9c9e0;
 }
-
-*/
 
 .headingclass_about {
   /* margin-top: 6px; */
@@ -696,6 +720,7 @@ button:hover,
 .headingclass_work {
   /* max-width: 500px; */
   text-align: center;
+  margin: 0;
   /* margin: 6px auto 114px; */
   color: #ff0606;
   font-weight: 500;
@@ -773,7 +798,7 @@ address {
 
 .formpart {
   /* display: inline-block; */
-  max-width: 366px;
+  /* max-width: 366px; */
   /* margin-top: 140px; */
   /* text-align: start;
   margin: 99px 18vh 423px 75px; */
@@ -794,6 +819,7 @@ address {
 
 .h-inline {
   display: inline-block;
+  font-size: 1.5rem;
 }
 
 .about-content {
@@ -830,13 +856,15 @@ caption {
 }
 
 .contact-section {
-  margin: 84px 0px;
-  /* max-width: 100%; */
-  /* text-align: center; */
-  /* display: block; */
+  margin: 84px 0px; */
   display: grid;
+  grid-template-columns: 1fr;
   padding: 20px;
+  /* background-color: red; */
+  /* border: 2px solid black; */
   grid-gap: 77px;
+  margin-top: 15rem;
+  justify-items: start;
 }
 
 thead {
@@ -855,6 +883,7 @@ thead {
   /* background-color: #27291ff7;
   background-color: #181817; */
   background-color: #fff;
+  /* border: 2px solid black; */
 }
 
 .contactpage {
@@ -1109,6 +1138,7 @@ thead {
   .project-list:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
+    grid-gap: 11rem;
   }
 
   .profile__portrait {
