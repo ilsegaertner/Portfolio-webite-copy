@@ -208,6 +208,10 @@ article {
   flex-basis: 44%x;
 }
 
+.pic a {
+  object-fit: cover;
+}
+
 .project-images:hover {
   -webkit-transition: 1s ease all;
   -o-transition: 1s ease all;
