@@ -373,7 +373,7 @@
                 <a href="mailto:joachimpruegl@gmail.com">write me an email</a>
               </button>
             </h2>
-            <form action="#" method="post" id="request" class="form-action">
+            <!-- <form action="#" method="post" id="request" class="form-action">
               <label for="email" class="standard-label"
                 >Your email-address</label
               >
@@ -396,6 +396,53 @@
                 required
               ></textarea>
               <input type="submit" value="Send" id="submit" />
+            </form> -->
+
+            <form
+              id="fs-frm"
+              name="simple-contact-form"
+              accept-charset="utf-8"
+              action="https://formspree.io/f/mqkrpwlr"
+              method="post"
+              class="form-action"
+            >
+              <fieldset id="fs-frm-inputs">
+                <label for="full-name" class="standard-label">Full Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="full-name"
+                  placeholder="First and Last"
+                  required=""
+                />
+                <label for="email-address" class="standard-label"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  name="_replyto"
+                  id="email-address"
+                  placeholder="Your Email"
+                  required=""
+                />
+                <label for="message" class="standard-label">Message</label>
+                <textarea
+                  rows="10"
+                  col="10"
+                  name="message"
+                  id="message"
+                  maxlength="240"
+                  placeholder="Your Message...."
+                  required=""
+                ></textarea>
+                <input
+                  type="hidden"
+                  name="_subject"
+                  id="email-subject"
+                  value="Contact Form Submission"
+                />
+              </fieldset>
+              <input type="submit" value="Submit" />
             </form>
           </div>
         </section>

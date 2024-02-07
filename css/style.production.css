@@ -260,6 +260,7 @@ input {
 textarea {
   border: 0.01px solid #616161;
   border-radius: 31px;
+  padding: 1rem;
 }
 
 button {
@@ -728,10 +729,18 @@ button:hover,
   padding: 20px;
   box-sizing: border-box;
   transition: width 0.5s ease;
+  box-shadow: 2px 20px 20px #4b4d44d6;
 }
 
 .contact-grid.collapsed {
   width: 4%; /* Set the collapsed width */
+}
+
+fieldset {
+  border: none;
+  display: grid;
+  grid-gap: 0.5rem;
+  padding: 1.3rem 0px;
 }
 
 .headingclass_about {
@@ -851,6 +860,7 @@ address {
 .h-inline {
   display: inline-block;
   font-size: 1.5rem;
+  color: #75dcc6;
 }
 
 .about-content {
