@@ -579,9 +579,8 @@ button:hover,
 }
 
 .social-media {
-  margin-bottom: 170px;
-
-  flex-basis: -63px;
+  /* margin-bottom: 170px; */
+  flex-basis: 129px;
   /* border-top-left-radius: 77px; */
   /* border-top-right-radius: 77px; */
   padding: 17px;
