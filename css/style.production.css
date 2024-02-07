@@ -738,7 +738,7 @@ button:hover,
 }
 
 .expanded {
-  width: 33.3%; /* Set the collapsed width */
+  width: 50%; /* Set the collapsed width */
 }
 
 fieldset {
@@ -910,7 +910,7 @@ caption {
   grid-template-columns: 1fr;
   padding: 20px;
   grid-gap: 77px;
-  margin-top: 11rem;
+  margin-top: 18rem;
   justify-items: start;
 }
 
