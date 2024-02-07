@@ -8,6 +8,13 @@ function fadeInProjects() {
 }
 window.addEventListener("load", fadeInProjects);
 
+document
+  .getElementById("collapseButton")
+  .addEventListener("click", function () {
+    document.querySelector(".project-section").classList.toggle("expanded");
+    document.querySelector(".contact-grid").classList.toggle("collapsed");
+  });
+
 // // Function to handle the fading effect for elements in viewport
 // function handleFadeIn() {
 //   const elements = document.querySelectorAll(".project-list__item");

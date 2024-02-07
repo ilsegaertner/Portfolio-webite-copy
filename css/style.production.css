@@ -86,7 +86,7 @@ a {
 a:visited {
   /* color: #ddd0c3; */
   /* color: #ff4e0a; */
-  color: #161613;
+  color: #4b4d44;
 }
 
 a:hover,
@@ -138,7 +138,7 @@ h2 {
   font-weight: 400;
   /* color: #ddd0c3; */
   /* color: #050559; */
-  color: #616161;
+  color: #4b4d44;
   margin-bottom: 15px;
   /* font-family: "Times New Roman", Times, serif; */
   /* font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -171,21 +171,23 @@ article {
 .address {
   line-height: 1.3;
   font-size: 1.5rem;
-  color: #3b3343;
+  color: #ffffff;
+  padding: 20px;
 }
 
 .address > a {
   /* color: white; */
-  color: black;
+  /* color: #ced8de; */
+  color: #c9c9c9;
   font-size: 1.5rem;
 }
 
 .contact-span {
-  color: #3737ba;
+  color: white;
 }
 
 .form-action {
-  color: #3737ba;
+  color: white;
 }
 
 .skills {
@@ -580,13 +582,16 @@ button:hover,
 }
 
 .social-media {
-  margin-bottom: 170px;
+  margin-bottom: 11px;
   background-color: #ff0405;
-  flex-basis: 51px;
-  border-top-left-radius: 77px;
-  border-top-right-radius: 77px;
+  /* flex-basis: 69px; */
+  /* border-top-left-radius: 77px; */
+  /* border-top-right-radius: 77px; */
   padding: 17px;
-  mix-blend-mode: exclusion;
+  /* margin-left: 559px; */
+  padding: 13px;
+  right: 0;
+  position: absolute;
 }
 
 .social-media:nth-child(1) {
@@ -629,12 +634,16 @@ button:hover,
   /* margin: 0 auto 177px; */
   display: grid;
   /* max-width: 1266px; */
-  grid-template-columns: 73.5% 27.5%;
+  grid-template-columns: 66.6% 33.3%;
   /* border: 2px solid black; */
   /* padding: 20px; */
   margin-bottom: 24rem;
   position: relative;
   /* background-color: currentColor; */
+}
+
+.project-section.expanded {
+  grid-template-columns: 80.6% 33.3%; /* Set the expanded grid template */
 }
 
 .addressbutton {
@@ -708,17 +717,21 @@ button:hover,
 }
 
 .contact-grid {
-  background-color: #c9c9e0;
+  background-color: #4a4d44;
   /* background-color: #7e7773; */
-
   position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
-  width: 27.5%;
+  width: 33.3%;
   overflow-y: auto;
   padding: 20px;
   box-sizing: border-box;
+  transition: width 0.5s ease;
+}
+
+.contact-grid.collapsed {
+  width: 4%; /* Set the collapsed width */
 }
 
 .headingclass_about {
@@ -819,6 +832,7 @@ address {
   /* margin-top: 140px; */
   /* text-align: start;
   margin: 99px 18vh 423px 75px; */
+  padding: 20px;
 }
 
 #submit {
@@ -876,7 +890,7 @@ caption {
   grid-template-columns: 1fr;
   padding: 20px;
   grid-gap: 77px;
-  margin-top: 15rem;
+  margin-top: 11rem;
   justify-items: start;
 }
 
@@ -1084,9 +1098,6 @@ thead {
     color: #c2e1e0;
   }
 
-  .me {
-  }
-
   .headingclass_contact {
     text-align: center;
   }
@@ -1095,6 +1106,7 @@ thead {
     margin: 0 auto;
     text-align: center;
     margin-top: 36px;
+    padding: 20px;
   }
 
   /* .intro {
@@ -1175,7 +1187,7 @@ thead {
   }
 
   .address > a {
-    color: white;
+    color: #c9c9c9;
     font-weight: 100;
   }
 }
