@@ -138,7 +138,7 @@ h2 {
   font-weight: 400;
   /* color: #ddd0c3; */
   /* color: #050559; */
-  color: #616161;
+  color: #000000;
   margin-bottom: 15px;
   /* font-family: "Times New Roman", Times, serif; */
   /* font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -171,7 +171,7 @@ article {
 .address {
   line-height: 1.3;
   font-size: 1.5rem;
-  color: #3b3343;
+  color: #ffffff;
 }
 
 .address > a {
@@ -580,10 +580,10 @@ button:hover,
 
 .social-media {
   margin-bottom: 170px;
-  background-color: #ff0405;
-  flex-basis: 51px;
-  border-top-left-radius: 77px;
-  border-top-right-radius: 77px;
+
+  flex-basis: -63px;
+  /* border-top-left-radius: 77px; */
+  /* border-top-right-radius: 77px; */
   padding: 17px;
   mix-blend-mode: exclusion;
 }
@@ -642,11 +642,12 @@ button:hover,
   border-radius: 31px;
   width: 49px;
   position: fixed;
-  margin-left: -53px;
+  margin-left: -65px;
 }
 
 .addressbutton2 {
   background-color: #050559;
+  display: none;
   border: 0px solid red;
   border-radius: 31px;
   width: 49px;
@@ -707,8 +708,8 @@ button:hover,
 }
 
 .contact-grid {
-  background-color: #c9c9e0;
-  /* background-color: #7e7773; */
+  /* background-color: #c9c9e0; */
+  background-color: #7e7773;
 
   position: fixed;
   top: 0;
