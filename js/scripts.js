@@ -8,12 +8,18 @@ function fadeInProjects() {
 }
 window.addEventListener("load", fadeInProjects);
 
-document
-  .getElementById("collapseButton")
-  .addEventListener("click", function () {
-    document.querySelector(".project-section").classList.toggle("expanded");
-    document.querySelector(".contact-grid").classList.toggle("collapsed");
-  });
+// document
+//   .getElementById("collapseButton")
+//   .addEventListener("click", function () {
+//     document.querySelector(".project-section").classList.toggle("expanded");
+//     document.querySelector(".contact-grid").classList.toggle("collapsed");
+//   });
+
+document.getElementById("expandButton").addEventListener("click", function () {
+  document.querySelector(".contact-grid").classList.toggle("expanded");
+  document.querySelector(".project-section").classList.toggle("collapsed");
+  document.querySelector(".addressbutton2").classList.toggle("button-expanded");
+});
 
 // // Function to handle the fading effect for elements in viewport
 // function handleFadeIn() {
