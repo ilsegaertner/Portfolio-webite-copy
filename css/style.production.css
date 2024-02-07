@@ -687,6 +687,14 @@ button:hover,
   /* box-shadow: 5px 9px 15px black; */
 }
 
+.project-list h1 {
+  font-size: 1.9rem;
+  font-weight: 400;
+  color: #4a4d44;
+  margin: 0;
+  padding: 20px;
+}
+
 .project-list h2 {
   font-size: 1.9rem;
   margin-bottom: -1.3rem;
