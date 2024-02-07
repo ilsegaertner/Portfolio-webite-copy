@@ -15,6 +15,18 @@ window.addEventListener("load", fadeInProjects);
 //     document.querySelector(".contact-grid").classList.toggle("collapsed");
 //   });
 
+document.getElementById("contactbutton").addEventListener("click", function () {
+  document.querySelector(".contact-grid").classList.toggle("expanded");
+  document.querySelector(".project-section").classList.toggle("collapsed");
+  document.querySelector(".addressbutton2").classList.toggle("button-expanded");
+});
+
+// document.querySelector(".contact-grid").addEventListener("click", function () {
+//   document.querySelector(".contact-grid").classList.add("expanded");
+//   document.querySelector(".project-section").classList.add("collapsed");
+//   document.querySelector(".addressbutton2").classList.add("button-expanded");
+// });
+
 document.getElementById("expandButton").addEventListener("click", function () {
   document.querySelector(".contact-grid").classList.toggle("expanded");
   document.querySelector(".project-section").classList.toggle("collapsed");
