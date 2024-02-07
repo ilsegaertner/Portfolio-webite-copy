@@ -181,7 +181,7 @@ article {
 }
 
 .contact-span {
-  color:#3737ba;
+  color: #3737ba;
 }
 
 .form-action {
@@ -476,6 +476,7 @@ button:hover,
   padding-right: 32px;
   position: fixed;
   padding-top: 2px;
+  z-index: 100;
   top: 0;
   /* mix-blend-mode: luminosity; */
   right: 0;
@@ -522,7 +523,7 @@ button:hover,
   -webkit-box-flex: 1;
   -ms-flex: 1 1 100px;
   flex: 1 1 100px;
-  background-color: #d8d8d8;
+  background-color: #eeeeee;
   position: fixed;
   color: #3aa4d7;
   left: 0;
@@ -578,11 +579,12 @@ button:hover,
 }
 
 .social-media {
-  margin-bottom: -5px;
+  margin-bottom: 170px;
   background-color: #ff0405;
-  flex-basis: 130px;
-  border-radius: 20px;
-  padding: 20px;
+  flex-basis: 51px;
+  border-top-left-radius: 77px;
+  border-top-right-radius: 77px;
+  padding: 17px;
   mix-blend-mode: exclusion;
 }
 
@@ -630,27 +632,33 @@ button:hover,
   /* border: 2px solid black; */
   /* padding: 20px; */
   margin-bottom: 24rem;
+  position: relative;
+  /* background-color: currentColor; */
 }
 
 .addressbutton {
   background-color: #75ddc6;
   border: 0px solid red;
   border-radius: 31px;
-  width: 42px;
-  margin-left: -76px;
+  width: 49px;
+  position: fixed;
+  margin-left: -53px;
 }
 
 .addressbutton2 {
   background-color: #050559;
   border: 0px solid red;
   border-radius: 31px;
-  width: 42px;
-  margin-left: -76px;
+  width: 49px;
+  position: fixed;
+  mix-blend-mode: hue;
+  margin-left: -74px;
 }
 
 .project-list {
   display: grid;
   grid-gap: 16rem;
+  overflow-y: auto;
   /* grid-template-columns: 49% 48%; */
   margin-top: 15rem;
   /* padding: 20px; */
@@ -699,9 +707,17 @@ button:hover,
 }
 
 .contact-grid {
-  /* margin-top: 15rem; */
-  /* background-color: red; */
   background-color: #c9c9e0;
+  /* background-color: #7e7773; */
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 27.5%;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .headingclass_about {
@@ -843,8 +859,6 @@ th {
 .skills {
   margin: 29px auto;
   background-color: #181817ab;
-  /* color: #e6e6e6; */
-  /* color: #c9c9c9; */
   color: white;
   border-radius: 10px;
   font-weight: 100;
@@ -856,12 +870,10 @@ caption {
 }
 
 .contact-section {
-  margin: 84px 0px; */
+  margin: 84px 0px;
   display: grid;
   grid-template-columns: 1fr;
   padding: 20px;
-  /* background-color: red; */
-  /* border: 2px solid black; */
   grid-gap: 77px;
   margin-top: 15rem;
   justify-items: start;
