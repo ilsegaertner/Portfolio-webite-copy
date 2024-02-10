@@ -19,6 +19,7 @@ document.getElementById("contactbutton").addEventListener("click", function () {
   document.querySelector(".contact-grid").classList.toggle("expanded");
   document.querySelector(".project-section").classList.toggle("collapsed");
   document.querySelector(".addressbutton2").classList.toggle("button-expanded");
+  document.querySelector(".project-list").classList.toggle("opacity-2");
 });
 
 // document.querySelector(".contact-grid").addEventListener("click", function () {
@@ -31,6 +32,7 @@ document.getElementById("expandButton").addEventListener("click", function () {
   document.querySelector(".contact-grid").classList.toggle("expanded");
   document.querySelector(".project-section").classList.toggle("collapsed");
   document.querySelector(".addressbutton2").classList.toggle("button-expanded");
+  document.querySelector(".project-list").classList.toggle("opacity-2");
 });
 
 // // Function to handle the fading effect for elements in viewport
