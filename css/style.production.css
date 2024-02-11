@@ -418,11 +418,18 @@ button {
   font-weight: 100;
 }
 
-.workpage-description {
+.project-list .workpage-description {
   padding-left: 20px;
   margin-top: -369px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: Geist mono;
+}
+
+.project-list h2:hover {
+  box-shadow: none;
+  cursor: auto;
+  color: #141414;
+  text-shadow: none;
 }
 
 input:visited {
@@ -734,6 +741,7 @@ button:hover,
   /* max-width: 1055px; */
   display: grid;
   grid-gap: 20px;
+  margin-bottom: 18rem;
 }
 
 .worklink {
@@ -1139,7 +1147,8 @@ caption {
   grid-template-columns: 1fr 1fr;
   /* padding: 20px; */
   grid-gap: 77px;
-  margin: 3rem 0;
+  margin: 10rem 0;
+  margin-bottom: 18rem;
   height: 100vh;
   align-items: baseline;
   justify-items: start;
