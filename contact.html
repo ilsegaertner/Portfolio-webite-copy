@@ -63,10 +63,10 @@
       </nav>
     </header>
 
-    <section class="contact-section">
+    <section class="contact-section_contactpage">
       <button class="addressbutton"></button>
       <button class="addressbutton2"></button>
-      <address class="address">
+      <address class="address_contactpage">
         Joachim Prügl<br />
         Badstr. 64<br />
         13357 Berlin<br />
@@ -82,33 +82,61 @@
 
       <!----<hr>-->
 
-      <div class="formpart">
+      <div class="formpart_contactpage">
         <h2 class="h-inline">
-          Leave me a message or
-          <button class="mailbutton">
+          > Leave me a message
+          <!-- <button class="mailbutton">
             <a href="mailto:joachimpruegl@gmail.com">write me an email</a>
-          </button>
+          </button> -->
         </h2>
-        <form action="#" method="post" id="request">
-          <label for="email" class="standard-label">Your email-address</label>
-          <input type="email" id="email" required placeholder="..." />
-          <label for="telephone" class="standard-label"
-            >Your telephone number
-          </label>
-          <input type="tel" id="telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" />
-          <label for="message" class="standard-label"></label>
-          <textarea
-            id="message"
-            rows="10"
-            cols="10"
-            placeholder="Your Message..."
-            maxlength="240"
-            required
-          ></textarea>
-          <input type="submit" value="Send" id="submit" />
+        <form
+          id="fs-frm"
+          name="simple-contact-form"
+          accept-charset="utf-8"
+          action="https://formspree.io/f/mqkrpwlr"
+          method="post"
+          class="form-action"
+        >
+          <fieldset id="fs-frm-inputs">
+            <label for="full-name" class="standard-label">Full Name</label>
+            <input
+              type="text"
+              name="name"
+              id="full-name"
+              placeholder="First and Last"
+              required=""
+            />
+            <label for="email-address" class="standard-label"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              name="_replyto"
+              id="email-address"
+              placeholder="Your Email"
+              required=""
+            />
+            <label for="message" class="standard-label">Message</label>
+            <textarea
+              rows="10"
+              col="10"
+              name="message"
+              id="message"
+              maxlength="240"
+              placeholder="Your Message...."
+              required=""
+            ></textarea>
+            <input
+              type="hidden"
+              name="_subject"
+              id="email-subject"
+              value="Contact Form Submission"
+            />
+          </fieldset>
+          <input type="submit" value="Submit" />
         </form>
 
-        or
+        <!-- or
         <p class="findme">find me on</p>
         <div class="social-media">
           <a href="https://github.com/ilsegaertner" target="_blank"
@@ -134,7 +162,7 @@
                 width="25"
                 height="25" /></a
           ></span>
-        </div>
+        </div> -->
       </div>
     </section>
     <footer class="page-footer">
