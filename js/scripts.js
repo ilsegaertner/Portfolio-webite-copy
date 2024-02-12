@@ -13,39 +13,47 @@ window.addEventListener("load", fadeInProjects);
 // expanding the work page with contact-grid
 
 document.getElementById("contactbutton").addEventListener("click", function () {
-  document.querySelector(".contact-grid").classList.toggle("expanded");
+  var contactGrid = document.querySelector(".contact-grid");
+  var descriptionElement = document.querySelector(".workpage-description");
+  var projectListElement = document.querySelector(".project-list");
+
+  // Toggle the 'expanded' class on the contact grid
+  contactGrid.classList.toggle("expanded");
+  projectListElement.classList.toggle("project-list-expanded");
+
+  // Toggle the text content based on the contact grid's width
+  if (contactGrid.classList.contains("expanded")) {
+    descriptionElement.textContent = "> contact";
+  } else {
+    descriptionElement.textContent =
+      "> portfolio projects__programming and design";
+  }
+
+  // Toggle other classes or perform other actions as needed
   document.querySelector(".project-section").classList.toggle("collapsed");
   document.querySelector(".addressbutton2").classList.toggle("button-expanded");
   document.querySelector(".project-list").classList.toggle("opacity-2");
 });
 
 document.getElementById("expandButton").addEventListener("click", function () {
-  document.querySelector(".contact-grid").classList.toggle("expanded");
+  var contactGrid = document.querySelector(".contact-grid");
+  var descriptionElement = document.querySelector(".workpage-description");
+  var projectListElement = document.querySelector(".project-list");
+
+  // Toggle the 'expanded' class on the contact grid
+  contactGrid.classList.toggle("expanded");
+  projectListElement.classList.toggle("project-list-expanded");
+
+  // Toggle the text content based on the contact grid's width
+  if (contactGrid.classList.contains("expanded")) {
+    descriptionElement.textContent = "> contact";
+  } else {
+    descriptionElement.textContent =
+      "> portfolio projects__programming and design";
+  }
+
+  // Toggle other classes or perform other actions as needed
   document.querySelector(".project-section").classList.toggle("collapsed");
   document.querySelector(".addressbutton2").classList.toggle("button-expanded");
   document.querySelector(".project-list").classList.toggle("opacity-2");
 });
-
-// change h1 when clicking on contact
-
-// document
-//   .querySelector(".work-navigation-link")
-//   .addEventListener("click", function (event) {
-//     event.preventDefault(); // Prevent default link behavior
-
-//     // Update the content of the h1 and h2 elements
-//     document.querySelector(".sub-heading-class").textContent = "> works";
-//     document.querySelector(".project-list__item").textContent =
-//       "portfolio projects__programming and design";
-//   });
-
-// document
-//   .querySelector(".contact-navigation-link")
-//   .addEventListener("click", function (event) {
-//     event.preventDefault(); // Prevent default link behavior
-
-//     // Update the content of the h1 and h2 elements
-//     document.querySelector(".sub-heading-class").textContent = "> contact";
-//     document.querySelector(".project-list__item").textContent =
-//       "give me a shout";
-//   });
