@@ -560,14 +560,15 @@ button:hover,
 }
 
 .profile__portrait {
-  /* float: left; */
   width: 100%;
   /* margin-bottom: -67px; */
+  /* position: fixed; */
   max-width: 507px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   /* padding: 34px; */
   backdrop-filter: blur(9px);
-  clip-path: polygon(0 0, 50% 0, 65% 100%, 25% 10%);
+  /* clip-path: polygon(0 0, 50% 0, 65% 100%, 25% 10%); */
+  border: 2px solid black;
 }
 
 .profile__portrait:hover {
@@ -657,7 +658,7 @@ button:hover,
   /* mix-blend-mode: difference; */
   align-content: center;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   /* background-color: #1e1e1e;
   box-shadow: 0px -3px 6px #1e1e1e; */
 
@@ -707,7 +708,7 @@ button:hover,
 
 .findme {
   font-size: 1.3rem;
-  margin-right: 13px;
+  margin-right: 145px;
   color: black;
 }
 
@@ -752,12 +753,14 @@ button:hover,
 }
 
 .profile {
-  /* margin: 10vh auto; */
+  margin: 10vh auto;
   /* padding: 30px; */
   /* max-width: 1055px; */
   display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   margin-bottom: 18rem;
+  border: 2px solid black;
 }
 
 .worklink {
@@ -984,6 +987,7 @@ fieldset {
   /* margin-top: 6px; */
   /* color: transparent; */
   margin: 0;
+
   color: #ff0606;
   font-weight: 500;
   /* margin-left: 10px; */
@@ -999,7 +1003,10 @@ fieldset {
   text-align: center;
   margin: 0;
   /* margin: 6px auto 114px; */
-  color: #ff0606;
+  background-image: linear-gradient(90deg, blue, yellow, red, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* color: #ff0606; */
   /* color: #5e4e4e; */
   /* color: #2a3a82; */
   font-weight: 500;
@@ -1016,6 +1023,7 @@ fieldset {
   /* margin-top: 6px; */
   /* color: transparent; */
   margin: 0;
+
   color: #ff0606;
   font-weight: 500;
   /* margin-left: 10px; */
@@ -1029,6 +1037,7 @@ fieldset {
 .hello-world {
   /* margin-top: 6px; */
   margin: 0;
+
   color: #ff0606;
   font-weight: 500;
   text-transform: lowercase;
@@ -1040,19 +1049,24 @@ fieldset {
 }
 
 .myname {
-  /* color: black; */
+  color: black;
   /* color: #2a2a23; */
   color: #161613;
-  /* margin-top: 179px; */
+  /* margin-top: 153px; */
   /* padding: 184px; */
-  margin-left: 492px;
+  /* margin-left: 492px; */
   padding: 20px;
-  font-size: 1.15em;
-  line-height: 1.3em;
+  max-width: 100%;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
 }
 
 .myname a:first-of-type {
-  color: #8cff0000;
+  background-image: linear-gradient(90deg, blue, yellow, red, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Geist mono;
+  font-size: 2.5rem;
 }
 
 .mycodingskills {
