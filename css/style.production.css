@@ -24,6 +24,7 @@ body {
   /* font-family: "Times New Roman", Times, serif; */
   padding: 20px;
   width: auto;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -310,7 +311,7 @@ article {
   background: #dfdfdf;
   border-radius: 3px;
   /* box-shadow: 0px 0px 616px #e0e0e080; */
-  box-shadow: 0px 0px 2px #575757;
+  box-shadow: 0px 0px 5px #575757;
 }
 
 .pic:hover {
@@ -439,6 +440,7 @@ button {
 .workpage-description {
   /* margin-top: 100px; */
   margin: 63px auto;
+  margin-top: 100px;
   position: sticky;
   z-index: 2200;
   /* background-color: #00ffa9; */
@@ -791,6 +793,81 @@ button:hover,
   justify-content: center;
 }
 
+.aside {
+  position: fixed;
+  top: 37vh;
+  left: -300px; /* Initially hide the aside off-screen */
+  transform: translateY(-50%);
+  z-index: 8000;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  font-weight: 400;
+  width: 180px; /* Set desired width of the aside */
+  transition: left 0.3s ease; /* Add smooth transition for opening/closing */
+  /* box-shadow: 0px 5px 4px 0px #afafaf; */
+}
+
+.aside.open {
+  left: 0; /* Move the aside back to the left when it's open */
+}
+
+#toggleAsideButton {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 transparent;
+  border: 0.1px solid #141414;
+  border-radius: 50px;
+  position: fixed;
+  z-index: 9000;
+  top: 12vh;
+  font-size: 0.7rem;
+  transform: translateY(-50%);
+}
+
+#toggleAsideButton:hover {
+  color: #14141491;
+}
+
+.toggleAsideButton-invisible {
+  display: none;
+}
+
+.aside-invisible {
+  display: none;
+}
+
+.work-list {
+  background-color: #ffffff00;
+  padding: 20px;
+  margin: 0;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  display: grid;
+  grid-gap: 15px;
+  list-style-type: none;
+}
+
+.go-back {
+  padding: 20px;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+}
+
+.go-back a {
+  color: #ff0405;
+}
+
+#work-list-id li a {
+  color: #4d525a;
+}
+
+#work-list-id li a:visited {
+  color: #4d525ad8;
+}
+#work-list-id li a:hover {
+  color: #4d525ac3;
+}
+
 .worklink {
   /* display: block; */
   /* margin-top: 20px; */
@@ -891,7 +968,7 @@ button:hover,
 
 .stack-images img {
   width: auto;
-  height: 50px;
+  height: 40px;
 }
 
 .intro-text .stack-images img {
@@ -1063,10 +1140,10 @@ fieldset {
   text-align: center;
   margin: 0;
   /* margin: 6px auto 114px; */
-  background-image: linear-gradient(90deg, blue, yellow, red, purple);
+  /* background-image: linear-gradient(90deg, blue, yellow, red, purple);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  /* color: #ff0606; */
+  -webkit-text-fill-color: transparent; */
+  color: #ff0606;
   /* color: #5e4e4e; */
   /* color: #2a3a82; */
   font-weight: 500;
@@ -1267,6 +1344,7 @@ caption {
   /* padding: 20px; */
   padding: 65px;
   grid-gap: 77px;
+  margin-top: 48px;
   /* margin: 18rem 0; */
   margin-bottom: 18rem;
   justify-items: start;
@@ -1595,6 +1673,11 @@ thead {
 }
 
 @media all and (max-width: 1000px) {
+  #aside,
+  #toggleAsideButton {
+    display: none;
+  }
+
   .intro-text .stack-images {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5.6vw;
