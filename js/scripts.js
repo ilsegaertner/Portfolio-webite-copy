@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const targetId = event.target.getAttribute("href");
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
-        scrollToTarget(targetElement, -90);
+        scrollToTarget(targetElement, -200);
       }
     }
   });
@@ -121,11 +121,12 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// toggle aside button
+// toggle aside button and adjust width of project-list__item
 
 document.addEventListener("DOMContentLoaded", function () {
   const toggleAsideButton = document.getElementById("toggleAsideButton");
   const aside = document.getElementById("aside");
+  const projectListItems = document.querySelectorAll(".project-list__item");
 
   toggleAsideButton.addEventListener("click", function () {
     console.log("Button clicked!");
@@ -134,8 +135,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // Toggle button content
     if (toggleAsideButton.innerHTML === "⇁") {
       toggleAsideButton.innerHTML = "⇂";
+      projectListItems.forEach((item) => {
+        item.classList.add("broad");
+      });
     } else {
       toggleAsideButton.innerHTML = "⇁";
+      projectListItems.forEach((item) => {
+        item.classList.remove("broad");
+      });
     }
   });
 });

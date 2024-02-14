@@ -188,6 +188,7 @@ h4 {
   font-weight: 400;
   font-family: "Geist-Light", sans-serif;
   font-size: 1.3rem;
+  margin: 30px 0 -4px 0px;
 }
 
 article {
@@ -890,13 +891,16 @@ button:hover,
 }
 
 #work-list-id li a {
-  color: #4d525a;
+  /* color: #4d525a; */
+  color: #bfbfca;
   font-size: 1.3rem;
   font-family: Geist;
+  text-shadow: 1px 0px 100px white;
 }
 
 #work-list-id li a:visited {
-  color: #4d525ad8;
+  /* color: #4d525ad8; */
+  color: #bfbfca;
 }
 #work-list-id li a:hover {
   color: #4d525ac3;
@@ -1088,7 +1092,18 @@ button:hover,
   margin: 20px;
   /* opacity: 0; */
   transition: opacity 0.5s ease-in-out;
+  transition: width 0.3s ease;
+  /* background-color: #c5c5e8; */
+  /* box-shadow: 0px 0px 3000px 0px #efefef; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
   /* border: 2px solid black; */
+}
+
+.broad {
+  width: 62%;
+  transition: width 0.3s ease;
 }
 
 .project-list__item > .text > a {
@@ -1201,7 +1216,7 @@ fieldset {
   text-transform: lowercase;
   /* position: fixed; */
   /* text-shadow: 0 0 8px #ded0c200; */
-  text-shadow: 0px 0px 20px #d18080a3;
+  text-shadow: 0px 0px 40px #d18080a3;
   /* rotate: 357deg; */
 }
 
