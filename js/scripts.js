@@ -14,8 +14,9 @@ window.addEventListener("load", fadeInProjects);
 
 document.getElementById("contactbutton").addEventListener("click", function () {
   var contactGrid = document.querySelector(".contact-grid");
-  var descriptionElement = document.querySelector(".workpage-description");
+  // var descriptionElement = document.querySelector(".workpage-description");
   var projectListElement = document.querySelector(".project-list");
+  var headingClassText = document.querySelector(".headingclass_work");
 
   // Toggle the 'expanded' class on the contact grid
   contactGrid.classList.toggle("expanded");
@@ -23,10 +24,12 @@ document.getElementById("contactbutton").addEventListener("click", function () {
 
   // Toggle the text content based on the contact grid's width
   if (contactGrid.classList.contains("expanded")) {
-    descriptionElement.textContent = "> contact";
+    // descriptionElement.textContent = "> contact";
+    headingClassText.textContent = "> contact";
   } else {
-    descriptionElement.textContent =
-      "> portfolio projects__programming and design";
+    // descriptionElement.textContent =
+    //   "> portfolio projects__programming and design";
+    headingClassText.textContent = "> portfolio projects";
   }
 
   // Toggle other classes or perform other actions as needed
@@ -41,8 +44,9 @@ document.getElementById("contactbutton").addEventListener("click", function () {
 
 document.getElementById("expandButton").addEventListener("click", function () {
   var contactGrid = document.querySelector(".contact-grid");
-  var descriptionElement = document.querySelector(".workpage-description");
+  // var descriptionElement = document.querySelector(".workpage-description");
   var projectListElement = document.querySelector(".project-list");
+  var headingClassText = document.querySelector(".headingclass_work");
 
   // Toggle the 'expanded' class on the contact grid
   contactGrid.classList.toggle("expanded");
@@ -50,10 +54,12 @@ document.getElementById("expandButton").addEventListener("click", function () {
 
   // Toggle the text content based on the contact grid's width
   if (contactGrid.classList.contains("expanded")) {
-    descriptionElement.textContent = "> contact";
+    // descriptionElement.textContent = "> contact";
+    headingClassText.textContent = "> contact";
   } else {
-    descriptionElement.textContent =
-      "> portfolio projects__programming and design";
+    // descriptionElement.textContent =
+    //   "> portfolio projects__programming and design";
+    headingClassText.textContent = "> portfolio projects";
   }
 
   // Toggle other classes or perform other actions as needed
@@ -126,10 +132,10 @@ document.addEventListener("DOMContentLoaded", function () {
     aside.classList.toggle("open");
 
     // Toggle button content
-    if (toggleAsideButton.innerHTML === ">") {
-      toggleAsideButton.innerHTML = "<";
+    if (toggleAsideButton.innerHTML === "⇁") {
+      toggleAsideButton.innerHTML = "⇂";
     } else {
-      toggleAsideButton.innerHTML = ">";
+      toggleAsideButton.innerHTML = "⇁";
     }
   });
 });
