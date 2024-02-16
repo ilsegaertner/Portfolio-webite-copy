@@ -20,6 +20,11 @@
       href="https://fonts.googleapis.com/css2?family=Jost&family=Nunito&family=Nunito+Sans&family=Signika&display=swap"
       rel="stylesheet"
     />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.production.css" type="text/css" />
     <title>Ilse Gaertner Works</title>
   </head>
@@ -73,17 +78,18 @@
     <button id="toggleAsideButton">⇁</button>
 
     <div id="aside" class="aside open">
+      <div class="go-back">
+        <a href="#">↾</a>
+      </div>
       <ul id="work-list-id" class="work-list">
         <li><a href="#Angular-App">angular app</a></li>
         <li><a href="#Meet-App">meet app</a></li>
         <li><a href="#Chat-App">chat app</a></li>
         <li><a href="#React-App">react app</a></li>
         <li><a href="#Pokemon-App">pokemon app</a></li>
-        <li><a href="#Rest-Api">rest app</a></li>
+        <li><a href="#Rest-Api">REST-api</a></li>
+        <li><a href="#Portfolio">portfolio</a></li>
       </ul>
-      <div class="go-back">
-        <a href="#">↾</a>
-      </div>
     </div>
 
     <section class="project-section">
@@ -96,21 +102,15 @@
         <div id="Angular-App" class="project-list__item">
           <div class="page-header__item_heading">
             <h2>*CUB Film Data (Angular Application)</h2>
-            <h4>Arthouse Movie Database</h4>
+            <h4>A Client-side Application For An Arthouse Movie Database</h4>
           </div>
           <div class="empty"></div>
-          <div class="pic">
+          <!-- <div class="pic">
             <a
               href="https://ilsegaertner.github.io/CUB-Film-Angular-client/"
               target="_blank"
             >
-              <!--               
-              <img
-                src="img/meet3.webp"
-                alt="Image of the project called Meet App"
-                class="project-images"
-            />
-           -->
+             
               <picture>
                 <source
                   srcset="
@@ -133,16 +133,137 @@
                 />
               </picture>
             </a>
+          </div> -->
+
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="
+                      img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_08.webp
+                    "
+                    type="image/webp"
+                    class="project-images"
+                  />
+                  <source
+                    srcset="
+                      img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_08.png
+                    "
+                    type="image/png"
+                    class="project-images"
+                  />
+                  <img
+                    src="img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_08.png"
+                    alt="Image of the project called Appsource"
+                    class="project-images"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <!-- <source
+                    srcset="
+                      img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_10.webp
+                    "
+                    type="image/webp"
+                    class="project-images"
+                  /> -->
+                  <source
+                    srcset="
+                      img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_10.png
+                    "
+                    type="image/png"
+                    class="project-images"
+                  />
+                  <img
+                    src="img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_10.png"
+                    alt="Image of the project called Appsource"
+                    class="project-images"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <!-- <source
+                    srcset="
+                      img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_01.webp
+                    "
+                    type="image/webp"
+                    class="project-images"
+                  /> -->
+                  <source
+                    srcset="
+                      img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_01.png
+                    "
+                    type="image/png"
+                    class="project-images"
+                  />
+                  <img
+                    src="img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_01.png"
+                    alt="Image of the project called Appsource"
+                    class="project-images"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <!-- <source
+                    srcset="
+                      img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_02.webp
+                    "
+                    type="image/webp"
+                    class="project-images"
+                  /> -->
+                  <source
+                    srcset="
+                      img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_02.png
+                    "
+                    type="image/png"
+                    class="project-images"
+                  />
+                  <img
+                    src="img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_02.png"
+                    alt="Image of the project called Appsource"
+                    class="project-images"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <!-- <source
+                    srcset="
+                      img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_06.webp
+                    "
+                    type="image/webp"
+                    class="project-images"
+                  /> -->
+                  <source
+                    srcset="
+                      img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_06.png
+                    "
+                    type="image/png"
+                    class="project-images"
+                  />
+                  <img
+                    src="img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_06.png"
+                    alt="Image of the project called Appsource"
+                    class="project-images"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
+
           <div class="text">
             <p>
-              CUB Film Data, an Angular-based project, stands as the frontend
-              interface of a movie database application which I built as
-              <a
-                href="https://github.com/ilsegaertner/CUB_Film_data"
-                target="_blank"
-                style="font-family: 'Times New Roman', Times, serif; color: red"
-                >CUB REST API</a
+              <span style="font-weight: 100">CUB Film Data,</span> an
+              Angular-based project, stands as the frontend interface of a movie
+              database application which I built as
+              <a href="#Rest-Api" style="font-weight: 100; color: red"
+                >REST-Api</a
               >
               for the backend.
             </p>
@@ -173,18 +294,12 @@
         <div id="Meet-App" class="project-list__item">
           <div class="page-header__item_heading">
             <h2>*Meet (React Application)</h2>
-            <h4>Progressive Web Application (PWA)</h4>
+            <h4>A Serverless Progressive Web Application</h4>
           </div>
           <div class="empty"></div>
-          <div class="pic">
+          <!-- <div class="pic">
             <a href="https://ilsegaertner.github.io/Meet-app/" target="_blank">
-              <!--               
-              <img
-                src="img/meet3.webp"
-                alt="Image of the project called Meet App"
-                class="project-images"
-            />
-           -->
+             
               <picture>
                 <source
                   srcset="img/meet3.webp"
@@ -203,15 +318,129 @@
                 />
               </picture>
             </a>
+          </div> -->
+
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture>
+                  <!-- <source
+                    srcset="
+                      img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_10.webp
+                    "
+                    type="image/webp"
+                    class="project-images"
+                  /> -->
+                  <source
+                    srcset="img/documentation/Meet-App_documentation/meet0.png"
+                    type="image/png"
+                    class="project-images"
+                  />
+                  <img
+                    src="img/documentation/Meet-App_documentation/meet0.png"
+                    alt="Image of the project called Appsource"
+                    class="project-images"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <!-- <source
+                      srcset="
+                        img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_10.webp
+                      "
+                      type="image/webp"
+                      class="project-images"
+                    /> -->
+                  <source
+                    srcset="img/documentation/Meet-App_documentation/meet1.png"
+                    type="image/png"
+                    class="project-images"
+                  />
+                  <img
+                    src="img/documentation/Meet-App_documentation/meet1.png"
+                    alt="Image of the project called Appsource"
+                    class="project-images"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <!-- <source
+                      srcset="
+                        img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_01.webp
+                      "
+                      type="image/webp"
+                      class="project-images"
+                    /> -->
+                  <source
+                    srcset="img/documentation/Meet-App_documentation/meet2.png"
+                    type="image/png"
+                    class="project-images"
+                  />
+                  <img
+                    src="img/documentation/Meet-App_documentation/meet2.png"
+                    alt="Image of the project called Appsource"
+                    class="project-images"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <!-- <source
+                      srcset="
+                        img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_02.webp
+                      "
+                      type="image/webp"
+                      class="project-images"
+                    /> -->
+                  <source
+                    srcset="img/documentation/Meet-App_documentation/meet3.png"
+                    type="image/png"
+                    class="project-images"
+                  />
+                  <img
+                    src="img/documentation/Meet-App_documentation/meet3.png"
+                    alt="Image of the project called Appsource"
+                    class="project-images"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <!-- <source
+                      srcset="
+                        img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_06.webp
+                      "
+                      type="image/webp"
+                      class="project-images"
+                    /> -->
+                  <source
+                    srcset="img/documentation/Meet-App_documentation/meet4.png"
+                    type="image/png"
+                    class="project-images"
+                  />
+                  <img
+                    src="img/documentation/Meet-App_documentation/meet4.png"
+                    alt="Image of the project called Appsource"
+                    class="project-images"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
+
           <div class="text">
             <p>
-              Meet App is a PWA (Progressive Web Application) built in REACT.
-              The application gathers and displays upcoming developer-centric
-              events worldwide by connecting to a Google Calendar API.
-              <br /><br />Designed to function across browsers, it also offers
-              desktop installation, providing users with a dynamic and
-              accessible event exploration experience.
+              <span style="font-weight: 100">Meet App</span> is a PWA
+              (Progressive Web Application) built in REACT. The application
+              gathers and displays upcoming developer-centric events worldwide
+              by connecting to a Google Calendar API. <br /><br />Designed to
+              function across browsers, it also offers desktop installation,
+              providing users with a dynamic and accessible event exploration
+              experience.
             </p>
             <span class="stack-images">
               <h4>Technologies</h4>
@@ -234,10 +463,10 @@
         <div id="Chat-App" class="project-list__item">
           <div class="page-header__item_heading">
             <h2>*Mobile Chat App (React Native)</h2>
-            <h4>For iOS/Android</h4>
+            <h4>A Chat App For Mobile Devices for iOS/Android</h4>
           </div>
           <div class="empty"></div>
-          <div class="pic">
+          <!-- <div class="pic">
             <a href="" target="_blank">
               <picture>
                 <source
@@ -257,14 +486,55 @@
                 />
               </picture>
             </a>
+          </div> -->
+
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture>
+                  <img
+                    src="img/documentation/chat-app-documentation/gif-chat-app.gif"
+                    alt="Gif of the project called Chat-App"
+                    class="project-images"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <!-- <source
+                      srcset="
+                        img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_10.webp
+                      "
+                      type="image/webp"
+                      class="project-images"
+                    /> -->
+                  <source
+                    srcset="
+                      img/documentation/chat-app-documentation/screen-example2.png
+                    "
+                    type="image/png"
+                    class="project-images"
+                  />
+                  <img
+                    src="img/documentation/chat-app-documentation/screen-example2.png"
+                    alt="Image of the project called Chat-App"
+                    class="project-images"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
+
           <div class="text">
             <p>
-              Mobile Chat app is an intuitive mobile application developed with
-              React Native. <br /><br />Users can interact in a chat interface
-              and have options to access the camera, share images and their
-              location, fostering interactive and engaging communication within
-              a mobile environment.
+              <span style="font-weight: 100">Mobile Chat App</span> is an
+              intuitive mobile application developed with React Native.
+              <br /><br />Users can interact in a chat interface and have
+              options to access the camera, share images and their location,
+              fostering interactive and engaging communication within a mobile
+              environment.
             </p>
 
             <span class="stack-images">
@@ -285,10 +555,10 @@
         <div id="React-App" class="project-list__item">
           <div class="page-header__item_heading">
             <h2>*CUB Film Data (React Application)</h2>
-            <h4>Arthouse Movie Database</h4>
+            <h4>A Client-side Application For An Arthouse Movie Database</h4>
           </div>
           <div class="empty"></div>
-          <div class="pic">
+          <!-- <div class="pic">
             <a href="https://cub-film-data.netlify.app/" target="_blank">
               <picture>
                 <source
@@ -308,16 +578,137 @@
                 />
               </picture>
             </a>
+          </div> -->
+
+          <!-- React App Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="
+                      img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_08.webp
+                    "
+                    type="image/webp"
+                    class="project-images"
+                  />
+                  <source
+                    srcset="
+                      img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_08.png
+                    "
+                    type="image/png"
+                    class="project-images"
+                  />
+                  <img
+                    src="img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_08.png"
+                    alt="Image of the project called Appsource"
+                    class="project-images"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <!-- <source
+          srcset="
+            img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_10.webp
+          "
+          type="image/webp"
+          class="project-images"
+        /> -->
+                  <source
+                    srcset="
+                      img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_10.png
+                    "
+                    type="image/png"
+                    class="project-images"
+                  />
+                  <img
+                    src="img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_10.png"
+                    alt="Image of the project called Appsource"
+                    class="project-images"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <!-- <source
+          srcset="
+            img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_01.webp
+          "
+          type="image/webp"
+          class="project-images"
+        /> -->
+                  <source
+                    srcset="
+                      img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_01.png
+                    "
+                    type="image/png"
+                    class="project-images"
+                  />
+                  <img
+                    src="img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_01.png"
+                    alt="Image of the project called Appsource"
+                    class="project-images"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <!-- <source
+          srcset="
+            img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_02.webp
+          "
+          type="image/webp"
+          class="project-images"
+        /> -->
+                  <source
+                    srcset="
+                      img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_02.png
+                    "
+                    type="image/png"
+                    class="project-images"
+                  />
+                  <img
+                    src="img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_02.png"
+                    alt="Image of the project called Appsource"
+                    class="project-images"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <!-- <source
+          srcset="
+            img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_06.webp
+          "
+          type="image/webp"
+          class="project-images"
+        /> -->
+                  <source
+                    srcset="
+                      img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_06.png
+                    "
+                    type="image/png"
+                    class="project-images"
+                  />
+                  <img
+                    src="img/documentation/CUB-Film-Angular-client_documentation/CUB-Film-Angular-client_documentation_06.png"
+                    alt="Image of the project called Appsource"
+                    class="project-images"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
+
           <div class="text">
             <p class="text-class">
-              CUB Film Data, a REACT-based project, stands as the frontend
-              interface of a movie database application which I engineered as
-              <a
-                href="https://github.com/ilsegaertner/CUB_Film_data"
-                target="_blank"
-                style="font-family: 'Times New Roman', Times, serif; color: red"
-                >CUB REST API</a
+              <span style="font-weight: 100">CUB Film Data,</span> a REACT-based
+              project, stands as the frontend interface of a movie database
+              application which I engineered as
+              <a href="#Rest-Api" style="font-weight: 100; color: red"
+                >REST-Api</a
               >
               for the backend.
             </p>
@@ -346,7 +737,7 @@
         <div id="Pokemon-App" class="project-list__item">
           <div class="page-header__item_heading">
             <h2>*Parallelograms</h2>
-            <h4>Pokemon Web Application</h4>
+            <h4>A Pokemon Web Application</h4>
           </div>
           <div class="empty"></div>
           <div class="pic">
@@ -405,8 +796,8 @@
         <hr />
         <div id="Rest-Api" class="project-list__item">
           <div class="page-header__item_heading">
-            <h2>*CUB REST API</h2>
-            <h4>REST API For A Movie Database</h4>
+            <h2>*CUB REST-Api</h2>
+            <h4>RESTful Api For A Movie Database</h4>
           </div>
           <div class="empty"></div>
           <div class="pic">
@@ -453,6 +844,164 @@
               href="https://github.com/ilsegaertner/CUB_Film_data"
               target="_blank"
               >See project on Github</a
+            >
+          </div>
+        </div>
+        <hr />
+        <div id="Portfolio" class="project-list__item">
+          <div class="page-header__item_heading">
+            <h2>*Portfolio Website</h2>
+            <h4>Online Portfolio for Full Stack Develpment</h4>
+          </div>
+          <div class="empty"></div>
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="img/documentation/portfolio/portfolio5.webp"
+                    type="image/webp"
+                    class="project-images"
+                  />
+                  <source
+                    srcset="img/documentation/portfolio/portfolio5.png"
+                    type="image/png"
+                    class="project-images"
+                  />
+                  <img
+                    src="img/documentation/portfolio/portfolio5.png"
+                    alt="Image of the project called Appsource"
+                    class="project-images"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="img/documentation/portfolio/portfolio2.webp"
+                    type="image/webp"
+                    class="project-images"
+                  />
+                  <source
+                    srcset="img/documentation/portfolio/portfolio2.png"
+                    type="image/png"
+                    class="project-images"
+                  />
+                  <img
+                    src="img/documentation/portfolio/portfolio2.png"
+                    alt="Image of the project called Appsource"
+                    class="project-images"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="img/documentation/portfolio/portfolio3.webp"
+                    type="image/webp"
+                    class="project-images"
+                  />
+                  <source
+                    srcset="img/documentation/portfolio/portfolio3.png"
+                    type="image/png"
+                    class="project-images"
+                  />
+                  <img
+                    src="img/documentation/portfolio/portfolio3.png"
+                    alt="Image of the project called Appsource"
+                    class="project-images"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="img/documentation/portfolio/portfolio4.webp"
+                    type="image/webp"
+                    class="project-images"
+                  />
+                  <source
+                    srcset="img/documentation/portfolio/portfolio4.png"
+                    type="image/png"
+                    class="project-images"
+                  />
+                  <img
+                    src="img/documentation/portfolio/portfolio4.png"
+                    alt="Image of the project called Appsource"
+                    class="project-images"
+                  />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="img/documentation/portfolio/portfolio1.webp"
+                    type="image/webp"
+                    class="project-images"
+                  />
+                  <source
+                    srcset="img/documentation/portfolio/portfolio1.png"
+                    type="image/png"
+                    class="project-images"
+                  />
+                  <img
+                    src="img/documentation/portfolio/portfolio1.png"
+                    alt="Image of the project called Appsource"
+                    class="project-images"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- <div class="pic">
+            <a href="" target="_blank"> 
+           <picture>
+                <source
+                  srcset="img/documentation/portfolio/portfolio1.webp"
+                  type="image/webp"
+                  class="project-images"
+                />
+                <source
+                  srcset="img/documentation/portfolio/portfolio1.png"
+                  type="image/png"
+                  class="project-images"
+                />
+                <img
+                  src="img/documentation/portfolio/portfolio1.png"
+                  alt="Image of the project called Appsource"
+                  class="project-images"
+                />
+              </picture> 
+
+           </a>
+          </div> -->
+          <div class="text">
+            <p>
+              My endeavor in this project was to create a RESTful API using
+              Node.js and Express. Serving as the backbone, this API forms the
+              base of the client-side movie database application, CUB Film Data.
+              <br /><br />Integrating backend reliability with frontend
+              innovation, this project showcases a symbiotic relationship
+              between different technology stacks.
+            </p>
+
+            <span class="stack-images">
+              <h4>Technologies</h4>
+              <img src="img/logos/html-5.png" />
+              <img src="img/logos/css-3.png" />
+              <img src="img/logos/java-script-logo.png" />
+            </span>
+            <a
+              href="https://github.com/ilsegaertner/CUB_Film_data"
+              target="_blank"
+              >See project on Github</a
+            >
+            <a
+              href="https://ilsegaertner.github.io/parallelogram/"
+              target="_blank"
+              >See project live</a
             >
           </div>
         </div>
@@ -547,6 +1096,39 @@
         </section>
       </div>
     </section>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="img/mongosh.webp"
+              type="image/webp"
+              class="project-images"
+            />
+            <source
+              srcset="img/mongosh.png"
+              type="image/png"
+              class="project-images"
+            />
+            <img
+              src="img/mongosh.png"
+              alt="Image of the project called Appsource"
+              class="project-images"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
 
     <footer class="page-footer">
       <p class="findme">find me on</p>
@@ -576,6 +1158,7 @@
         ></span>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/tota11y.min.js"></script>
   </body>

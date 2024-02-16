@@ -44,8 +44,8 @@ document.getElementById("contactbutton").addEventListener("click", function () {
 
 document.getElementById("expandButton").addEventListener("click", function () {
   var contactGrid = document.querySelector(".contact-grid");
-  // var descriptionElement = document.querySelector(".workpage-description");
   var projectListElement = document.querySelector(".project-list");
+  var projectListItems = document.querySelectorAll(".project-list__item");
   var headingClassText = document.querySelector(".headingclass_work");
 
   // Toggle the 'expanded' class on the contact grid
@@ -54,12 +54,16 @@ document.getElementById("expandButton").addEventListener("click", function () {
 
   // Toggle the text content based on the contact grid's width
   if (contactGrid.classList.contains("expanded")) {
-    // descriptionElement.textContent = "> contact";
     headingClassText.textContent = "> contact";
+    projectListItems.forEach((item) => {
+      item.classList.add("thin");
+    });
   } else {
     // descriptionElement.textContent =
-    //   "> portfolio projects__programming and design";
     headingClassText.textContent = "> portfolio projects";
+    projectListItems.forEach((item) => {
+      item.classList.remove("thin");
+    });
   }
 
   // Toggle other classes or perform other actions as needed
@@ -83,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const targetId = event.target.getAttribute("href");
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
-        scrollToTarget(targetElement, -200);
+        scrollToTarget(targetElement, -100);
       }
     }
   });
@@ -144,5 +148,20 @@ document.addEventListener("DOMContentLoaded", function () {
         item.classList.remove("broad");
       });
     }
+  });
+});
+
+// Swiper
+document.addEventListener("DOMContentLoaded", function () {
+  // Initialize Swiper
+  var swiper = new Swiper(".mySwiper", {
+    direction: "vertical",
+    slidesPerView: 1,
+    spaceBetween: 30,
+    mousewheel: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
   });
 });
