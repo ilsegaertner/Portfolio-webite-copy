@@ -921,7 +921,8 @@ button:hover,
   /* color: white; */
   /* color: #050559; */
   /* color: #050559; */
-  color: #737373;
+  /* color: #737373; */
+  color: #e6e6e6;
   font-size: var(--font-size-regular);
   font-weight: 400;
   font-family: Geist;
@@ -945,7 +946,8 @@ button:hover,
   /* color: #75dec6; */
   /* color: #b4b4ff; */
   /* color: #ff0405; */
-  opacity: 0.5;
+  /* opacity: 0.5; */
+  color: var(--main-red);
 }
 
 .worklink {
@@ -1496,12 +1498,14 @@ thead {
 
 .workpage .page-header {
   /* background-color: #141414; */
-  background-color: var(--main-red);
+  /* background-color: var(--main-red); */
+  background-color: var(--main-black);
 }
 
 .workpage .page-footer {
   /* background-color: aliceblue; */
-  background-color: var(--main-red);
+  background-color: var(--main-black);
+  /* background-color: var(--main-red); */
   /* background-color: #8ea1b2; */
   /* background-color: #dce1e4; */
 }
