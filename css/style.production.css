@@ -14,8 +14,12 @@
 :root {
   --main-white: #fafafa;
   --main-black: #141414;
-  --main-red: #ff0405;
+  --main-red: #ff0404;
   --main-green: #75dec6;
+  --color-variant1: #bdc0db;
+  --color-variant2: #cdd78f;
+  --alt-white: #fcfcfc;
+  --alt-grey: #707070;
   --font-size-lg: 2.5rem;
   --font-size-h2: 1.5rem;
   --font-size-regular: 1.2rem;
@@ -194,7 +198,8 @@ h2:hover {
 }
 
 h4 {
-  color: #c9c9c9;
+  /* color: #c9c9c9; */
+  color: var(--alt-grey);
   font-weight: 400;
   font-family: "Geist-Light", sans-serif;
   font-size: var(--font-size-text);
@@ -271,7 +276,8 @@ article {
 }
 
 .contact-span {
-  color: var(--main-white);
+  /* color: var(--main-white); */
+  color: var(--main-black);
   /* font-family: Geist; */
 }
 
@@ -356,7 +362,8 @@ input {
   border: none;
   display: inline-block;
   /* background-color: #616161; */
-  background-color: #0a1f04;
+  /* background-color: #0a1f04; */
+  background-color: var(--main-black);
   color: #e6e6e6;
   text-decoration: none;
   padding: 10px;
@@ -544,7 +551,7 @@ button:hover,
 
 .navigation-list__item:hover {
   opacity: 0.8;
-  font-style: italic;
+  /* font-style: italic; */
   text-transform: lowercase;
 }
 
@@ -748,6 +755,7 @@ button:hover,
   /* font-family: times; */
   /* color: #e0e0e0; */
   color: var(--main-white);
+  /* color: var(--main-black); */
   font-size: var(--font-size-regular);
 }
 
@@ -845,7 +853,7 @@ button:hover,
   /* box-shadow: 4px 5px 0px #6f6f6fa1; */
   /* box-shadow: 0px 5px 8px 0px #afafaf; */
   /* box-shadow: 0px 5px 4px 0px #afafaf; */
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: flex-end;
   flex-direction: row-reverse;
 }
@@ -930,7 +938,8 @@ button:hover,
   /* color: #050559; */
   /* color: #737373; */
   /* color: #e6e6e6; */
-  color: #8a8a91;
+  /* color: #8a8a91; */
+  color: var(--alt-grey);
   font-size: var(--font-size-regular);
   font-weight: 400;
   font-family: Geist;
@@ -984,7 +993,7 @@ button:hover,
 }
 
 .addressbutton {
-  background-color: #75ddc6;
+  background-color: var(--main-green);
   border: 0px solid var(--main-red);
   border-radius: 31px;
   width: 49px;
@@ -993,7 +1002,8 @@ button:hover,
 }
 
 .addressbutton2 {
-  background-color: #050559;
+  /* background-color: #050559; */
+  background-color: var(--main-black);
   border: 0px solid var(--main-red);
   border-radius: 31px;
   width: 49px;
@@ -1208,7 +1218,8 @@ button:hover,
   /* background-color: #4a4d44; */
   /* background-color: #a9c3be; */
   /* background-color: #b0b0becf; */
-  background-color: #707078cf;
+  /* background-color: #707078cf; */
+  background-color: var(--color-variant2);
   /* background-color: #7e7773; */
   position: fixed;
   top: 0;
@@ -1383,7 +1394,8 @@ address {
   padding: 20px;
   /* background-color: #736767; */
   /* background-color: #141414; */
-  background-color: #c3c3c3;
+  /* background-color: #c3c3c3; */
+  background-color: var(--color-variant1);
   border-radius: 3px;
   box-shadow: 2px 2px 4000px #8d8d8d38;
   /* margin: 20px; */
@@ -1421,7 +1433,8 @@ address {
   font-size: var(--font-size-h2);
   /* color: #75dcc6; */
   /* color: #141414; */
-  color: var(--main-white);
+  /* color: var(--main-white); */
+  color: var(--main-black);
   /* font-family: times; */
   margin-bottom: 5rem;
   margin-top: 0.3rem;
@@ -1504,8 +1517,10 @@ thead {
 .workpage {
   /* background-color: #27291ff7;
   background-color: #181817; */
-  background-color: var(--main-white);
+  /* background-color: var(--main-white); */
   /* border: 2px solid black; */
+  background: rgb(245, 245, 245);
+  background: linear-gradient(270deg, var(--main-white) 50%, #f2f2f2 100%);
 }
 
 .workpage .page-header {
@@ -1513,6 +1528,7 @@ thead {
   /* background-color: var(--main-red); */
   /* background-color: var(--main-black); */
   background-color: var(--main-white);
+  background-color: var(--alt-grey);
 }
 
 .workpage .page-footer {
@@ -1526,11 +1542,13 @@ thead {
 .workpage .page-header h1 {
   /* color: #c9c9c9; */
   /* color: var(--main-white); */
-  color: var(--main-red);
+  /* color: var(--main-red); */
+  color: var(--alt-white);
 }
 
 .workpage a {
-  color: var(--main-green);
+  /* color: var(--main-green); */
+  color: var(--alt-white);
   margin-bottom: 0.2rem;
   /* color: var(--main-white); */
 }
@@ -1743,14 +1761,14 @@ thead {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: var(--main-white);
+  /* background: var(--main-white); */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .swiper-slide-active {
-  background-color: var(--main-white);
+  /* background-color: var(--main-white); */
 }
 
 .swiper-slide img {
