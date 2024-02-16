@@ -29,7 +29,7 @@ document.getElementById("contactbutton").addEventListener("click", function () {
   } else {
     // descriptionElement.textContent =
     //   "> portfolio projects__programming and design";
-    headingClassText.textContent = "> portfolio projects";
+    headingClassText.textContent = "> work";
   }
 
   // Toggle other classes or perform other actions as needed
@@ -60,7 +60,7 @@ document.getElementById("expandButton").addEventListener("click", function () {
     });
   } else {
     // descriptionElement.textContent =
-    headingClassText.textContent = "> portfolio projects";
+    headingClassText.textContent = "> work";
     projectListItems.forEach((item) => {
       item.classList.remove("thin");
     });
