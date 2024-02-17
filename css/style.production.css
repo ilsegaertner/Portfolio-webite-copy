@@ -1082,19 +1082,32 @@ button:hover,
 
 .stack-images img {
   width: auto;
-  /* height: 40px; */
   height: 2rem;
 }
 
 .intro-text .stack-images img {
   width: auto;
-  /* height: 40px; */
   height: 2rem;
 }
 
-.intro-text .social-media-intro img {
+/* .intro-text .social-media-intro img {
   width: 40px;
   height: 40px;
+} */
+
+.stack-images-skillicons {
+  margin: 5rem 0rem;
+  /* background-color: #fafafa; */
+  border-radius: 3px;
+  /* padding: 10px; */
+  /* padding-bottom: 20px; */
+  /* border-radius: 3px; */
+  /* padding: 20px; */
+  /* box-shadow: 0px 0px 4px 0px #a2a2a299; */
+}
+
+.stack-images-skillicons p {
+  padding-left: 20px;
 }
 
 .stack-images {
@@ -1115,21 +1128,45 @@ button:hover,
   font-size: var(--font-size-small);
 }
 
+/* .intro-text .stack-images {
+  margin: 4rem 1rem;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1.2vw;
+  box-shadow: inset 0px 0px 2px 0px #898989; 
+  border-radius: 3px;
+} */
+
 .intro-text .stack-images {
   margin: 4rem 1rem;
   /* border: 2px solid black; */
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: 1.2vw;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-gap: 1.2vw; */
   /* box-shadow: inset 0px 0px 2px 0px #898989; */
   border-radius: 3px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
 }
 
-.intro-text .stack-images h4 {
-  /* margin: 1.7rem 0rem 1.3rem 0rem; */
-  margin: 0 0rem 0.4rem 0rem;
+.skillicons-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 45px;
+  list-style-type: none;
 }
+
+.stack-images p {
+  font-size: var(--font-size-text);
+  color: var(--alt-grey);
+}
+/* 
+.intro-text .stack-images h4 {
+  margin: 0 0rem 0.4rem 0rem;
+} */
 
 .get-in-touch {
   margin: -3rem 0rem 0rem 30rem;
@@ -1372,6 +1409,12 @@ fieldset {
   grid-gap: 1.2vw;
   /* margin: 5rem 0rem -1rem 2rem; */
   margin: 10rem 0rem 8rem 2rem;
+}
+
+.social-media-icons {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  list-style-type: none;
 }
 
 .mycodingskills {
