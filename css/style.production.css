@@ -1121,6 +1121,7 @@ button:hover,
 .project-list__heading h1 a {
   color: var(--main-black);
   letter-spacing: normal;
+  font-size: 4rem;
 }
 
 .project-list__heading h3 {
@@ -1128,9 +1129,10 @@ button:hover,
   color: var(--main-black);
   font-family: Geist mono, sans-serif;
   /* font-weight: 100; */
-  font-size: var(--font-size-text);
+  /* font-size: var(--font-size-text); */
   margin-top: 21px;
   font-style:italic;
+  font-size: 4rem;
 }
 
 .project-list h2 {
