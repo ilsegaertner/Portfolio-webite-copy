@@ -120,6 +120,7 @@ a {
   color: #161613;
   font-size: var(--font-size-text);
   text-decoration: none;
+  letter-spacing: 1px;
 }
 
 a:visited {
@@ -553,7 +554,8 @@ button:hover,
 }
 
 .navigation-list a {
-  font-size: var(--font-size-regular);
+  /* font-size: var(--font-size-regular); */
+  font-size: var(--font-size-text);
 }
 
 .navigation-list__item:hover {
@@ -959,8 +961,10 @@ button:hover,
   /* color: #737373; */
   /* color: #e6e6e6; */
   /* color: #8a8a91; */
-  color: var(--alt-grey);
-  font-size: var(--font-size-regular);
+  /* color: var(--alt-grey); */
+  color: var(--alt-white);
+  /* font-size: var(--font-size-regular); */
+  font-size: var(--font-size-text);
   font-weight: 400;
   font-family: Geist;
   text-shadow: 1px 0px 100px #fafafa;
@@ -1046,7 +1050,7 @@ button:hover,
   display: grid;
   grid-gap: 15rem;
   /* overflow-y: auto; */
-  /* margin-top: 15rem; */
+  margin-top: 15rem;
   border-radius: 18px;
   justify-content: space-evenly;
   transition: opacity 1s ease;
@@ -1108,6 +1112,7 @@ button:hover,
 
 .project-list__heading h1 a {
   color: var(--main-black);
+  letter-spacing: normal;
 }
 
 .project-list__heading h3 {
@@ -1250,7 +1255,9 @@ button:hover,
 
 .project-list__item {
   width: 45%;
-  padding: 20px;
+  /* padding: 20px; */
+  padding: 40px;
+  border-radius: 10px;
   margin: 20px;
   /* opacity: 0; */
   transition: opacity 0.5s ease-in-out;
@@ -1260,6 +1267,7 @@ button:hover,
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
+  box-shadow: inset 0px 0px 23px 0px var(--alt-grey);
   /* border: 2px solid black; */
 }
 
@@ -1676,6 +1684,7 @@ thead {
   /* color: #c9c9c9; */
   /* color: var(--main-white); */
   /* color: var(--main-red); */
+  font-size: var(--font-size-text);
   color: var(--alt-white);
 }
 
