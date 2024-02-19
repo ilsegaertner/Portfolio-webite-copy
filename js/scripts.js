@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const targetId = event.target.getAttribute("href");
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
-        scrollToTarget(targetElement, -200);
+        scrollToTarget(targetElement, -130);
       }
     }
   });
