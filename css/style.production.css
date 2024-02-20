@@ -878,6 +878,7 @@ button:hover,
   align-items: flex-start;
   justify-content: flex-end;
   flex-direction: row-reverse;
+  
 }
 
 .aside.open {
@@ -1110,9 +1111,10 @@ button:hover,
     justify-content: flex-start;
 }
 
+
 .project-list__heading h1 {
   margin-top: 9px;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .project-list__heading h1:hover {
@@ -1124,7 +1126,7 @@ button:hover,
   color: var(--main-black);
   letter-spacing: normal;
   /* font-size: 4rem; */
-  font-size: var(--font-size-lg);
+  /* font-size: var(--font-size-lg); */
 }
 
 .project-list__heading h3 {
@@ -1132,11 +1134,11 @@ button:hover,
   color: var(--main-black);
   font-family: Geist mono, sans-serif;
   /* font-weight: 100; */
-  /* font-size: var(--font-size-text); */
+  font-size: var(--font-size-text);
   margin-top: 21px;
-  font-style:italic;
+  /* font-style:italic; */
   /* font-size: 4rem; */
-  font-size: var(--font-size-lg);
+  /* font-size: var(--font-size-lg); */
 }
 
 .project-list h2 {
@@ -1735,6 +1737,8 @@ thead {
   margin-left: -4%;
   /* bottom: 0;*/
 }
+
+
 
 .work-bottom-contact {
   padding: 20px;
