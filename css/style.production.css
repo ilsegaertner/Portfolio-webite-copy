@@ -850,7 +850,7 @@ button:hover,
   /* top: 50vh; */
   /* top: 49vh; */
   /* bottom: 0; */
-  left: -300px;
+  left: -900px;
   /* background-color: #95a29f; */
   /* background-color: #141414; */
   transform: translateY(-8%);
@@ -1108,7 +1108,7 @@ button:hover,
     /* border-bottom: 0.1px solid black; */
     /* box-shadow: -20px 1px 14px 2px #d1d1d178; */
     /* box-shadow: 0px 0px 2px 0px var(--main-black); */
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 
@@ -1732,10 +1732,10 @@ thead {
   width: 100%;
   /* margin-bottom: 20px; */
   z-index: 4000;
-  position: absolute;
-  height: 66vh;
+  /* position: absolute; */
+  /* height: 66vh; */
   margin-left: -1%;
-  /* bottom: 0;*/
+
 }
 
 
@@ -1800,9 +1800,9 @@ thead {
 
 .reach-out {
   display: grid;
-  /* grid-gap: 17px; */
+  grid-gap: 2.5rem;
   /* max-width: 50%; */
-  padding: 64px;
+  padding: 10rem;
   /* margin: 20px; */
   /* height: 33.3vh; */
   /* top: 50%; */
@@ -1844,7 +1844,7 @@ thead {
 
 .work-bottom-reach-out-list a {
   color: var(--main-white);
-  font-size: var(--font-size-text);
+  font-size: var(--font-size-lg)
 }
 
 /* animations */
