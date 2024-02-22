@@ -50,13 +50,13 @@ document.getElementById("expandButton").addEventListener("click", function () {
 
   // Toggle the text content based on the contact grid's width
   if (contactGrid.classList.contains("expanded")) {
-    headingClassText.textContent = "> contact";
+    headingClassText.textContent = "contact";
     projectListItems.forEach((item) => {
       item.classList.add("thin");
     });
   } else {
     // descriptionElement.textContent =
-    headingClassText.textContent = "> work";
+    headingClassText.textContent = "work";
     projectListItems.forEach((item) => {
       item.classList.remove("thin");
     });
