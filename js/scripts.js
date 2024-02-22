@@ -12,31 +12,31 @@ window.addEventListener("load", fadeInProjects);
 
 // expanding the work page with contact-grid
 
-document.getElementById("contactbutton").addEventListener("click", function () {
-  var contactGrid = document.querySelector(".contact-grid");
-  var projectListElement = document.querySelector(".project-list");
-  var headingClassText = document.querySelector(".headingclass_work");
+// document.getElementById("contactbutton").addEventListener("click", function () {
+//   var contactGrid = document.querySelector(".contact-grid");
+//   var projectListElement = document.querySelector(".project-list");
+//   var headingClassText = document.querySelector(".headingclass_work");
 
-  // Toggle the 'expanded' class on the contact grid
-  contactGrid.classList.toggle("expanded");
-  projectListElement.classList.toggle("project-list-expanded");
+//   // Toggle the 'expanded' class on the contact grid
+//   contactGrid.classList.toggle("expanded");
+//   projectListElement.classList.toggle("project-list-expanded");
 
-  // Toggle the text content based on the contact grid's width
-  if (contactGrid.classList.contains("expanded")) {
-    headingClassText.textContent = "> contact";
-  } else {
-    headingClassText.textContent = "> work";
-  }
+//   // Toggle the text content based on the contact grid's width
+//   if (contactGrid.classList.contains("expanded")) {
+//     headingClassText.textContent = "> contact";
+//   } else {
+//     headingClassText.textContent = "> work";
+//   }
 
-  // Toggle other classes or perform other actions as needed
-  document.querySelector(".project-section").classList.toggle("collapsed");
-  document.querySelector(".addressbutton2").classList.toggle("button-expanded");
-  document.querySelector(".project-list").classList.toggle("opacity-2");
-  document
-    .getElementById("toggleAsideButton")
-    .classList.toggle("toggleAsideButton-invisible");
-  document.getElementById("aside").classList.toggle("aside-invisible");
-});
+//   // Toggle other classes or perform other actions as needed
+//   document.querySelector(".project-section").classList.toggle("collapsed");
+//   document.querySelector(".addressbutton2").classList.toggle("button-expanded");
+//   document.querySelector(".project-list").classList.toggle("opacity-2");
+//   document
+//     .getElementById("toggleAsideButton")
+//     .classList.toggle("toggleAsideButton-invisible");
+//   document.getElementById("aside").classList.toggle("aside-invisible");
+// });
 
 document.getElementById("expandButton").addEventListener("click", function () {
   var contactGrid = document.querySelector(".contact-grid");
@@ -161,19 +161,3 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
-
-// window.addEventListener("scroll", function () {
-//   var projectListHeader = document.querySelector(".project-list__heading");
-//   var firstDiv = document.getElementById("Angular-App");
-
-//   var projectListHeaderHeight = projectListHeader.offsetHeight;
-//   var firstDivTop = firstDiv.getBoundingClientRect().top;
-
-//   if (firstDivTop <= projectListHeaderHeight) {
-//     var opacity =
-//       1 - (projectListHeaderHeight - firstDivTop) / projectListHeaderHeight;
-//     projectListHeader.style.opacity = opacity;
-//   } else {
-//     projectListHeader.style.opacity = 1;
-//   }
-// });
