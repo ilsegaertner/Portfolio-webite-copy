@@ -14,7 +14,6 @@ window.addEventListener("load", fadeInProjects);
 
 document.getElementById("contactbutton").addEventListener("click", function () {
   var contactGrid = document.querySelector(".contact-grid");
-  // var descriptionElement = document.querySelector(".workpage-description");
   var projectListElement = document.querySelector(".project-list");
   var headingClassText = document.querySelector(".headingclass_work");
 
@@ -24,11 +23,8 @@ document.getElementById("contactbutton").addEventListener("click", function () {
 
   // Toggle the text content based on the contact grid's width
   if (contactGrid.classList.contains("expanded")) {
-    // descriptionElement.textContent = "> contact";
     headingClassText.textContent = "> contact";
   } else {
-    // descriptionElement.textContent =
-    //   "> portfolio projects__programming and design";
     headingClassText.textContent = "> work";
   }
 
