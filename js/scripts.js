@@ -162,18 +162,18 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-window.addEventListener("scroll", function () {
-  var projectListHeader = document.querySelector(".project-list__heading");
-  var firstDiv = document.getElementById("Angular-App");
+// window.addEventListener("scroll", function () {
+//   var projectListHeader = document.querySelector(".project-list__heading");
+//   var firstDiv = document.getElementById("Angular-App");
 
-  var projectListHeaderHeight = projectListHeader.offsetHeight;
-  var firstDivTop = firstDiv.getBoundingClientRect().top;
+//   var projectListHeaderHeight = projectListHeader.offsetHeight;
+//   var firstDivTop = firstDiv.getBoundingClientRect().top;
 
-  if (firstDivTop <= projectListHeaderHeight) {
-    var opacity =
-      1 - (projectListHeaderHeight - firstDivTop) / projectListHeaderHeight;
-    projectListHeader.style.opacity = opacity;
-  } else {
-    projectListHeader.style.opacity = 1;
-  }
-});
+//   if (firstDivTop <= projectListHeaderHeight) {
+//     var opacity =
+//       1 - (projectListHeaderHeight - firstDivTop) / projectListHeaderHeight;
+//     projectListHeader.style.opacity = opacity;
+//   } else {
+//     projectListHeader.style.opacity = 1;
+//   }
+// });
