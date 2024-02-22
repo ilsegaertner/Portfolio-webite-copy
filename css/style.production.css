@@ -2640,6 +2640,10 @@ thead {
   #work-bottom-section {
     display: none;
   }
+
+  .profile__portrait {
+    height: auto;
+  }
 }
 
 @media all and (max-width: 369px) {
