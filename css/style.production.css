@@ -1656,10 +1656,12 @@ fieldset {
 }
 
 .social-media-icons {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
   list-style-type: none;
   padding-left: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .mycodingskills {
