@@ -1080,7 +1080,7 @@ button:hover,
   background-color: var(--main-black);
   bottom: 0;
   position: relative;
-  padding-bottom: 13vh;
+  padding-bottom: 50vh;
 }
 
 .stack-images-skillicons p {
