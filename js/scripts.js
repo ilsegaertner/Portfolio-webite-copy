@@ -43,10 +43,18 @@ document.getElementById("expandButton").addEventListener("click", function () {
   var projectListElement = document.querySelector(".project-list");
   var projectListItems = document.querySelectorAll(".project-list__item");
   var headingClassText = document.querySelector(".headingclass_work");
+  var projectListHeadingItem1 = document.querySelector(
+    ".project-list__heading__item1"
+  );
+  var projectListHeadingItem2 = document.querySelector(
+    ".project-list__heading__item2"
+  );
 
   // Toggle the 'expanded' class on the contact grid
   contactGrid.classList.toggle("expanded");
   projectListElement.classList.toggle("project-list-expanded");
+  projectListHeadingItem1.classList.toggle("display-none");
+  projectListHeadingItem2.classList.toggle("display-none");
 
   // Toggle the text content based on the contact grid's width
   if (contactGrid.classList.contains("expanded")) {
