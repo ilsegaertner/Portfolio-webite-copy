@@ -1483,6 +1483,7 @@ caption {
 .page-header h1 {
   font-weight: 500;
   font-size: var(--font-size-small);
+  font-family: Geist mono, sans-serif;
 }
 
 .workpage .page-header h1 {
