@@ -8,7 +8,7 @@
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: Geist mono, sans-serif;
+  font-family: Geist, sans-serif;
 }
 
 :root {
@@ -76,6 +76,10 @@ body {
   font-weight: 700;
 }
 
+.font-weight-500 {
+  font-weight: 500;
+}
+
 .separate-div {
   width: 33.3vw;
   height: 100vh;
@@ -98,13 +102,13 @@ h1:hover {
 }
 
 a {
-  color: #161613;
+  color: var(--main-black);
   font-size: var(--font-size-text);
   text-decoration: none;
 }
 
 a:visited {
-  color: var(--main-black);
+  color: var(--main-red);
 }
 
 a:hover,
@@ -154,11 +158,9 @@ h2 {
   margin-bottom: 15px;
 }
 
-/* h2:hover {
-  color: var(--main-white);
-  cursor: pointer;
-  text-shadow: 0 0 0 var(--main-red), 0 0 1px #050559;
-} */
+.address-wrapper {
+  padding-top: 20px;
+}
 
 .address-wrapper h2 {
   margin-bottom: 5rem;
@@ -410,6 +412,21 @@ button {
   margin-bottom: 500px;
 }
 
+.legal-info-body-wrapper {
+  margin: 10vw;
+  padding: 20px;
+}
+
+.legal-info-body-wrapper address {
+  /* margin-bottom: 50px; */
+  color: var(--main-black);
+}
+
+em {
+  font-weight: 500;
+  font-style: normal;
+}
+
 .workh1 {
   margin-top: 260px;
 }
@@ -506,7 +523,7 @@ button:hover,
 
 .navigation-list a {
   font-size: var(--font-size-small);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .navigation-list__item:hover {
@@ -666,7 +683,7 @@ button:hover,
   width: 100%;
   background-color: #fafafa;
   height: 63px;
-  position: fixed;
+  /* position: fixed; */
   z-index: 8000;
 }
 
@@ -699,14 +716,14 @@ button:hover,
 .footer-container p {
   line-height: normal;
 }
-
+/* 
 header {
-  border-bottom: 0.1px solid;
+  border-bottom: 0.1px solid var(--main-black);
 }
 
 footer {
   border-top: 0.1px solid;
-}
+} */
 
 .page-footer {
   position: fixed;
@@ -770,6 +787,7 @@ footer {
   grid-template-columns: 1fr 1fr 1fr;
   display: grid;
   align-items: center;
+  padding-top: 5px;
 }
 
 .social-media a img {
@@ -1036,6 +1054,7 @@ footer {
   display: grid;
   justify-items: center;
   font-size: 0.8rem;
+  font-weight: 500;
 }
 
 .stack-images {
@@ -1204,7 +1223,7 @@ fieldset {
   font-weight: 500;
   padding: 20px;
   text-transform: lowercase;
-  text-shadow: 0 0 40px #d18080a3;
+  /* text-shadow: 0 0 40px #d18080a3; */
 }
 
 .headingclass_contact {
@@ -1518,6 +1537,8 @@ caption {
 
 .contactpage .page-header {
   height: 0;
+  position: relative;
+  border: none;
 }
 
 .aboutpage {
@@ -1694,7 +1715,7 @@ caption {
 
 .intro {
   font-size: var(--font-size-regular);
-  line-height: 2.5rem;
+  line-height: 2.2rem;
 }
 
 /* Swiper */
