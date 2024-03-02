@@ -606,7 +606,7 @@ button:hover,
   grid-template-columns: repeat(8, 1fr);
   grid-gap: 20px;
   grid-template-rows: repeat(1, 1fr);
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .me p {
@@ -614,7 +614,7 @@ button:hover,
   grid-column: 2/3;
   margin: 0;
   text-align: start;
-  line-height: 1.6;
+  line-height: 1.4;
   font-family: Geist, sans-serif;
   margin-bottom: 50px;
   color: var(--main-black);
@@ -647,9 +647,56 @@ button:hover,
 }
 
 .me_text2 {
+<<<<<<< Updated upstream
   grid-column: 2/4;
   margin-top: 50px;
+=======
+  grid-column: 1/7;
+  /* margin-top: 50px; */
+>>>>>>> Stashed changes
   line-height: 1.6;
+}
+
+.aboutpage h1 {
+  text-align: center;
+}
+
+.education-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.education-item {
+  padding: 20px;
+  background-color: var(--color-variant1);
+  border-radius: 15px;
+  box-shadow: -2px 1px 4px 0px var(--color-variant1);
+}
+
+.education-item h3 {
+  color: var(--main-white);
+  font-size: var(--font-size-small);
+  font-weight: 600;
+  margin: 0;
+}
+
+.education-item ul {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-direction: row;
+  color: #4b3279;
+}
+
+.education-item li {
+  list-style-type: none;
+  font-size: var(--font-size-small);
+}
+
+.education-item h2 {
+  color: var(--alt-white);
 }
 
 .about-image-wrapper {
@@ -657,8 +704,15 @@ button:hover,
   grid-row: 1/5;
 }
 
+<<<<<<< Updated upstream
+=======
+.skills-image-github {
+  grid-column: 10/15;
+  margin-top: 130px;
+}
+
+>>>>>>> Stashed changes
 .about-image-wrapper img {
-  position: sticky;
   top: 90px;
   object-fit: cover;
   box-shadow: 0 0 10px #e5e5e5;
@@ -670,8 +724,13 @@ button:hover,
 }
 
 .cv {
+<<<<<<< Updated upstream
   grid-column: 2/6;
   grid-row: 2/2;
+=======
+  grid-column: 7/13;
+  /* grid-row: 2/2; */
+>>>>>>> Stashed changes
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
@@ -1440,7 +1499,6 @@ button:hover,
   color: var(--main-black);
   border-radius: 10px;
   font-weight: 100;
-  position: sticky;
   top: 90px;
   margin-top: 50px;
   display: inline-block;
