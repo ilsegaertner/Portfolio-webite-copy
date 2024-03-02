@@ -1241,9 +1241,11 @@ button:hover,
 .project-list__item {
   min-width: 48%;
   max-width: 37%;
-  border: 2px solid var(--main-black);
+  border: .2px solid var(--main-black);
   grid-column: 1/9;
   position: relative;
+  margin-bottom: 50px;
+  box-shadow: 0px 0px 200px #dedede;
   padding: 20px;
 overflow: hidden;
   border-radius: 10px;
