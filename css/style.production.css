@@ -702,17 +702,17 @@ button:hover,
   grid-row: 1/5;
 }
 
-<<<<<<< Updated upstream
-=======
+
+
 .skills-image-github {
   grid-column: 10/15;
   margin-top: 130px;
 }
 
->>>>>>> Stashed changes
 .about-image-wrapper img {
   top: 90px;
   object-fit: cover;
+  position: sticky;
   box-shadow: 0 0 10px #e5e5e5;
 }
 
