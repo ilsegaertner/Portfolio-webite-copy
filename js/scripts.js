@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", function () {
     spaceBetween: 30,
     mousewheel: true,
     autoplay: {
-      delay: 5000,
+      delay: 6000,
     },
     loop: true,
     pagination: {
