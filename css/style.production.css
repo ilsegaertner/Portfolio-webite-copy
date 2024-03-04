@@ -496,7 +496,6 @@ button:hover,
 
 .legal-info-body-wrapper {
   margin: 12.5vw;
-  padding: 20px;
 }
 
 .legal-info-body-wrapper address {
@@ -576,6 +575,10 @@ button:hover,
 .navigation-list li {
   display: inline-block;
   margin-left: 2rem;
+}
+
+.navigation-list li:last-child {
+  padding-bottom: 20px;
 }
 
 .navigation-list a {
@@ -804,6 +807,7 @@ button:hover,
 
 .footer-container p {
   line-height: normal;
+  margin: 0;
 }
 
 .page-footer {
@@ -1193,24 +1197,9 @@ button:hover,
   color: var(--alt-grey);
 }
 
-/* .get-in-touch {
-  margin-top: 40px;
-  width: 138px;
-} */
-
 .tel-wrapper {
   display: flex;
 }
-
-/* .get-in-touch .worklink {
-  color: var(--main-red);
-  font-weight: 600;
-  display: inline-flex;
-  padding: 40px 0;
-  border-radius: 13px;
-  font-family: Geist, sans-serif;
-  font-size: var(--font-size-lg);
-} */
 
 .with-icon--before {
   display: flex;
@@ -1943,6 +1932,15 @@ button:hover,
     display: none;
   }
 
+  .project-list__item {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .text p {
+    height: auto;
+  }
+
   .intro-text .stack-images {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5.6vw;
@@ -1973,6 +1971,24 @@ button:hover,
     display: none;
   }
 
+  .stack-images h4 {
+    font-size: 1rem;
+  }
+
+  .top,
+  .bottom {
+    margin: 12.5vw 0;
+    padding: 20px;
+  }
+
+  .page-header h1 {
+    font-size: 1rem;
+  }
+
+  .header-container {
+    padding: 0 20px;
+  }
+
   .text {
     padding-left: 0;
   }
@@ -1982,15 +1998,15 @@ button:hover,
   }
 
   .text p {
-    font-size: inherit;
+    font-size: 1rem;
   }
 
   .navigation-list a {
-    font-size: inherit;
+    font-size: 1rem;
   }
 
   a {
-    font-size: inherit;
+    font-size: 1rem;
   }
 
   .text a:nth-child(2),
@@ -1999,7 +2015,7 @@ button:hover,
   }
 
   .findme {
-    font-size: inherit;
+    font-size: 1rem;
   }
 
   .project-list h1 {
@@ -2007,11 +2023,11 @@ button:hover,
   }
 
   .project-list h2 {
-    font-size: var(--font-size-h2);
+    font-size: 1rem;
   }
 
   h4 {
-    font-size: inherit;
+    font-size: 1rem;
   }
 
   .myname > a {
@@ -2033,15 +2049,15 @@ button:hover,
   }
 
   h1 {
-    font-size: 19px;
+    font-size: 1rem;
   }
 
-  .contactpage {
-    background-color: var(--alt-white);
-  }
-
-  .mainpage {
+  .mainpage,
+  .aboutpage,
+  .contactpage,
+  .workpage {
     background-color: var(--main-white);
+    font-size: 1rem;
   }
 
   .myname {
@@ -2053,28 +2069,27 @@ button:hover,
     font-weight: 100;
   }
 
-  .project-section {
-    grid-template-columns: 1fr;
-    margin-left: 0;
-  }
-
   .contact-grid {
     display: none;
-  }
-
-  .project-list__item {
-    width: 100%;
-    grid-column: 1/7;
-    display: block;
   }
 
   .contact-section_contactpage {
     grid-template-columns: 1fr;
     padding: 0;
+    margin: 12.25vh 20px;
   }
 
   .formpart_contactpage .h-inline {
     color: var(--main-white);
+    font-size: 1rem;
+  }
+
+  .formpart_contactpage .form-action {
+    font-size: 1rem;
+  }
+
+  #fs-frm input {
+    font-size: 1rem;
   }
 
   .intro-text {
@@ -2097,7 +2112,7 @@ button:hover,
   }
 
   .get-in-touch {
-    margin: 11rem 0;
+    margin: 5rem 0;
   }
 
   .mongodb-img {
@@ -2109,8 +2124,8 @@ button:hover,
   }
 
   .intro {
-    font-size: var(--font-size-h2);
-    line-height: 2.6rem;
+    font-size: 1rem;
+    line-height: 1.6rem;
     color: var(--main-black);
     margin: 8rem 2rem;
     font-family: Geist, sans-serif;
@@ -2144,8 +2159,8 @@ button:hover,
   }
 
   .myname h1 {
-    margin: 6rem 0 5rem 2rem;
-    font-size: 2rem;
+    margin: 6rem;
+    font-size: 1rem;
     color: var(--main-black);
   }
 
@@ -2164,6 +2179,44 @@ button:hover,
   .workpage {
     padding-left: 0;
   }
+
+  .project-section {
+    margin: 20vh 0;
+  }
+
+  .project-list__item {
+    border: none;
+    border-radius: 0;
+  }
+
+  .footer-container {
+    margin: 0 20px;
+  }
+
+  .intro-text .social-media-icons {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .me p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .education-item li {
+    font-size: 1rem;
+  }
+
+  .address-wrapper h2 {
+    font-size: 1rem;
+  }
+
+  .address_contactpage {
+    font-size: 1rem;
+  }
 }
 
 @media all and (max-width: 682px) {
@@ -2173,16 +2226,16 @@ button:hover,
 }
 
 @media all and (max-width: 500px) {
-  .project-list {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    display: block;
-    box-shadow: none;
-    background-color: var(--alt-white);
+  .profile {
+    margin: 20vh 0 0;
   }
 
-  .profile {
-    margin: 0;
+  .button1 {
+    display: inline;
+  }
+
+  .education-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .pic {
@@ -2191,13 +2244,13 @@ button:hover,
 
   .myname h1 {
     font-size: var(--font-size-h2);
-    margin: 6rem 0 5rem;
+    margin: 5rem 0 5rem;
   }
 
   h2.intro {
-    font-size: 1.3rem;
-    line-height: 2rem;
-    margin: 100px 10px;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin: 58px 20px;
   }
 
   .intro-text {
@@ -2215,14 +2268,6 @@ button:hover,
   .workpage {
     padding: 0;
     background-color: var(--alt-white);
-  }
-
-  .project-list__item {
-    grid-template-columns: 1fr;
-    width: 100%;
-    padding-left: 0;
-    padding-right: 20px;
-    margin: 0;
   }
 
   .project-list__item > .text > a,
@@ -2261,10 +2306,6 @@ button:hover,
     margin: 0;
     font-size: 0.8rem;
   }
-  /* 
-  .get-in-touch .worklink {
-    font-size: var(--font-size-h2);
-  } */
 
   .text {
     padding-left: 0;
@@ -2324,10 +2365,6 @@ button:hover,
     align-items: center;
   }
 
-  .project-section {
-    display: block;
-  }
-
   #work-bottom-section {
     display: none;
   }
@@ -2337,26 +2374,17 @@ button:hover,
   }
 
   .contact-section_contactpage {
-    margin: 0;
+    margin: 12.25vh 20px;
     margin-top: 150px;
-  }
-
-  .footer-container {
-    margin: 0;
   }
 
   .page-header {
     background-color: #fafafa00;
   }
 
-  .header-container {
-    padding-bottom: 20px;
-    padding-left: 0;
-    margin: 0;
-  }
-
   .intro-text .social-media-icons {
     justify-content: center;
+    margin: 0;
   }
 }
 
