@@ -24,8 +24,8 @@
 }
 
 body {
-  background-color: var(--main-white);
-  color: #e6e6e6;
+  /* background-color: var(--main-white); */
+  /* color: #e6e6e6; */
   font-size: 19px;
   width: auto;
   scroll-behavior: smooth;
@@ -99,6 +99,7 @@ h1 {
   font-size: var(--font-size-regular);
   font-weight: 550;
   color: var(--main-black);
+  font-family: times;
 }
 
 h1:hover {
@@ -142,7 +143,8 @@ h2 {
 h4 {
   color: var(--alt-grey);
   font-weight: 400;
-  font-family: "Geist-Light", sans-serif;
+  /* font-family: "Geist-Light", sans-serif; */
+  font-family: times;
   font-size: var(--font-size-small);
   margin: 5px 0 0;
 }
@@ -240,8 +242,7 @@ button:visited {
 
 input:hover,
 input:focus,
-button:hover,
-.button1:hover {
+button:hover {
   cursor: pointer;
   opacity: 0.8;
 }
@@ -272,7 +273,8 @@ button:hover,
   line-height: 1.5;
   margin-top: 2.5rem;
   font-weight: 400;
-  font-family: Geist, sans-serif;
+  /* font-family: Geist, sans-serif; */
+  font-family: times;
   height: 630px;
 }
 
@@ -306,10 +308,12 @@ button:hover,
   margin-top: 0;
   color: var(--color-variant2);
   font-size: var(--font-size-regular);
+  font-family: times;
 }
 
 .clouds {
-  height: 100vh;
+  rotate: 270deg;
+  position: absolute;
 }
 
 .previous_me {
@@ -349,6 +353,14 @@ button:hover,
   gap: 10px;
 }
 
+.email a {
+  font-family: times;
+}
+
+.tel-wrapper * {
+  font-family: times;
+}
+
 .address_contactpage {
   display: flex;
   line-height: 1.5;
@@ -359,6 +371,7 @@ button:hover,
   border-radius: 3px;
   color: var(--main-black);
   margin-bottom: 60px;
+  font-family: times;
 }
 
 .address_contactpage > a {
@@ -395,6 +408,7 @@ button:hover,
 
 .formpart_contactpage #fs-frm-inputs label {
   color: var(--alt-white);
+  font-family: times;
 }
 
 #contactbutton {
@@ -486,9 +500,16 @@ button:hover,
 }
 
 .button1 {
+  background-image: linear-gradient(
+    to right,
+    var(--main-green) 0%,
+    var(--main-red) 51%,
+    var(--color-variant1) 100%
+  );
   font-family: Geist, sans-serif;
   border: none;
-  color: var(--main-green);
+  /* color: var(--main-green); */
+  color: var(--alt-white);
   text-decoration: none;
   padding: 20px;
   border-radius: var(--border-radius-large);
@@ -496,9 +517,16 @@ button:hover,
   -webkit-transition: opacity 0.2s;
   display: block;
   text-align: center;
-  -o-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-  box-shadow: inset 2px -45px 31px 4px var(--main-black);
+  background-size: 200% auto;
+  /* -o-transition: opacity 0.2s; */
+  /* transition: opacity 0.2s; */
+  /* flex: 1 1 auto; */
+  transition: 2s;
+  box-shadow: inset 0 -20px 40px -7px var(--main-black);
+}
+
+.button1:hover {
+  background-position: right center;
 }
 
 .legal-info-body-wrapper {
@@ -621,7 +649,8 @@ button:hover,
   margin: 0;
   text-align: start;
   line-height: 1.4;
-  font-family: Geist, sans-serif;
+  /* font-family: Geist, sans-serif; */
+  font-family: "Times New Roman", Times, serif;
   margin-bottom: 50px;
   color: var(--main-black);
 }
@@ -719,6 +748,7 @@ button:hover,
   top: 90px;
   object-fit: cover;
   position: sticky;
+  border-radius: 50%;
 }
 
 .me2 .about-image-wrapper {
@@ -748,6 +778,19 @@ button:hover,
   border-radius: 50%;
   padding: 20px;
   backdrop-filter: blur(9px);
+  /* animation: pulse 2s infinite;  */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* Start size */
+  }
+  50% {
+    transform: scale(1.1); /* Intermediate size */
+  }
+  100% {
+    transform: scale(1); /* Return to original size */
+  }
 }
 
 .profile__portrait:hover {
@@ -761,10 +804,10 @@ button:hover,
 }
 
 .intro-text {
-  flex-basis: auto;
+  flex-basis: 36vw;
 
   border: 0.2px solid var(--main-black);
-
+  position: relative;
   box-shadow: 0px 0px 200px #dededed4;
   padding: 20px;
   overflow: hidden;
@@ -872,6 +915,7 @@ button:hover,
 
 #fs-frm-inputs {
   color: #fafafa;
+  font-family: times;
   /* padding: 6.66px; */
 }
 
@@ -929,7 +973,7 @@ button:hover,
   display: flex;
   grid-template-columns: repeat(20, 1fr);
   justify-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -1130,6 +1174,7 @@ button:hover,
   text-transform: lowercase;
   grid-row: -1/3;
   font-family: Geist, sans-serif;
+  /* font-family: times; */
   font-size: var(--font-size-text);
 }
 
@@ -1137,7 +1182,8 @@ button:hover,
   font-size: var(--font-size-regular);
   font-weight: 560;
   align-items: center;
-  font-family: Geist, sans-serif;
+  /* font-family: Geist, sans-serif; */
+  font-family: times;
   margin: 0;
   text-shadow: 0 0 1px #9a9a9aba;
 }
@@ -1153,14 +1199,13 @@ button:hover,
 }
 
 .stack-images-skillicons {
-  padding-top: 20px;
-  border-radius: 3px;
-  grid-column: 1/22;
-  grid-row: 2/2;
   background-color: var(--main-black);
-  bottom: 0;
-  position: relative;
   padding-bottom: 50vh;
+  border: 0.2px solid var(--main-black);
+  box-shadow: 0px 0px 200px #dededed4;
+  padding: 23px;
+  height: 48vh;
+  border-radius: 10px;
 }
 
 .stack-images-skillicons p {
@@ -1412,6 +1457,7 @@ button:hover,
 .myname h1 {
   font-size: var(--font-size-regular);
   font-weight: 600;
+  font-family: times;
 }
 
 .myname h1:hover,
@@ -1511,10 +1557,11 @@ button:hover,
 }
 
 .formpart_contactpage .h-inline {
-  color: var(--color-variant2);
+  color: var(--main-green);
   font-size: var(--font-size-regular);
   border-radius: 13px;
   font-weight: 600;
+  font-family: times;
 }
 
 .formpart_contactpage .form-action {
@@ -1616,7 +1663,7 @@ button:hover,
 .page-header h1 {
   font-weight: 500;
   font-size: var(--font-size-small);
-  font-family: Geist mono, sans-serif;
+  font-family: Geist, sans-serif;
 }
 
 .workpage .page-header h1 {
@@ -1687,10 +1734,16 @@ button:hover,
 .reach-out {
   display: flex;
   padding: 11vw;
-  height: 100vh;
+  height: 66.6vh;
   align-items: center;
   flex-direction: row;
   justify-content: space-evenly;
+  border: 0.2px solid var(--main-black);
+  position: relative;
+  box-shadow: 0px 0px 200px #dededed4;
+  overflow: hidden;
+  transition: opacity 0.5s ease-in-out;
+  transition: width 0.3s ease;
 }
 
 .reach-out span {
@@ -1729,6 +1782,7 @@ button:hover,
 .intro {
   font-size: var(--font-size-regular);
   line-height: 2.2rem;
+  font-family: times;
 }
 
 /* Swiper */
@@ -2012,8 +2066,7 @@ button:hover,
   }
 
   .project-list__item {
-    width: 95%;
-    grid-column: 1/6;
+    margin-top: 20vh;
   }
 }
 
@@ -2179,7 +2232,8 @@ button:hover,
     line-height: 1.6rem;
     color: var(--main-black);
     margin: 8rem 2rem;
-    font-family: Geist, sans-serif;
+    /* font-family: Geist, sans-serif; */
+    font-family: times;
   }
 
   .social-media-intro {
@@ -2213,6 +2267,7 @@ button:hover,
     margin: 6rem;
     font-size: 1rem;
     color: var(--main-black);
+    font-family: times;
   }
 
   .profile {
