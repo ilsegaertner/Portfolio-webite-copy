@@ -296,7 +296,8 @@ button:hover {
   position: relative;
   margin-bottom: 50px;
   box-shadow: 0px 0px 200px #dededed4;
-  padding: 20px;
+  /* padding: 20px; */
+  padding: 1.6vw;
   overflow: hidden;
   border-radius: 10px;
   transition: opacity 0.5s ease-in-out;
@@ -511,7 +512,8 @@ button:hover {
   /* color: var(--main-green); */
   color: var(--alt-white);
   text-decoration: none;
-  padding: 20px;
+  /* padding: 20px; */
+  padding: 1.66vw;
   border-radius: var(--border-radius-large);
   font-weight: 500;
   -webkit-transition: opacity 0.2s;
@@ -523,6 +525,10 @@ button:hover {
   /* flex: 1 1 auto; */
   transition: 2s;
   box-shadow: inset 0 -20px 40px -7px var(--main-black);
+}
+
+.cv .button1 {
+  margin-top: 1.6vw;
 }
 
 .button1:hover {
@@ -605,6 +611,7 @@ button:hover {
   flex-wrap: wrap;
   justify-content: flex-end;
   margin: 0;
+  align-items: center;
 }
 
 .navigation-list li {
@@ -613,7 +620,7 @@ button:hover {
 }
 
 .navigation-list li:last-child {
-  padding-bottom: 20px;
+  padding: 1.6vh 0;
 }
 
 .navigation-list a {
@@ -638,8 +645,8 @@ button:hover {
 
 .me,
 .me2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  /* grid-template-columns: repeat(3, 1fr); */
   grid-gap: 1.32vw;
 }
 
@@ -679,7 +686,8 @@ button:hover {
   position: relative;
   margin-bottom: 50px;
   box-shadow: 0px 0px 200px #dededed4;
-  padding: 20px;
+  /* padding: 20px; */
+  padding: 1.66vw;
   overflow: hidden;
   border-radius: 10px;
   transition: opacity 0.5s ease-in-out;
@@ -690,6 +698,10 @@ button:hover {
   margin-bottom: 50px;
   margin-top: 0;
   font-weight: 600;
+}
+
+.me_text h1 {
+  margin: 0 0 1.66vw 0;
 }
 
 .me_text2 {
@@ -736,7 +748,8 @@ button:hover {
 }
 
 .about-image-wrapper {
-  grid-column: 1/2;
+  /* grid-column: 1/2; */
+  flex-basis: 33.3vw;
 }
 
 .skills-image-github {
@@ -776,7 +789,7 @@ button:hover {
   position: relative;
   object-fit: cover;
   border-radius: 50%;
-  padding: 20px;
+  /* padding: 20px; */
   backdrop-filter: blur(9px);
   /* animation: pulse 2s infinite;  */
 }
@@ -801,11 +814,12 @@ button:hover {
 
 .image-container-intro {
   border-radius: 50%;
+  flex-basis: 35vw;
+  flex-grow: 1;
 }
 
 .intro-text {
-  flex-basis: 36vw;
-
+  flex-basis: 35vw;
   border: 0.2px solid var(--main-black);
   position: relative;
   box-shadow: 0px 0px 200px #dededed4;
@@ -821,18 +835,14 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   padding: 0 12.5vw;
-  /* margin: 0 10vw; */
   width: 100%;
   overflow: hidden;
   z-index: 9000;
-  /* padding-right: 18px; */
   flex-wrap: wrap;
   position: fixed;
-  /* padding-top: 2px; */
   top: 0;
-  /* right: 0; */
   background-color: var(--main-white);
-  align-items: baseline;
+  align-items: center;
 }
 
 .page-header {
@@ -873,6 +883,7 @@ button:hover {
 
 .footer-container p {
   line-height: normal;
+  padding: 1.6vh 0;
   margin: 0;
 }
 
@@ -969,11 +980,13 @@ button:hover {
 
 .profile {
   margin: 12.5vw;
-
   display: flex;
+  gap: 3.1vw;
   grid-template-columns: repeat(20, 1fr);
   justify-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -1142,7 +1155,7 @@ button:hover {
   display: grid;
   position: fixed;
   left: 0;
-  transform: translateY(-100px);
+  transform: translateY(-108px);
   rotate: 270deg;
   top: 33.3vh;
 }
@@ -1291,7 +1304,8 @@ button:hover {
   position: relative;
   margin-bottom: 50px;
   box-shadow: 0px 0px 200px #dededed4;
-  padding: 20px;
+  /* padding: 20px; */
+  padding: 1.66vw;
   overflow: hidden;
   border-radius: 10px;
   transition: opacity 0.5s ease-in-out;
@@ -1407,7 +1421,7 @@ button:hover {
 .headingclass_about {
   margin: 0;
   font-weight: 500;
-  padding: 20px 0;
+  padding: 1.6vh 0;
   text-transform: lowercase;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0);
 }
@@ -1416,14 +1430,15 @@ button:hover {
   text-align: center;
   margin: 0;
   font-weight: 500;
-  padding: 20px 0;
+  padding: 1.6vh 0;
   text-transform: lowercase;
 }
 
 .headingclass_contact {
   margin: 0;
   font-weight: 500;
-  padding: 20px 0;
+  /* padding: 20px 0; */
+  padding: 1.6vh 0;
   text-transform: lowercase;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0);
 }
@@ -1455,9 +1470,10 @@ button:hover {
 }
 
 .myname h1 {
-  font-size: var(--font-size-regular);
+  font-size: 3rem;
   font-weight: 600;
   font-family: times;
+  margin: 0 0 2vh 0;
 }
 
 .myname h1:hover,
@@ -1511,13 +1527,17 @@ button:hover {
 .social-media-icons {
   list-style-type: none;
   padding-left: 0;
-  margin: 50px auto;
+  flex-basis: 100vw;
+  margin: 0;
   gap: 20px;
-  margin-left: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+}
+
+.social-media-icons a {
+  display: flex;
 }
 
 .social-media-icons img {
@@ -1541,15 +1561,10 @@ button:hover {
   padding: 20px;
   border-radius: 10px;
   background-color: var(--main-black);
-
-  /* min-width: 48%;
-  max-width: 37%; */
   border: 0.2px solid var(--main-black);
-  /* grid-column: 2/9; */
-  /* position: relative; */
   margin-bottom: 50px;
   box-shadow: 0px 0px 200px #dededed4;
-  padding: 20px;
+  padding: 1.6vw;
   overflow: hidden;
   border-radius: 10px;
   transition: opacity 0.5s ease-in-out;
@@ -1614,6 +1629,10 @@ button:hover {
   border-radius: 10px;
   transition: opacity 0.5s ease-in-out;
   transition: width 0.3s ease;
+}
+
+.bottom h1 {
+  margin: 0 0 2vh 0;
 }
 
 .skills {
@@ -1781,8 +1800,9 @@ button:hover {
 
 .intro {
   font-size: var(--font-size-regular);
-  line-height: 2.2rem;
+  line-height: 1.9rem;
   font-family: times;
+  margin: 0;
 }
 
 /* Swiper */
@@ -2010,7 +2030,7 @@ button:hover {
 
 @media all and (max-width: 1350px) {
   .profile__portrait {
-    height: 40vh;
+    height: 33.33vh;
   }
 
   .collapsed {
@@ -2268,6 +2288,7 @@ button:hover {
     font-size: 1rem;
     color: var(--main-black);
     font-family: times;
+    margin: 0 0 2vh 0;
   }
 
   .profile {
