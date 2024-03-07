@@ -298,13 +298,13 @@ button:hover {
   padding-top: 20px;
   /* min-width: 48%;
   max-width: 37%; */
-  border: 0.2px solid var(--main-black);
+  /* border: 0.2px solid var(--main-black); */
   /* grid-column: 2/9; */
   position: relative;
   margin-bottom: 50px;
-  box-shadow: 0px 0px 200px #dededed4;
+  /* box-shadow: 0px 0px 200px #dededed4; */
   /* padding: 20px; */
-  padding: 1.6vw;
+  /* padding: 1.6vw; */
   overflow: hidden;
   border-radius: 10px;
   transition: opacity 0.5s ease-in-out;
@@ -1336,11 +1336,11 @@ min-height: 318px;
 .project-list__item {
   min-width: 48%;
   max-width: 37%;
-  border: 0.2px solid var(--main-black);
+  /* border: 0.2px solid var(--main-black); */
   grid-column: 1/9;
   position: relative;
   margin-bottom: 50px;
-  box-shadow: 0px 0px 200px #dededed4;
+  /* box-shadow: 0px 0px 200px #dededed4; */
   /* padding: 20px; */
   padding: 1.66vw;
   overflow: hidden;
@@ -1599,12 +1599,12 @@ min-height: 318px;
 }
 
 .formpart_contactpage {
-  padding: 20px;
+  /* padding: 20px; */
   border-radius: 10px;
   background-color: var(--main-black);
-  border: 0.2px solid var(--main-black);
+  /* border: 0.2px solid var(--main-black); */
   margin-bottom: 50px;
-  box-shadow: 0px 0px 200px #dededed4;
+  /* box-shadow: 0px 0px 200px #dededed4; */
   padding: 1.6vw;
   overflow: hidden;
   border-radius: 10px;
