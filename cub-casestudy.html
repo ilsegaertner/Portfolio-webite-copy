@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A case study of a portfolio piece of Joachim Prügl - CUB Film Data"
+    />
+    <meta name="copyright" content="Joachim Prügl" />
+    <meta name="language" content="ES" />
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content="Joachim Prügl, contact@joachimpruegl.de" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.production.css" type="text/css" />
+    <title>Case Study CUB Film Data (React) | Full Stack Developer</title>
+  </head>
+
+  <body class="aboutpage">
+    <header class="page-header">
+      <div class="header-container">
+        <h1 class="headingclass_contact">
+          Joachim Prügl | Case Study CUB Film Data (React)
+        </h1>
+
+        <nav class="main navigation page-header__item">
+          <ul role="menubar" class="navigation-list">
+            <li role="presentation">
+              <a
+                href="./index.html"
+                role="menuitem"
+                class="navigation-list__item navigation-list__item"
+                >Home</a
+              >
+            </li>
+            <li role="presentation">
+              <a
+                href="about.html"
+                role="menuitem"
+                class="navigation-list__item--active"
+                >About</a
+              >
+            </li>
+            <li role="presentation">
+              <a href="work.html" role="menuitem" class="navigation-list__item"
+                >Work</a
+              >
+            </li>
+            <li role="presentation">
+              <a
+                href="contact.html"
+                role="menuitem"
+                class="navigation-list__item"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="about-content">
+      <section class="top">
+        <article class="case-study">
+          <div class="case-study_text">
+            <h1>Case Study</h1>
+
+            <p>
+              Working on <span class="font-weight-600">CUB Film Data</span> was
+              an exciting encounter. The project was built in 2023 as a
+              full-stack web application that displays information about
+              arthouse movies, directors, and genres. Users are able to create
+              an account, update their personal data, create a list of favorite
+              movies, or delete their accounts.
+            </p>
+
+            <h2>Objective</h2>
+            <p>
+              The primary goal was to demonstrate mastery in full-stack app
+              development within the MERN stack, showcasing proficiency in APIs,
+              web server frameworks, databases, business logic, authentication,
+              and data security. The project was aimed to be added to my
+              professional portfolio.
+            </p>
+          </div>
+
+          <div class="case-study-image-wrapper">
+            <img
+              src="img/documentation/cub_react_client/cub_react_client_doc_01_2.png"
+              alt="Picture of a screenshot of the Application CUB Film Data (React)"
+              width="100%"
+            />
+            <img
+              src="img/documentation/cub_react_client/cub_react_client_doc_05.png"
+              alt="Picture of a screenshot of the Application CUB Film Data (React)"
+              width="100%"
+            />
+            <!--  <img
+              src="img/documentation/cub_react_client/cub_react_client_doc_03.png"
+              alt="Picture of a drawing of Joachim Pruegl"
+              width="100%"
+            /> -->
+          </div>
+        </article>
+
+        <section class="case-study_problem">
+          <h2>Problem</h2>
+          <p>
+            The challenging task was to construct both the server-side and
+            client-side components entirely from scratch. This involved
+            addressing technical considerations, such as data management, user
+            authentication, mastering backend programming concepts - as well as
+            navigating through the server side with the terminal.
+          </p>
+        </section>
+
+        <div class="case-study-image-wrapper_middle">
+          <img
+            src="img/documentation/postman/01.JPG"
+            alt=""
+            width="100%"
+            alt="Picture of the Postman documentation of the API endpoints"
+          />
+          <img
+            src="img/documentation/postman/03.JPG"
+            alt="Picture of querying the Terminal"
+            width="100%"
+          />
+        </div>
+
+        <section class="case-study_approach">
+          <h2>Approach</h2>
+          <div class="case-study_approach_wrapper">
+            <h3>Server-Side:</h3>
+            <p>
+              Creating a robust REST API using Node.js and Express was the first
+              step. I defined server-side endpoints for the API that support
+              common HTTP methods (GET, POST, PUT, DELETE), providing users with
+              access to movie, director, and genre data. <br /><br />
+              To connect the movie and user data, I connected a non-relational
+              database (MongoDB) with Mongoose. The endpoints and HTTP methods
+              were tested in Postman including the functionality of JWT
+              authorization (see picture). <br /><br />Finally, the API and the
+              database were deployed to an online hosting service (Heroku) and a
+              cloud-based database hosting platform (MongoDB).
+            </p>
+
+            <h3>Client-Side:</h3>
+            <p>
+              Transitioning to the client side, I used React to create an
+              intuitive user interface. <br /><br />Key components such as a
+              main view (displaying all movies), a single movie view (details
+              about a movie), and a profile view connect the data with the
+              endpoints. <br /><br />Implementing login and registration
+              functionalities added depth to user interaction.
+
+              <!-- <img
+                src="img/documentation/cub_react_client/cub_react_client_doc_login.png"
+              /> -->
+            </p>
+          </div>
+          <div class="case-study_approach_wrapper-image-container">
+            <img
+              src="img/documentation/cub_react_client/cub_react_client_doc_03.png"
+            />
+            <img
+              src="img/documentation/cub_react_client/cub_react_client_doc_04.png"
+            />
+          </div>
+        </section>
+
+        <section class="case-study-challenges_wrapper">
+          <h2>Challenges</h2>
+          <p>
+            The creation of the server side felt straightforward. While this was
+            challenging and enriching at the same time, resulting in a deeper
+            understanding of backend programming, the client-side implementation
+            presented unique challenges and required a significant time
+            investment compared to previous projects. <br /><br />Learning React
+            took me some effort, yet overcoming these obstacles with the help of
+            my tutor Emanuel Okello enriched my skills in debugging and problem
+            solving, and deepened my understanding of JavaScript and frontend
+            development.
+          </p>
+        </section>
+        <section class="credits-wrapper">
+          <h2>Credits:</h2>
+          <ul class="credits">
+            <li>Role: Lead Developer</li>
+            <li>Tutor: Emanuel Okello</li>
+            <li>Mentor: Stephen Barungi</li>
+          </ul>
+          <ul class="case-study-links">
+            <li>
+              <a
+                href="https://github.com/ilsegaertner/CUB-film-data-client"
+                target="_blank"
+                class="button1"
+                >Code</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://cub-film-data.netlify.app/"
+                target="_blank"
+                class="button1"
+                >Demo</a
+              >
+            </li>
+            <li>
+              <a href="work.html" class="button1">Back</a>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="footer-container">
+        <a class="font-weight-500" href="legal-info.html">legal info</a>
+        <p class="findme font-weight-500">find me on</p>
+
+        <div class="social-media">
+          <a href="https://github.com/ilsegaertner" target="_blank"
+            ><img
+              src="img/github-mark-white.svg"
+              alt="Logo and Link for the Github platform"
+              width="25"
+              height="25" /></a
+          ><span
+            ><a href="https://twitter.com/JoachimPrugl" target="_blank"
+              ><img
+                src="img/x_logo.svg"
+                alt="Logo and Link for the Twitter platform"
+                width="25"
+                height="25" /></a></span
+          ><span
+            ><a
+              href="https://www.linkedin.com/in/joachim-pr%C3%BCgl/"
+              target="_blank"
+              ><img
+                src="img/icons8-linkedin-128.svg"
+                alt="Logo and Link for the LinkedIn platform"
+                width="25"
+                height="25" /></a
+          ></span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script src="js/tota11y.min.js"></script> -->
+  </body>
+</html>
