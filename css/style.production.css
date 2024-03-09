@@ -113,6 +113,7 @@ body {
 h1 {
   font-weight: var(--font-weight-strong);
   color: var(--main-black);
+  /* color: var(--main-red); */
   font-family: Geist;
   font-size: var(--font-size-md);
 }
@@ -291,11 +292,8 @@ button:hover {
 .text p {
   font-size: var(--font-size-small);
   line-height: var(--line-height-regular);
-  margin-top: 2.5rem;
   font-weight: 300;
   font-family: Geist, sans-serif;
-  /* font-family: times; */
-  /* height: 450px; */
 }
 
 .text a {
@@ -327,7 +325,7 @@ button:hover {
 .address-wrapper h2 {
   margin-bottom: 5rem;
   margin-top: 0;
-  color: var(--color-variant2);
+  /* color: var(--color-variant2); */
   /* font-size: var(--font-size-regular); */
   font-size: var(--font-size-md);
   font-family: Geist, sans-serif;
@@ -737,6 +735,7 @@ button:hover {
 
 .me_text h1 {
   margin: 0 0 1.66vw 0;
+  color: var(--main-black);
 }
 
 .case-study_text {
@@ -804,9 +803,9 @@ button:hover {
 
 .education-item h3 {
   /* color: var(--main-white); */
-  color: var(--main-green);
+  color: #bebebe;
   font-size: var(--font-size-regular);
-  font-weight: 100;
+  font-weight: 600;
   margin: 0;
   margin-bottom: 3.3vh;
 }
@@ -1643,6 +1642,7 @@ button:hover {
 .myname h1 {
   font-size: var(--font-size-lg);
   font-weight: 600;
+  color: var(--main-black);
   font-family: Geist;
   margin: 0 0 2vh 0;
 }
@@ -1742,7 +1742,7 @@ button:hover {
 }
 
 .formpart_contactpage .h-inline {
-  color: var(--main-green);
+  color: var(--main-white);
   font-size: var(--font-size-md);
   border-radius: 13px;
   font-weight: 600;
@@ -1798,6 +1798,7 @@ button:hover {
 
 .bottom h1 {
   margin: 0 0 2vh 0;
+  color: var(--main-black);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1916,7 +1917,7 @@ button:hover {
 
 .reach-out span {
   color: var(--alt-white);
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-big);
   font-family: Geist, sans-serif;
   font-weight: var(--font-weight-strong);
 }
@@ -1949,7 +1950,7 @@ button:hover {
 }
 
 .work-bottom-reach-out-list a {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-big);
   font-weight: var(--font-weight-medium);
   color: var(--main-green);
 }
@@ -2501,6 +2502,10 @@ button:hover {
   .address_contactpage {
     font-size: 1rem;
   }
+
+  .project-list {
+    margin: 0 20px;
+  }
 }
 
 @media all and (max-width: 682px) {
@@ -2592,13 +2597,6 @@ button:hover {
 
   .text {
     padding-left: 0;
-    text-align: center;
-  }
-
-  .livelinks {
-    padding: 30px;
-    align-items: center;
-    gap: 20px;
   }
 
   .project-list__item > div {
