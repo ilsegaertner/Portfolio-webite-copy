@@ -1061,6 +1061,7 @@ button:hover {
   margin: 0 12.5vw;
   /* padding: 0 20px; */
   flex-direction: row;
+  height: 6vh;
   justify-content: space-between;
 }
 
