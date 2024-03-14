@@ -514,6 +514,10 @@ button:hover {
   transition: opacity 0.2s;
 }
 
+.footer-container .button1 {
+  padding: 10px;
+}
+
 .button1 {
   background-image: linear-gradient(
     to right,
@@ -544,6 +548,10 @@ button:hover {
 
 .button1:hover {
   background-position: right center;
+}
+
+.legal-info {
+  margin-top: 20px;
 }
 
 .legal-info-body-wrapper {
@@ -1007,6 +1015,7 @@ button:hover {
   border-radius: 50%;
   flex-basis: 35vw;
   flex-grow: 1;
+  display: none;
 }
 
 .intro-text {
@@ -1062,31 +1071,29 @@ button:hover {
 
 .footer-container {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  gap: 10px;
   margin: 0 12.5vw;
+  /* background-color: var(--color-variant1); */
   /* padding: 0 20px; */
-  flex-direction: row;
-  height: 6vh;
-  justify-content: space-between;
+  /* height: 6vh; */
+  flex-direction: column;
 }
 
 .footer-container p {
   line-height: normal;
-  padding: 1.6vh 0;
-  margin: 0 20px;
-  position: relative;
-  left: -37px;
+  margin: 0;
 }
 
 .page-footer {
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   width: 100%;
-  /* border-top: 1px solid blue; */
+  border-top: 1px solid blue;
   z-index: 9000;
+  background-color: var(--color-variant1);
   overflow: hidden;
   color: var(--main-black);
-  background-color: var(--main-white);
 }
 
 .mailbutton {
@@ -1142,12 +1149,10 @@ button:hover {
 }
 
 .social-media {
-  height: 3rem;
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr;
   display: grid;
-  align-items: center;
-  padding-top: 5px;
+  padding-bottom: 20px;
 }
 
 .social-media a img {
@@ -1401,7 +1406,7 @@ button:hover {
   box-shadow: 0px 0px 200px #dededed4;
   padding: 23px;
   height: 48vh;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 .stack-images-skillicons p {
@@ -1827,7 +1832,7 @@ button:hover {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   margin-top: 48px;
-  margin: 18rem 0;
+  margin: -20vh 0;
 }
 
 .contact-section_contactpage {
@@ -1875,7 +1880,7 @@ button:hover {
 
 #work-bottom-section {
   background-color: var(--alt-white);
-  bottom: 44px;
+
   position: relative;
   z-index: 4000;
 }
