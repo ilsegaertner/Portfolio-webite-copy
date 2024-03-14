@@ -376,10 +376,6 @@ button:hover {
   align-items: center;
 }
 
-.tel-wrapper * {
-  font-weight: var(--font-weight-medium);
-}
-
 .address_contactpage {
   display: flex;
   line-height: var(--line-height-small);
@@ -1077,7 +1073,9 @@ button:hover {
 .footer-container p {
   line-height: normal;
   padding: 1.6vh 0;
-  margin: 0;
+  margin: 0 20px;
+  position: relative;
+  left: -37px;
 }
 
 .page-footer {
