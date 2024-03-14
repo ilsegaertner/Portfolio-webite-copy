@@ -224,6 +224,7 @@ caption {
 
 address {
   text-align: justify;
+  font-style: normal;
 }
 
 textarea {
@@ -551,11 +552,19 @@ button:hover {
 
 .legal-info-body-wrapper {
   margin: 12.5vw;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .legal-info-body-wrapper address {
   /* margin-bottom: 50px; */
   color: var(--main-black);
+}
+
+.english_version a,
+.german_version_impressum a {
+  font-size: inherit;
 }
 
 .workh1 {
