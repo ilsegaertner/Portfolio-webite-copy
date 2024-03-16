@@ -69,43 +69,50 @@
 
     <!-- main -->
     <div class="profile">
-      <div class="image-container-intro">
-        <img
-          src="img/me4.webp"
-          alt="Profile picture of Joachim Prügl"
-          class="profile__portrait"
-        />
-      </div>
-      <div class="intro-text">
-        <div class="myname">
-          <h1>Welcome!</h1>
-
-          <h2 class="intro">
-            I am Joachim Prügl, <br />a Full-Stack Developer from Berlin,
-            Germany.
-            <!-- <br />I enjoy building sites and apps. -->
-          </h2>
+      <div class="profile_container">
+        <div class="image-container-intro">
+          <img
+            src="img/me4.webp"
+            alt="Profile picture of Joachim Prügl"
+            class="profile__portrait"
+          />
         </div>
+        <div class="intro-text">
+          <div class="myname">
+            <div class="myname_heading">
+              <img src="img/icons/dev-icon-87.svg" height="50px" width="50px" />
+              <h1>Welcome!</h1>
+            </div>
+
+            <h2 class="intro">
+              I am Joachim Prügl, <br />a Full-Stack Developer from Berlin,
+              Germany.
+              <!-- <br />I enjoy building sites and apps. -->
+            </h2>
+          </div>
+        </div>
+        <div class="get-in-touch">
+          <a href="work.html" class="button1">See my projects</a>
+        </div>
+        <ul class="social-media-icons">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/joachim-pruegl/"
+              target="_blank"
+              ><img
+                src="https://skillicons.dev/icons?i=linkedin"
+                alt="social-media-icon of linkedin"
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/ilsegaertner" target="_blank">
+              <img
+                src="https://skillicons.dev/icons?i=github"
+                alt="social-media-icon of GitHub"
+            /></a>
+          </li>
+        </ul>
       </div>
-      <div class="get-in-touch">
-        <a href="work.html" class="button1">See my projects</a>
-      </div>
-      <ul class="social-media-icons">
-        <li>
-          <a href="https://www.linkedin.com/in/joachim-pruegl/" target="_blank"
-            ><img
-              src="https://skillicons.dev/icons?i=linkedin"
-              alt="social-media-icon of linkedin"
-          /></a>
-        </li>
-        <li>
-          <a href="https://github.com/ilsegaertner" target="_blank">
-            <img
-              src="https://skillicons.dev/icons?i=github"
-              alt="social-media-icon of GitHub"
-          /></a>
-        </li>
-      </ul>
     </div>
     <div class="stack-images-skillicons">
       <p>Tech Stack</p>
@@ -154,37 +161,42 @@
     <!-- footer -->
     <footer class="page-footer">
       <div class="footer-container">
-        <a class="legal-info font-weight-500" href="legal-info.html"
-          >legal info | impressum</a
-        >
-        <button class="button1"><a href="">Download resume</a></button>
-        <p class="findme font-weight-500">find me on</p>
-        <div class="social-media">
-          <a href="https://github.com/ilsegaertner" target="_blank"
-            ><img
-              src="img/github-mark-white.svg"
-              alt="Logo and Link for the Github platform"
-              width="25"
-              height="25" /></a
-          ><span
-            ><a href="https://twitter.com/JoachimPrugl" target="_blank"
+        <div class="footer-container_left">
+          <a class="legal-info font-weight-500" href="legal-info.html"
+            >Legal Info | Impressum</a
+          >
+          <a class="font-weight-500" href="">Download Resume</a>
+        </div>
+        <div class="footer-container_right">
+          <p class="findme font-weight-500">Find me on</p>
+          <div class="social-media">
+            <a href="https://github.com/ilsegaertner" target="_blank"
               ><img
-                src="img/x_logo.svg"
-                alt="Logo and Link for the Twitter platform"
-                width="25"
-                height="25" /></a></span
-          ><span
-            ><a
-              href="https://www.linkedin.com/in/joachim-pr%C3%BCgl/"
-              target="_blank"
-              ><img
-                src="img/icons8-linkedin-128.svg"
-                alt="Logo and Link for the LinkedIn platform"
+                src="img/github-mark-white.svg"
+                alt="Logo and Link for the Github platform"
                 width="25"
                 height="25" /></a
-          ></span>
+            ><span
+              ><a href="https://twitter.com/JoachimPrugl" target="_blank"
+                ><img
+                  src="img/x_logo.svg"
+                  alt="Logo and Link for the Twitter platform"
+                  width="25"
+                  height="25" /></a></span
+            ><span
+              ><a
+                href="https://www.linkedin.com/in/joachim-pr%C3%BCgl/"
+                target="_blank"
+                ><img
+                  src="img/icons8-linkedin-128.svg"
+                  alt="Logo and Link for the LinkedIn platform"
+                  width="25"
+                  height="25" /></a
+            ></span>
+          </div>
         </div>
       </div>
+      <p class="copyright">© Copyright 2024 | joachimpruegl.me</p>
     </footer>
     <!-- <script src="js/tota11y.min.js"></script> -->
     <script src="js/windowSize.js"></script>
