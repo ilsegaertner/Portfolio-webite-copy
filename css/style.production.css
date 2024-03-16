@@ -1121,6 +1121,7 @@ button:hover {
 .copyright {
   font-size: 0.8rem;
   margin: 0 12.5vw 20px;
+  color: var(--alt-grey);
 }
 
 .page-footer {
@@ -1171,7 +1172,7 @@ button:hover {
 .findme {
   font-size: var(--font-size-small);
   color: var(--main-black);
-  font-weight: var(--font-weight-strong);
+  /* font-weight: var(--font-weight-strong); */
 }
 
 .findme2 {
@@ -1483,6 +1484,7 @@ button:hover {
   color: var(--alt-white);
   /* display: grid; */
   margin: 0 12.5vw;
+  flex-grow: 1;
   justify-items: center;
   font-size: var(--font-size-regular);
 }
@@ -1513,7 +1515,8 @@ button:hover {
 .skillicons-list {
   display: flex;
   gap: 15px;
-  margin: 0 12.5vw;
+  /* margin: 0 12.5vw; */
+  flex-grow: 1;
   /* margin-top: 60px; */
   /* text-align: center; */
   list-style-type: none;
@@ -1565,6 +1568,14 @@ button:hover {
   grid-template-columns: 1fr 1fr;
 }
 
+.div1 {
+  width: 20px;
+  height: 20px;
+  background: var(--color-variant1);
+  position: fixed;
+  filter: blur(25px);
+}
+
 /* .div1 {
   position: absolute;
   width: 30vw;
@@ -1576,6 +1587,7 @@ button:hover {
   border-radius: 50%;
   animation: moveDiv 10s infinite alternate linear;
 }
+
 
 .div2 {
   position: absolute;
@@ -1638,7 +1650,7 @@ button:hover {
 }
 
 .project-section {
-  margin: 27vh 12.5vw 0;
+  margin: 20vh 12.5vw 0;
   position: relative;
   transition: grid-template-columns 0.2s ease;
 }
@@ -1902,17 +1914,18 @@ button:hover {
 .contact-section {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  margin-top: 48px;
-  margin: -20vh 0;
+
+  margin: 27vh 0;
 }
 
 .contact-section_contactpage {
   position: relative;
+  box-shadow: 0px 0px 200px #dededed4;
 }
 
 .contact-section_contactpage_wrapper {
-  margin: 23vh 12.5vw 0;
-  /* padding-bottom: 22vh; */
+  margin: 0vh 12.5vw 0;
+  padding: 20vh 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: stretch;
@@ -2010,6 +2023,7 @@ button:hover {
 .about-content {
   background-color: var(--alt-white);
   position: relative;
+  box-shadow: 0px 0px 200px #dededed4;
 }
 
 .about-content::after {
@@ -2037,6 +2051,7 @@ button:hover {
   height: 66.6vh;
   align-items: center;
   background-color: var(--main-black);
+  box-shadow: 0px 0px 200px #dededed4;
 }
 
 .reach-out::after {
@@ -2393,6 +2408,26 @@ button:hover {
     display: none;
   }
 
+  .myname_heading {
+    flex-direction: column;
+  }
+
+  .profile_container {
+    margin: 16.5vw 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+    margin: 0 20px 0px;
+    color: var(--alt-grey);
+  }
+
   .stack-images h4 {
     font-size: 1rem;
   }
@@ -2419,10 +2454,6 @@ button:hover {
     padding-left: 0;
   }
 
-  .text p {
-    font-size: 1rem;
-  }
-
   .navigation-list a {
     font-size: 1rem;
   }
@@ -2445,7 +2476,7 @@ button:hover {
   }
 
   .project-list h2 {
-    font-size: 1rem;
+    font-size: var(--font-size-h2);
   }
 
   h4 {
@@ -2495,14 +2526,19 @@ button:hover {
   }
 
   .contact-section_contactpage {
-    grid-template-columns: 1fr;
-    padding: 0;
-    margin: 12.25vh 20px;
+    padding-top: 20vh;
+  }
+
+  .contact-section_contactpage_wrapper {
+    display: block;
+    margin: 0px;
+    padding: 20px;
+    position: relative;
   }
 
   .formpart_contactpage .h-inline {
     color: var(--main-white);
-    font-size: 1rem;
+    font-size: var(--font-size-h2);
   }
 
   .formpart_contactpage .form-action {
@@ -2544,15 +2580,6 @@ button:hover {
     height: 2rem;
   }
 
-  .intro {
-    font-size: 1rem;
-    line-height: 1.6rem;
-    color: var(--main-black);
-    margin: 8rem 2rem;
-    /* font-family: Geist, sans-serif; */
-    font-family: times;
-  }
-
   .social-media-intro {
     grid-template-columns: 1fr 1fr 1fr;
     display: grid;
@@ -2561,7 +2588,7 @@ button:hover {
   }
 
   .social-media-icons {
-    grid-template-columns: repeat(2, 1fr);
+    flex-basis: 15vw;
   }
 
   .skillicons-list {
@@ -2582,9 +2609,8 @@ button:hover {
 
   .myname h1 {
     margin: 6rem;
-    font-size: 1rem;
+    font-size: var(--font-size-lg);
     color: var(--main-black);
-    font-family: times;
     margin: 0 0 2vh 0;
   }
 
@@ -2605,7 +2631,7 @@ button:hover {
   }
 
   .project-section {
-    margin: 20vh 0;
+    margin: 20vh 0 0;
   }
 
   .project-list__item {
@@ -2614,7 +2640,7 @@ button:hover {
   }
 
   .footer-container {
-    margin: 0 20px;
+    margin: 70px 20px 24px;
   }
 
   .footer-container_left a {
@@ -2639,7 +2665,7 @@ button:hover {
   }
 
   .address-wrapper h2 {
-    font-size: 1rem;
+    font-size: var(--font-size-h2);
   }
 
   .address_contactpage {
@@ -2675,14 +2701,12 @@ button:hover {
   }
 
   .myname h1 {
-    font-size: var(--font-size-h2);
-    margin: 5rem 0 5rem;
+    font-size: var(--font-size-big);
   }
 
   h2.intro {
-    font-size: 1rem;
-    line-height: 1.6rem;
-    margin: 58px 20px;
+    font-size: var(--font-size-regular);
+    line-height: var(--line-height-regular);
   }
 
   .intro-text {
@@ -2790,16 +2814,10 @@ button:hover {
   }
 
   #work-bottom-section {
-    display: none;
   }
 
   .profile__portrait {
     height: auto;
-  }
-
-  .contact-section_contactpage {
-    margin: 12.25vh 20px;
-    margin-top: 150px;
   }
 
   .page-header {
@@ -2808,6 +2826,15 @@ button:hover {
 
   .intro-text .social-media-icons {
     justify-content: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-container_right {
+    align-items: flex-start;
+    margin: 10px 0;
   }
 }
 
