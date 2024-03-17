@@ -138,6 +138,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
+  opacity: 0.8;
 }
 
 a:active {
@@ -266,6 +267,59 @@ button:hover {
 }
 
 /* semantic elements end */
+
+/* Hamburger Menu Start */
+
+.hamburger {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  transition: transform 0.3s ease;
+}
+
+.hamburger::before {
+  top: -8px;
+}
+
+.hamburger::after {
+  bottom: -8px;
+}
+
+.menu-open .hamburger {
+  background-color: transparent;
+}
+
+.menu-open .hamburger::before {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-open .hamburger::after {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.menu-toggle {
+  display: flex;
+  position: fixed;
+  right: 10px;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Hamburger Menu End */
 
 .me-image-wrapper {
   display: grid;
@@ -661,11 +715,20 @@ button:hover {
 
 .navigation-list {
   list-style-type: none;
-  display: flex;
+  /* display: flex; */
+  display: none;
   flex-wrap: wrap;
   justify-content: flex-end;
   margin: 0;
   align-items: center;
+}
+
+.navigation-list.menu-open {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+  padding-top: 20px;
 }
 
 .navigation-list li {
@@ -2400,6 +2463,16 @@ button:hover {
   .project-list__item {
     width: 95%;
     grid-column: 1/6;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .navigation-list {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: none; /* Hide the hamburger icon */
   }
 }
 

@@ -1,3 +1,18 @@
+// Hamburger
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navigationList = document.querySelector(".navigation-list");
+
+  console.log(menuToggle); // Debugging statement
+  console.log(navigationList); // Debugging statement
+
+  menuToggle.addEventListener("click", function () {
+    console.log("Menu toggle clicked"); // Debugging statement
+    navigationList.classList.toggle("menu-open");
+  });
+});
+
 // fade in project-list__items
 
 function fadeInProjects() {
