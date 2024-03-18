@@ -116,6 +116,10 @@ h1 {
   /* color: var(--main-red); */
   font-family: Geist;
   font-size: var(--font-size-md);
+  margin: 0 12.5vw;
+  /* position: sticky;
+  top: 70px; */
+  text-decoration: overline;
 }
 
 h1:hover {
@@ -153,10 +157,12 @@ p {
 }
 
 h2 {
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
+  font-size: var(--font-size-md);
   font-weight: var(--font-weight-medium);
   color: var(--main-black);
   margin-bottom: 15px;
+  /* text-decoration: overline; */
 }
 
 h4 {
@@ -1139,6 +1145,13 @@ button:hover {
   flex: 0 1 150px;
 }
 
+.page-header h1 {
+  font-weight: var(--font-weight-strong);
+  font-size: var(--font-size-small);
+  font-family: Geist, sans-serif;
+  text-decoration: none;
+}
+
 .page-header__item_heading {
   margin-bottom: 14px;
 }
@@ -1960,7 +1973,7 @@ button:hover {
   color: var(--main-black);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .skills {
@@ -1984,6 +1997,10 @@ button:hover {
 .contact-section_contactpage {
   position: relative;
   box-shadow: 0px 0px 200px #dededed4;
+}
+
+.h1-padding-top {
+  padding-top: 12.5vh;
 }
 
 .contact-section_contactpage_wrapper {
@@ -2021,12 +2038,6 @@ button:hover {
 
 .workpage .page-footer {
   background-color: var(--main-black);
-}
-
-.page-header h1 {
-  font-weight: var(--font-weight-strong);
-  font-size: var(--font-size-small);
-  font-family: Geist, sans-serif;
 }
 
 .workpage .page-header h1 {
