@@ -922,7 +922,7 @@ button:hover {
   padding: 16px;
   /* background-color: var(--color-variant1); */
   background-color: var(--main-black);
-  min-height: 318px;
+  /* min-height: 318px; */
   border-radius: 15px;
   /* box-shadow: -2px 1px 4px 0px var(--color-variant1); */
 }
@@ -973,8 +973,13 @@ button:hover {
 }
 
 .bottom-container {
+  padding: 20px;
   display: flex;
   gap: 3.33vw;
+  margin-bottom: 149px;
+  border-radius: 14px;
+  background-color: var(--highlight);
+  border: 2px solid var(--highlight);
   align-items: flex-start;
 }
 
@@ -985,12 +990,13 @@ button:hover {
 #back-end-development {
   max-width: 45vw;
   overflow: auto;
-  margin-bottom: 40vh;
+  margin-bottom: 2vh;
 }
 
 .bottom-container h2 {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   margin-bottom: 3.33vh;
+  color: var(--main-red);
   text-transform: uppercase;
 }
 
@@ -1185,8 +1191,8 @@ button:hover {
 }
 
 .page-header__item_text {
-  flex-basis: 100%;
-  z-index: 10;
+  /* flex-basis: 100%; */
+  /* z-index: 10; */
   max-width: 700px;
 }
 
@@ -1568,6 +1574,7 @@ button:hover {
   box-shadow: 0px 0px 200px #dededed4;
   padding: 20px 0;
   display: flex;
+  border-top: 18px solid var(--highlight);
   height: 43.3vh;
   /* border-radius: 10px; */
   align-items: center;
@@ -1664,7 +1671,8 @@ button:hover {
   /* min-width: 100%; */
   width: 85%;
   /* max-width: 37%; */
-  /* border: 0.2px solid var(--main-black); */
+  max-width: 1200px;
+  border: 2px solid var(--highlight);
   grid-column: 1/9;
   position: relative;
   margin-bottom: 150px;
@@ -1677,6 +1685,10 @@ button:hover {
   transition: width 0.3s ease;
   /* display: grid; */
   grid-template-columns: 1fr 1fr;
+}
+
+.project-list__item:last-child {
+  box-shadow: 0px 737px 450px #70707030;
 }
 
 .project-list__item_text-content {
@@ -1955,6 +1967,7 @@ button:hover {
   /* padding: 20px; */
   border-radius: 10px;
   background-color: var(--main-black);
+  border: 2px solid var(--highlight);
   /* border: 0.2px solid var(--main-black); */
   margin-bottom: 50px;
   /* box-shadow: 0px 0px 200px #dededed4; */
@@ -2175,6 +2188,7 @@ button:hover {
   padding: 12.5vw;
   height: 66.6vh;
   align-items: center;
+  border-top: 18px solid var(--color-variant2);
   background-color: var(--main-black);
   box-shadow: 0px 0px 200px #dededed4;
 }
