@@ -2822,7 +2822,7 @@ button:hover {
 
   .project-list__item {
     border: none;
-    border-radius: 0;
+    /* border-radius: 0; */
   }
 
   .footer-container {
@@ -2872,6 +2872,10 @@ button:hover {
 @media all and (max-width: 500px) {
   .profile {
     margin: 20vh 0 0;
+  }
+
+  .card-container {
+    display: block;
   }
 
   .work-bottom-reach-out-list a {
