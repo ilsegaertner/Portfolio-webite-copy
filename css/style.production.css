@@ -1583,6 +1583,7 @@ button:hover {
   box-shadow: 0px 0px 200px #dededed4;
   padding: 20px 0;
   display: flex;
+  padding-right: 12.5vw;
   border-top: 18px solid var(--highlight);
   height: 43.3vh;
   /* border-radius: 10px; */
@@ -2581,6 +2582,14 @@ button:hover {
     display: none;
   }
 
+  .stack-images-skillicons p {
+    margin: 20px;
+  }
+
+  .stack-images-skillicons {
+    padding-right: 0;
+  }
+
   h1 {
     margin: 20px;
   }
@@ -2863,6 +2872,18 @@ button:hover {
 @media all and (max-width: 500px) {
   .profile {
     margin: 20vh 0 0;
+  }
+
+  .work-bottom-reach-out-list a {
+    font-size: var(--font-size-regular);
+  }
+
+  .mail {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   .button1 {
