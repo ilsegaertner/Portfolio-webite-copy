@@ -652,6 +652,10 @@ button:hover {
   padding: 20vh 0;
 }
 
+.legal-info-body-wrapper_text h1 {
+  margin: 0;
+}
+
 .legal-info-body-wrapper address {
   /* margin-bottom: 50px; */
   color: var(--main-black);
@@ -776,7 +780,8 @@ button:hover {
 .me,
 .me2 {
   display: flex;
-  gap: 24.5vw;
+  gap: 12.5vw;
+  flex-direction: row-reverse;
 }
 
 .case-study {
@@ -851,6 +856,7 @@ button:hover {
   position: relative;
   margin-bottom: 50px;
   overflow: hidden;
+  flex: 1 1 50vw;
 }
 
 .me_text h2 {
@@ -1002,6 +1008,7 @@ button:hover {
 
 .about-image-wrapper {
   width: 100%;
+  flex: 1 0 25vw;
 }
 
 .about-image-wrapper img {
@@ -1009,7 +1016,7 @@ button:hover {
   object-fit: cover;
   position: sticky;
   border-radius: 50%;
-  height: 23vh;
+  /* height: 23vh; */
 }
 
 .case-study-image-wrapper_middle {
@@ -1089,6 +1096,8 @@ button:hover {
 .cv {
   display: flex;
   align-items: center;
+  margin-top: 80px;
+  justify-content: center;
 }
 
 .img {
@@ -2247,7 +2256,7 @@ button:hover {
 }
 
 .work-bottom-reach-out-list a {
-  font-size: var(--font-size-big);
+  font-size: var(--font-size-h2);
   font-weight: var(--font-weight-medium);
   color: var(--main-green);
   letter-spacing: 1px;
@@ -2513,6 +2522,16 @@ button:hover {
     display: none;
   }
 
+  .bottom-container {
+    flex-wrap: wrap;
+  }
+
+  #front-end-development,
+  #back-end-development {
+    max-width: fit-content;
+    overflow: auto;
+  }
+
   .project-list__item {
     min-width: 100%;
     max-width: 100%;
@@ -2560,6 +2579,10 @@ button:hover {
 @media all and (max-width: 750px) {
   .project-list__heading {
     display: none;
+  }
+
+  h1 {
+    margin: 20px;
   }
 
   .myname_heading {
@@ -2930,10 +2953,6 @@ button:hover {
 
   .me {
     display: block;
-  }
-
-  .me_text {
-    margin-top: 20vh;
   }
 
   .me2 {
