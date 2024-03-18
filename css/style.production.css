@@ -649,7 +649,7 @@ button:hover {
   grid-gap: 40px;
   grid-template-columns: 1fr 1fr;
   margin: 0 12.5vw;
-  padding: 20vh 0;
+  padding: 24vh 0;
 }
 
 .legal-info-body-wrapper_text h1 {
@@ -1799,7 +1799,7 @@ button:hover {
 }
 
 .project-section {
-  margin: 20vh 12.5vw 0;
+  margin: 12.5vh 12.5vw 0;
   position: relative;
   transition: grid-template-columns 0.2s ease;
 }
@@ -2031,7 +2031,7 @@ button:hover {
 .top,
 .bottom {
   margin: 0 12.5vw 1vh;
-  padding: 20vh 0vh 0;
+  padding: 12.5vh 0vh 0;
 }
 
 .bottom {
@@ -2074,12 +2074,12 @@ button:hover {
 }
 
 .h1-padding-top {
-  padding-top: 12.5vh;
+  padding-top: 24vh;
 }
 
 .contact-section_contactpage_wrapper {
   margin: 0vh 12.5vw 0;
-  padding: 20vh 0;
+  padding: 12.5vh 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: stretch;
@@ -2712,7 +2712,11 @@ button:hover {
   }
 
   .contact-section_contactpage {
-    padding-top: 20vh;
+    padding-top: 0vh;
+  }
+
+  .h1-padding-top {
+    padding-top: 8vh;
   }
 
   .contact-section_contactpage_wrapper {
