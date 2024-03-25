@@ -125,8 +125,8 @@ h1 {
   font-weight: var(--font-weight-strong);
   color: var(--main-black);
   /* color: var(--main-red); */
-  font-family: Geist;
-  font-size: var(--font-size-md);
+  font-family: GeistVariable, sans-serif;
+  font-size: var(--font-size-lg);
   margin: 0 12.5vw;
   /* position: sticky;
   top: 70px; */
@@ -850,7 +850,7 @@ button:hover {
   text-align: start;
   line-height: var(--line-height-regular);
   font-family: GeistVariable, sans-serif;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   font-weight: 300;
   color: var(--main-black);
 }
@@ -1930,7 +1930,7 @@ button:hover {
   font-size: var(--font-size-lg);
   font-weight: 600;
   color: var(--main-black);
-  font-family: Geist;
+  font-family: GeistVariable, sans-serif;
   margin: 0;
 }
 
