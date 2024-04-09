@@ -352,7 +352,7 @@ button:hover {
   position: fixed;
   left: 50%;
   /* display: none; */
-  width: 2px;
+  width: 0px;
   height: 241vh;
   background: var(--main-black);
   z-index: -10;
