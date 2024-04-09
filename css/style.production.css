@@ -351,7 +351,7 @@ button:hover {
 .divider {
   position: fixed;
   left: 50%;
-  /* display: none; */
+  display: none;
   width: 0px;
   height: 241vh;
   background: var(--main-black);
