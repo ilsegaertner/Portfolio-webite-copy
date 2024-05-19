@@ -944,7 +944,7 @@ button:hover {
   background: linear-gradient(240deg, var(--color-variant1), transparent);
   margin-top: 20px;
   flex: 1;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: rgb(61 49 91 / 10%) 0 2px 2px, rgb(61 49 91 / 10%) 0 4px 4px,
     rgb(60 49 91 / 10%) 0 8px 8px, rgb(60 49 91 / 10%) 0 16px 16px,
     rgb(61 49 91 / 10%) 0 2px 1px, rgb(60 49 91 / 10%) 0 2px 62px;
@@ -2221,7 +2221,7 @@ button:hover {
   content: "";
   position: absolute;
   right: 0;
-  padding-top: 500px;
+  padding-top: 366px;
   left: -7%;
   top: 100%;
   z-index: -10;
