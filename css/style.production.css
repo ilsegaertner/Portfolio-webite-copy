@@ -930,49 +930,48 @@ button:hover {
 }
 
 .education-container {
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr); */
   display: flex;
-  overflow: auto;
-  grid-gap: 20px;
+  /* overflow: auto; */
+  flex-wrap: wrap;
+  grid-gap: 10px;
+  justify-content: space-evenly;
+  flex-direction: row;
 }
 
 .education-item {
-  /* padding: 20px; */
   padding: 16px;
-  /* background-color: var(--color-variant1); */
-  background-color: var(--main-black);
+  background-color: var(--color-variant1);
+  background: linear-gradient(240deg, var(--color-variant1), transparent);
+  /* background-color: var(--main-black); */
   /* min-height: 318px; */
-  border-radius: 15px;
-  /* box-shadow: -2px 1px 4px 0px var(--color-variant1); */
+  margin-top: 20px;
+  flex: 1;
+  border-radius: 50px;
+  box-shadow: rgb(61 49 91 / 10%) 0 2px 2px, rgb(61 49 91 / 10%) 0 4px 4px,
+    rgb(60 49 91 / 10%) 0 8px 8px, rgb(60 49 91 / 10%) 0 16px 16px,
+    rgb(61 49 91 / 10%) 0 2px 1px, rgb(60 49 91 / 10%) 0 2px 62px;
 }
 
 .education-item h3 {
-  /* color: var(--main-white); */
-  color: #bebebe;
   font-size: var(--font-size-regular);
   font-weight: 600;
-  margin: 0;
-  margin-bottom: 3.3vh;
 }
 
 .education-item ul {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 1.66vh;
-  flex-direction: row;
+  flex-direction: column;
   min-width: 75px;
-  /* color: #4b3279; */
-  /* color: var(--main-green); */
-  /* color: var(--color-variant1); */
-  color: var(--alt-white);
+  color: #4b3279;
+  align-content: flex-start;
 }
 
 .education-item li {
   list-style-type: none;
-  font-size: var(--font-size-small);
+  /* font-size: var(--font-size-small); */
   font-weight: var(--font-weight-medium);
+  padding-top: 9px;
 }
 
 .education-item:hover {
@@ -993,31 +992,22 @@ button:hover {
 }
 
 .bottom-container {
-  padding: 20px;
   display: flex;
-  gap: 3.33vw;
   margin-bottom: 149px;
-  border-radius: 14px;
-  background-color: var(--highlight);
-  border: 2px solid var(--highlight);
   align-items: flex-start;
-}
-
-#front-end-development {
-  max-width: 35vw;
+  justify-content: space-between;
+  gap: 2rem;
+  /* flex-wrap: wrap; */
 }
 
 #back-end-development {
-  max-width: 45vw;
-  overflow: auto;
+  /* overflow: auto; */
   margin-bottom: 2vh;
 }
 
 .bottom-container h2 {
   /* margin-top: 50px; */
   margin-bottom: 3.33vh;
-  color: var(--main-red);
-  text-transform: uppercase;
 }
 
 .about-image-wrapper {
@@ -1605,6 +1595,12 @@ button:hover {
   height: 2rem;
 }
 
+.skill-flex-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
 .stack-images-skillicons {
   background-color: var(--main-black);
   padding-bottom: 50vh;
@@ -2068,7 +2064,7 @@ button:hover {
 
 .bottom {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   border-radius: 10px;
   transition: opacity 0.5s ease-in-out;
   transition: width 0.3s ease;
@@ -2076,10 +2072,6 @@ button:hover {
 
 .bottom h1 {
   margin: 0 0 2vh 0;
-  color: var(--main-black);
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
 }
 
 .skills {
@@ -2203,16 +2195,17 @@ button:hover {
 .about-content {
   background-color: var(--alt-white);
   position: relative;
-  box-shadow: 0px 0px 200px #dededed4;
+  /* box-shadow: 0px 0px 200px #dededed4; */
 }
 
 .about-content::after {
   content: "";
   position: absolute;
   right: 0;
+  padding-top: 500px;
   left: -7%;
   top: 100%;
-  z-index: 10;
+  z-index: -10;
   display: block;
   height: 50px;
   background-size: 50px 100%;
@@ -2566,7 +2559,7 @@ button:hover {
   #front-end-development,
   #back-end-development {
     max-width: fit-content;
-    overflow: auto;
+    /* overflow: auto; */
   }
 
   .project-list__item {
@@ -2742,10 +2735,6 @@ button:hover {
     margin-bottom: -63px;
   }
 
-  /* h1 {
-    font-size: 1rem;
-  } */
-
   .mainpage,
   .contactpage,
   .workpage {
@@ -2919,6 +2908,22 @@ button:hover {
 
   .project-list {
     margin: 0 20px;
+  }
+
+  .about-content::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    padding-top: 0;
+    left: -7%;
+    top: 100%;
+    z-index: 10;
+    display: block;
+    height: 50px;
+    background-size: 50px 100%;
+    background-image: linear-gradient(135deg, #fcfcfc 25%, transparent 25%),
+      linear-gradient(225deg, #fcfcfc 25%, transparent 25%);
+    background-position: 0 0;
   }
 }
 
