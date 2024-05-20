@@ -1633,7 +1633,7 @@ button:hover {
   padding: 20px 0;
   display: flex;
   padding-right: 12.5vw;
-  border-top: 18px solid var(--highlight);
+  border-top: 6px solid var(--highlight);
   height: 35.3vh;
   /* border-radius: 10px; */
   align-items: center;
@@ -1736,7 +1736,7 @@ button:hover {
   /* border: 2px solid var(--highlight); */
   grid-column: 1/9;
   position: relative;
-  margin-bottom: 150px;
+  margin-bottom: 120px;
   /* box-shadow: 0px 0px 200px #dededed4; */
   /* padding: 20px; */
   /* padding: 1.66vw; */
@@ -1868,7 +1868,7 @@ button:hover {
 }
 
 .project-section {
-  margin: 12.5vh 12.5vw 0;
+  margin: 8.5vh 12.5vw 0;
   position: relative;
   transition: grid-template-columns 0.2s ease;
 }
@@ -2166,7 +2166,7 @@ button:hover {
 
 .contact-section_contactpage_wrapper {
   margin: 0vh 12.5vw 0;
-  padding: 12.5vh 0;
+  padding: 8.5vh 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: stretch;
@@ -2287,7 +2287,7 @@ button:hover {
   height: 66.6vh;
   gap: 20px;
   align-items: stretch;
-  border-top: 18px solid var(--color-variant2);
+  border-top: 6px solid var(--color-variant2);
   background-color: var(--main-black);
   /* box-shadow: 0px 0px 200px #dededed4; */
   justify-content: center;
