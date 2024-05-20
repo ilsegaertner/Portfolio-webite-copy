@@ -814,7 +814,7 @@ button:hover {
 .card-container {
   display: flex;
   /* background-color: var(--color-variant1); */
-  background: linear-gradient(45deg, var(--color-variant1), transparent);
+  background: linear-gradient(45deg, var(--color-variant1), #f1f1f1);
   padding: 20px;
   gap: 40px;
   justify-content: center;
@@ -1051,6 +1051,7 @@ button:hover {
   object-fit: cover;
   position: sticky;
   border-radius: 50%;
+  filter: blur(0.2px);
   /* height: 23vh; */
 }
 
@@ -1590,10 +1591,9 @@ button:hover {
 .project-list__footer {
   display: flex;
   padding: 20px;
-  gap: 40px;
   /* background-color: #f3f3f3; */
   /* background-color: var(--alt-grey); */
-  background: linear-gradient(307deg, var(--alt-grey), transparent);
+  background: linear-gradient(307deg, var(--alt-grey), #dbdbdb);
   justify-content: space-between;
   box-shadow: inset 0px 0px 1px 0px #a4a4a4;
   align-items: flex-end;
@@ -1955,9 +1955,17 @@ button:hover {
   margin: 0 0 4vh 0;
 }
 
+.h1_skills {
+  filter: blur(0.4px);
+  letter-spacing: 0.05vw;
+  font-weight: 500;
+}
+
 .myname h1 {
   font-size: var(--font-size-lg);
+  filter: blur(0.4px);
   font-weight: 600;
+  letter-spacing: 0.1vw;
   color: var(--main-black);
   font-family: GeistVariable, sans-serif;
   margin: 0;
@@ -2151,6 +2159,9 @@ button:hover {
 
 .h1-padding-top {
   padding-top: 15vh;
+  filter: blur(0.4px);
+  letter-spacing: 0.05vw;
+  font-weight: 500;
 }
 
 .contact-section_contactpage_wrapper {
@@ -2305,7 +2316,7 @@ button:hover {
 
 .reach-out span {
   color: var(--alt-white);
-  font-size: var(--font-size-big);
+  font-size: var(--font-size-h2);
   font-family: GeistVariable, sans-serif;
   font-weight: var(--font-weight-strong);
 }
@@ -2337,6 +2348,7 @@ button:hover {
 
 .work-bottom-reach-out-list a {
   font-size: var(--font-size-h2);
+
   font-weight: var(--font-weight-medium);
   /* color: var(--main-green); */
   letter-spacing: 1px;
@@ -3009,6 +3021,7 @@ button:hover {
 
   .work-bottom-reach-out-list a {
     font-size: var(--font-size-regular);
+    padding: 4vw;
   }
 
   .mail {
