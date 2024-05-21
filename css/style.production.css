@@ -1962,7 +1962,7 @@ button:hover {
 }
 
 .myname_heading img {
-  filter: blur(1px);
+  filter: blur(0.2px);
 }
 
 .h1_skills {
@@ -2174,7 +2174,7 @@ button:hover {
   padding-top: 7vh;
   position: relative;
   top: 22.5px;
-  filter: blur(0.4px);
+  filter: blur(0.2px);
   letter-spacing: 0.05vw;
   font-weight: 500;
 }
@@ -2705,6 +2705,11 @@ button:hover {
     margin: 0 20px;
   }
 
+  .shadow-div,
+  .div1 {
+    display: none;
+  }
+
   .project-list__heading {
     display: none;
   }
@@ -3138,11 +3143,17 @@ button:hover {
 
   .me {
     display: block;
+    padding: 0;
   }
 
   .me2 {
     margin-top: 500px;
     display: block;
+    padding: 0;
+  }
+
+  .about-image-wrapper {
+    padding: 20px;
   }
 
   .skills {
