@@ -955,7 +955,7 @@ button:hover {
 }
 
 .education-item {
-  padding: 16px;
+  padding: 10px;
   background: linear-gradient(240deg, #eeeeee, transparent);
   margin-top: 20px;
   flex: 1;
@@ -980,6 +980,7 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  margin: 0;
   min-width: 75px;
   /* color: #4b3279; */
   align-content: flex-start;
@@ -992,9 +993,11 @@ button:hover {
 .education-item li {
   list-style-type: none;
   /* font-family: Geist mono; */
-  font-size: var(--font-size-small);
+  /* font-size: var(--font-size-small); */
+  font-size: 16px;
   font-weight: var(--font-weight-medium);
-  padding-top: 9px;
+  /* padding-top: 9px; */
+  padding: 5px;
 }
 
 .education-item:hover {
@@ -2993,9 +2996,9 @@ button:hover {
     line-height: var(--line-height-regular);
   }
 
-  .education-item li {
+  /* .education-item li {
     font-size: 1rem;
-  }
+  } */
 
   .address-wrapper h2 {
     font-size: var(--font-size-h2);
