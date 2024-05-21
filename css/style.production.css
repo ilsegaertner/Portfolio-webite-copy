@@ -1975,7 +1975,7 @@ button:hover {
 
 .myname h1 {
   font-size: var(--font-size-lg);
-  filter: blur(0.4px);
+  filter: blur(0.2px);
   font-weight: 500;
   letter-spacing: 0.1vw;
   color: var(--main-black);
