@@ -805,6 +805,9 @@ button:hover {
   gap: 12.5vw;
   flex-direction: row-reverse;
   padding: 20px;
+
+  border-radius: 30px;
+  border: 0.2px solid #c2c2c28a;
 }
 
 .case-study {
@@ -1024,6 +1027,9 @@ button:hover {
   gap: 2rem;
   padding: 20px;
   /* flex-wrap: wrap; */
+
+  border-radius: 30px;
+  border: 0.2px solid #c2c2c28a;
 }
 
 #back-end-development {
