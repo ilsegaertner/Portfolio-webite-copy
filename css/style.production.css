@@ -373,6 +373,7 @@ button:hover {
   font-size: 1.3rem;
   flex-direction: column;
   align-items: flex-start;
+  display: none;
 }
 
 .text p {
@@ -713,6 +714,11 @@ button:hover {
 
 .project-list__item:nth-child(even) {
   float: right;
+  /* margin-top: 30px; */
+}
+
+.project-list__item:nth-child(odd) {
+  margin-top: -30px;
 }
 
 .project-list__item:nth-child(even) .card-container {
@@ -882,6 +888,7 @@ button:hover {
 .me_text {
   position: relative;
   margin-bottom: 50px;
+  margin-top: -30px;
   flex: 1 1 50vw;
   font-size: 82%;
   height: 400px;
@@ -1535,32 +1542,20 @@ button:hover {
 }
 
 .project-list {
-  /* display: grid; */
-  /* display: flex; */
-  /* grid-gap: 4%; */
-  /* margin: 0 20px; */
-  /* grid-template-columns: repeat(15, 1fr); */
   display: flex;
   border-radius: 30px;
-  /* display: grid; */
-  /* display: flex; */
   gap: 4vw;
   /* grid-gap: 4%; */
   border: 0.2px solid #c2c2c28a;
   padding: 20px;
   margin: 20px 0;
   padding-bottom: 30px;
-  /* border-radius: 18px; */
   justify-content: space-between;
   transition: opacity 1s ease;
   transition: filter 1s ease;
   position: relative;
-  /* justify-items: center; */
-  align-items: center;
+  /* align-items: center; */
   flex-wrap: wrap;
-  /* justify-items: center; */
-  /* align-items: baseline; */
-  /* flex-wrap: wrap; */
 }
 
 .project-list-expanded {
@@ -1763,7 +1758,7 @@ button:hover {
   /* min-width: 100%; */
   /* width: 85%; */
   height: 300px;
-  flex: 1 1 20vw;
+  flex: 1 1 30vw;
   /* max-width: 37%; */
   max-width: 1200px;
   /* border: 2px solid var(--highlight); */
@@ -2418,6 +2413,7 @@ button:hover {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
