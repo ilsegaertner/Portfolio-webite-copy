@@ -1026,6 +1026,7 @@ button:hover {
   justify-content: space-between;
   gap: 2rem;
   padding: 20px;
+  padding-bottom: 16vh;
   /* flex-wrap: wrap; */
 
   border-radius: 30px;
@@ -2209,7 +2210,7 @@ button:hover {
 
 .contact-section_contactpage_wrapper {
   margin: 0vh 12.5vw 0;
-  padding: 8.5vh 20px;
+  padding: 8.5vh 20px 15vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: stretch;
