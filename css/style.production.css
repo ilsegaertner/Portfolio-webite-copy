@@ -805,7 +805,7 @@ button:hover {
   gap: 12.5vw;
   flex-direction: row-reverse;
   padding: 20px;
-
+  margin-bottom: 200px;
   border-radius: 30px;
   border: 0.2px solid #c2c2c28a;
 }
@@ -1054,13 +1054,13 @@ button:hover {
 
 .about-image-wrapper {
   width: 100%;
-  flex: 1 0 25vw;
+  flex: 1 0 17vw;
 }
 
 .about-image-wrapper img {
   top: 90px;
   object-fit: cover;
-  position: sticky;
+  /* position: sticky; */
   border-radius: 50%;
   filter: blur(0.2px);
   /* height: 23vh; */
