@@ -2432,11 +2432,13 @@ button:hover {
 #front-end-development {
   padding: 10px 26px 0px 0px;
   border-radius: 13px;
+  flex: 1 1 81vw;
 }
 
 #back-end-development {
   padding: 10px;
   border-radius: 13px;
+  flex: 1 1 33vw;
 }
 
 .image-container-animation-div {
