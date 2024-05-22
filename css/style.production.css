@@ -1535,6 +1535,13 @@ button:hover {
   /* grid-gap: 4%; */
   /* margin: 0 20px; */
   /* grid-template-columns: repeat(15, 1fr); */
+  border-radius: 30px;
+  /* display: grid; */
+  /* display: flex; */
+  /* grid-gap: 4%; */
+  border: 0.2px solid #c2c2c28a;
+  padding: 20px;
+  margin: 20px 0;
   padding-bottom: 30px;
   /* border-radius: 18px; */
   justify-content: space-between;
@@ -1883,7 +1890,7 @@ button:hover {
 
 .project-section {
   margin: 8.5vh 12.5vw 0;
-  padding: 0 20px;
+  /* padding: 0 20px; */
   position: relative;
   transition: grid-template-columns 0.2s ease;
 }
@@ -1975,18 +1982,18 @@ button:hover {
 }
 
 .h1_skills {
-  filter: blur(0.4px);
+  /* filter: blur(0.4px);
   letter-spacing: 0.05vw;
-  font-weight: 500;
+  font-weight: 500; */
   position: relative;
   top: 22.5px;
 }
 
 .myname h1 {
   font-size: var(--font-size-lg);
-  filter: blur(0.2px);
+  /* filter: blur(0.2px);
   font-weight: 500;
-  letter-spacing: 0.1vw;
+  letter-spacing: 0.1vw; */
   color: var(--main-black);
   font-family: GeistVariable, sans-serif;
   margin: 0;
@@ -2183,9 +2190,9 @@ button:hover {
   padding-top: 7vh;
   position: relative;
   top: 22.5px;
-  filter: blur(0.2px);
+  /* filter: blur(0.2px);
   letter-spacing: 0.05vw;
-  font-weight: 500;
+  font-weight: 500; */
 }
 
 .contact-section_contactpage_wrapper {
