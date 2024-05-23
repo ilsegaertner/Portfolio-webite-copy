@@ -156,6 +156,7 @@ a:visited {
 
 .navigation-list__item--active {
   opacity: 0.7;
+  text-decoration: underline;
 }
 
 p {
@@ -394,8 +395,7 @@ button:hover {
 }
 
 .address-wrapper {
-  padding-top: 20px;
-  padding-right: 20px;
+  padding: 20px;
 
   position: relative;
   margin-bottom: 50px;
@@ -453,7 +453,13 @@ button:hover {
 .email {
   display: flex;
   gap: 10px;
+  color: var(--alt-white);
   align-items: center;
+}
+
+.email a {
+  color: var(--alt-white);
+  font-weight: 200;
 }
 
 .address_contactpage {
@@ -892,7 +898,7 @@ button:hover {
   margin-top: -30px;
   flex: 1 1 50vw;
   font-size: 82%;
-  height: 400px;
+  height: 44vh;
   border: 0.1px solid #3d315b17;
   border-radius: 31px;
   padding: 1rem;
@@ -1322,7 +1328,7 @@ button:hover {
 
 .copyright {
   font-size: 0.8rem;
-  margin: 0 12.5vw 20px;
+  margin: 0 12.5vw 0px;
   color: var(--alt-grey);
 }
 
@@ -1661,7 +1667,7 @@ button:hover {
   display: flex;
   padding-right: 12.5vw;
   border-top: 6px solid var(--highlight);
-  height: 35.3vh;
+  height: 33.6vh;
   /* border-radius: 10px; */
   align-items: center;
   justify-content: center;
@@ -2091,7 +2097,7 @@ button:hover {
   /* padding: 20px; */
   border-radius: 10px;
   /* background-color: var(--main-black); */
-  border: 2px solid var(--highlight);
+  border: 0.2px solid #3d315b57;
   /* border: 0.2px solid var(--main-black); */
   margin-bottom: 50px;
   /* box-shadow: 0px 0px 200px #dededed4; */
@@ -2122,8 +2128,10 @@ button:hover {
 
 .get-in-touch_wrapper {
   display: flex;
-  padding: 22px 0;
+  border-radius: 30px;
   gap: 20px;
+  padding: 20px;
+  background-color: var(--main-black);
   flex-wrap: wrap;
 }
 
@@ -2155,7 +2163,7 @@ button:hover {
   /* margin: 0 12.5vw 25vh;
   padding: 12.5vh 0vh 0; */
 
-  margin: 0 12.5vw 15vh;
+  margin: 0 12.5vw 10vh;
   padding: 3.5vh 0vh 0;
 }
 
@@ -2205,11 +2213,14 @@ button:hover {
 
 .contact-section_contactpage_wrapper {
   margin: 0vh 12.5vw 0;
-  padding: 8.5vh 20px;
-  display: grid;
+  padding: 8.5vh 0px;
+  display: flex;
   grid-template-columns: repeat(2, 1fr);
   justify-items: stretch;
   position: relative;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .contact-section_contactpage::after {
