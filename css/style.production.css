@@ -2770,6 +2770,10 @@ button:hover {
     padding: 20px;
   }
 
+  .reach-out span {
+    font-size: var(--font-size-big);
+  }
+
   .bottom-container {
     flex-wrap: wrap;
   }
