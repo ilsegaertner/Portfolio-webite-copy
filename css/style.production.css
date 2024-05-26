@@ -760,7 +760,7 @@ button:hover {
 }
 
 .project-list__item:nth-child(odd) {
-  margin-top: -30px;
+  /* margin-top: -30px; */
 }
 
 .project-list__item:nth-child(even) .card-container {
@@ -1819,7 +1819,7 @@ button:hover {
 /* end grid fallback */
 
 .project-list__item {
-  height: 310px;
+  /* height: 310px; */
   flex: 1 1 30vw;
   max-width: 1200px;
   position: relative;
@@ -2950,9 +2950,7 @@ button:hover {
   }
 
   .project-list:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-    grid-gap: 11rem;
+    grid-gap: 4rem;
   }
 
   .profile__portrait {
