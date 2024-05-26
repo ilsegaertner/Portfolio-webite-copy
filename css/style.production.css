@@ -666,16 +666,23 @@ button:hover {
   border-radius: 7px;
   font-family: GeistVariable, sans-serif;
   text-transform: uppercase;
+  transition: 0.1s;
+  border-bottom: none;
 }
 
 .button2:hover {
   opacity: 0.8;
+  background: var(--alt-white);
 }
 
 .button2 a {
   font-size: 14px;
   color: var(--main-white);
   margin-bottom: 10px;
+}
+
+.button2 a:hover {
+  color: var(--highlight);
 }
 
 .legal-info-body-wrapper {
@@ -924,9 +931,9 @@ button:hover {
   position: relative;
   margin-bottom: 50px;
   margin-top: -30px;
-  flex: 1 1 50vw;
+  flex: 1 1 33vw;
   font-size: 82%;
-  height: 44vh;
+  /* height: 44vh; */
   border: 0.1px solid #3d315b17;
   border-radius: 31px;
   padding: 1rem;
@@ -1097,6 +1104,19 @@ button:hover {
 .about-image-wrapper {
   width: 100%;
   flex: 1 0 17vw;
+  padding: 20px;
+  /* background-color: var(--highlight); */
+  border-radius: 30px;
+}
+
+.links-wrapper {
+  display: flex;
+  padding-right: 20px;
+  gap: 2vw;
+  align-items: baseline;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-direction: row-reverse;
 }
 
 .about-image-wrapper img {
@@ -2304,7 +2324,7 @@ button:hover {
 .livelinks {
   display: flex;
   gap: 15px;
-  margin-top: 10px;
+  margin-top: 24px;
   flex-direction: row;
   align-items: flex-start;
   flex-wrap: nowrap;
@@ -2313,12 +2333,18 @@ button:hover {
 .livelinks a {
   color: var(--highlight);
   background: var(--main-white);
+  border: 0.3px solid var(--highlight);
   font-weight: 600;
   font-size: 14px;
   padding: 5px;
   border-radius: 7px;
   font-family: GeistVariable, sans-serif;
   text-transform: uppercase;
+}
+
+.livelinks a:hover {
+  background: var(--highlight);
+  color: var(--alt-white);
 }
 
 .workpage .findme {
