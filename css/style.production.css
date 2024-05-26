@@ -850,7 +850,7 @@ button:hover {
 .me,
 .me2 {
   display: flex;
-  gap: 2rem;
+  gap: 10rem;
   flex-direction: row-reverse;
   padding: 20px;
   /* margin-bottom: 200px; */
@@ -931,7 +931,7 @@ button:hover {
   position: relative;
   margin-bottom: 50px;
   margin-top: -30px;
-  flex: 1 1 33vw;
+  flex: 1 1 24vw;
   font-size: 82%;
   /* height: 44vh; */
   border: 0.1px solid #3d315b17;
@@ -1104,7 +1104,7 @@ button:hover {
 
 .about-image-wrapper {
   width: 100%;
-  flex: 1 0 17vw;
+  flex: 1 0 9vw;
   padding: 20px;
   /* background-color: var(--highlight); */
   border-radius: 30px;
@@ -1222,6 +1222,13 @@ button:hover {
   margin-top: 50px;
   position: relative;
   /* z-index: 9000; */
+}
+
+.cv_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
 }
 
 .cv .button1 {
