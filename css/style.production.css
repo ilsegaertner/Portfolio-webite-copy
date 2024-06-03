@@ -402,10 +402,9 @@ button:hover {
 
 .address-wrapper {
   padding: 20px;
-  /* flex: 1 0 50%; */
+  flex: 1;
   position: relative;
   margin-bottom: 50px;
-
   overflow: hidden;
   border-radius: 10px;
   transition: opacity 0.5s ease-in-out;
@@ -2179,7 +2178,7 @@ button:hover {
 .formpart_contactpage {
   /* padding: 20px; */
   border-radius: 10px;
-  /* flex: 1 0 50%; */
+  flex: 1;
   /* background-color: var(--main-black); */
   border: 0.2px solid #3d315b57;
   /* border: 0.2px solid var(--main-black); */
