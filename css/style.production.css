@@ -402,7 +402,7 @@ button:hover {
 
 .address-wrapper {
   padding: 20px;
-  flex: 1 0 50%;
+  /* flex: 1 0 50%; */
   position: relative;
   margin-bottom: 50px;
 
@@ -673,7 +673,7 @@ button:hover {
   background: var(--highlight);
   font-weight: 600;
   font-size: 14px;
-  padding: 5px;
+  padding: 15px;
   border-radius: 7px;
   font-family: GeistVariable, sans-serif;
   text-transform: uppercase;
@@ -683,7 +683,7 @@ button:hover {
 
 .button2:hover {
   opacity: 0.8;
-  background: var(--alt-white);
+  /* background: var(--alt-white); */
 }
 
 .button2 a {
@@ -863,10 +863,10 @@ button:hover {
   display: flex;
   gap: 10rem;
   flex-direction: row-reverse;
-  padding: 20px;
+  /* padding: 20px; */
   /* margin-bottom: 200px; */
   border-radius: 30px;
-  border: 0.2px solid #c2c2c28a;
+  /* border: 0.2px solid #c2c2c28a; */
 }
 
 .case-study {
@@ -1085,12 +1085,12 @@ button:hover {
   align-items: flex-start;
   justify-content: space-between;
   gap: 2rem;
-  padding: 20px;
+  /* padding: 20px; */
   padding-bottom: 16vh;
   /* flex-wrap: wrap; */
 
   border-radius: 30px;
-  border: 0.2px solid #c2c2c28a;
+  /* border: 0.2px solid #c2c2c28a; */
 }
 
 #back-end-development {
@@ -1621,8 +1621,8 @@ button:hover {
   border-radius: 30px;
   gap: 4vw;
   /* grid-gap: 4%; */
-  border: 0.2px solid #c2c2c28a;
-  padding: 20px;
+  /* border: 0.2px solid #c2c2c28a;
+  padding: 20px; */
   margin: 20px 0;
   padding-bottom: 30px;
   justify-content: space-between;
@@ -1714,6 +1714,7 @@ button:hover {
 .stack-images img {
   width: auto;
   height: 2rem;
+  padding: 5px;
 }
 
 .intro-text .stack-images img {
@@ -2178,13 +2179,13 @@ button:hover {
 .formpart_contactpage {
   /* padding: 20px; */
   border-radius: 10px;
-  flex: 1 0 50%;
+  /* flex: 1 0 50%; */
   /* background-color: var(--main-black); */
   border: 0.2px solid #3d315b57;
   /* border: 0.2px solid var(--main-black); */
   margin-bottom: 50px;
   /* box-shadow: 0px 0px 200px #dededed4; */
-  padding: 1.6vw;
+  padding: 20px;
   overflow: hidden;
   transition: opacity 0.5s ease-in-out;
   transition: width 0.3s ease;
@@ -2213,6 +2214,7 @@ button:hover {
   display: flex;
   border-radius: 30px;
   gap: 20px;
+  margin: 20px 0;
   padding: 20px;
   background-color: var(--main-black);
   flex-wrap: wrap;
@@ -2428,6 +2430,29 @@ button:hover {
 
 .body {
   background-color: #181817;
+}
+
+.technologies-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.technologies-item {
+  display: flex;
+  flex-basis: 2vw;
+  flex-direction: column-reverse;
+  padding: 5px;
+  gap: 5px;
+  /* margin: 5px; */
+  align-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.technologies-span {
+  font-size: 0.7rem;
+  color: var(--alt-grey);
+  padding: 5px;
 }
 
 .reach-out {
@@ -2869,6 +2894,10 @@ button:hover {
     margin: 0 20px;
   }
 
+  .bottom-container {
+    padding: 20px;
+  }
+
   .shadow-div,
   .div1 {
     display: none;
@@ -3197,6 +3226,21 @@ button:hover {
 @media all and (max-width: 500px) {
   .card-container {
     display: block;
+  }
+
+  .address-wrapper {
+    padding: 0;
+    margin-top: 50px;
+  }
+
+  .formpart_contactpage {
+    padding: 0;
+    margin-top: 110px;
+    border: none;
+  }
+
+  .project-list {
+    margin: 0;
   }
 
   .reach-out span {
