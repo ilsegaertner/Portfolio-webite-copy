@@ -612,6 +612,17 @@ button:hover {
   padding-left: 20px;
 }
 
+.joachim-pruegl {
+  background-image: linear-gradient(
+    to right,
+    var(--main-green) 0%,
+    var(--main-red) 51%,
+    var(--color-variant1) 100%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
 .footer-container .button1 {
   padding: 0;
 }
