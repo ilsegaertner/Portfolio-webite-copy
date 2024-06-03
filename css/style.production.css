@@ -2400,6 +2400,10 @@ button:hover {
   background-color: var(--color-variant1);
 }
 
+.aboutpage .page-footer {
+  margin-top: 20vh;
+}
+
 .about-content {
   background-color: var(--alt-white);
   position: relative;
