@@ -179,23 +179,4 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const animatedItems = document.querySelectorAll(".animated__item");
 
-  const checkVisibility = () => {
-    const triggerBottom = window.innerHeight * 0.8;
-
-    animatedItems.forEach((item, index) => {
-      const itemTop = item.getBoundingClientRect().top;
-
-      if (itemTop < triggerBottom) {
-        setTimeout(() => {
-          item.classList.add("visible");
-        }, index * 200); // Adding delay based on index
-      }
-    });
-  };
-
-  window.addEventListener("scroll", checkVisibility);
-  checkVisibility(); // Initial check in case elements are already in view
-});
