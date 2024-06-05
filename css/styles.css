@@ -587,7 +587,7 @@ button:hover {
   padding-left: 20px;
 }
 
-.joachim-pruegl {
+/* .joachim-pruegl {
   background-image: linear-gradient(
     to right,
     var(--main-green) 0%,
@@ -596,7 +596,7 @@ button:hover {
   );
   background-clip: text;
   color: transparent;
-}
+} */
 
 .footer-container .button1 {
   padding: 0;
@@ -1372,6 +1372,7 @@ button:hover {
 .profile_container {
   margin: 24vh 12.5vw 144px;
   display: flex;
+  /* background-image: url(../img/linkedin_background3.jpg); */
   gap: 4.1vw;
   grid-template-columns: repeat(20, 1fr);
   justify-items: center;
@@ -2804,6 +2805,7 @@ button:hover {
   .profile_container {
     margin: 16.5vw 0 0 0;
     display: flex;
+    background-image: none;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;

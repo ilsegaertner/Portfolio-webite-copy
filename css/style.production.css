@@ -528,7 +528,7 @@ button:hover {
   mix-blend-mode: exclusion;
   padding-left: 20px;
 }
-.joachim-pruegl {
+/* .joachim-pruegl {
   background-image: -webkit-gradient(
     linear,
     left top,
@@ -552,7 +552,7 @@ button:hover {
   -webkit-background-clip: text;
   background-clip: text;
   color: #fff0;
-}
+} */
 .footer-container .button1 {
   padding: 0;
 }
@@ -1450,6 +1450,7 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /* background-image: url(../img/linkedin_background3.jpg); */
   gap: 4.1vw;
   -ms-grid-columns: 1fr 4.1vw 1fr 4.1vw 1fr 4.1vw 1fr 4.1vw 1fr 4.1vw 1fr 4.1vw
     1fr 4.1vw 1fr 4.1vw 1fr 4.1vw 1fr 4.1vw 1fr 4.1vw 1fr 4.1vw 1fr 4.1vw 1fr
