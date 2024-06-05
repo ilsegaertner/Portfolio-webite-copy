@@ -764,6 +764,7 @@ button:hover {
 }
 .navigation-list a {
   font-size: 1rem;
+  padding: 1.4vh 0;
 }
 .shadow-div {
   max-width: 900px;
