@@ -6,7 +6,7 @@ The goal of this poject was to create a working portfolio website, complete with
 
 A responsive website using HTML and CSS that will showcase my own professional portfolio, which includes the projects I built throughout my Full-Stack Web Development Program, to your professional network and potential employers.
 
-See the website live [GitHub](https://github.com/ilsegaertner/CUB_Film_data)
+See the website live [joachimpruegl.me](https://joachimpruegl.me/)
 
 ### Features
 
