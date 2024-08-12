@@ -834,14 +834,17 @@ button:hover {
 }
 
 .card-container {
-  display: flex;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
   /* background-color: var(--color-variant1); */
   background: linear-gradient(45deg, var(--color-variant1), #f1f1f1);
   padding: 20px;
   gap: 2vw;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: nowrap;
+  /* justify-content: space-between;
+  align-items: flex-start; */
+  /* flex-wrap: nowrap; */
   overflow: hidden;
   position: relative;
 }
@@ -1056,8 +1059,9 @@ button:hover {
 
 .links-wrapper {
   display: flex;
-  padding-right: 20px;
-  gap: 5vw;
+  /* padding-right: 20px;
+  gap: 5vw; */
+  padding-top: 17px;
   align-items: baseline;
   justify-content: space-between;
   flex-direction: row-reverse;
@@ -1259,6 +1263,7 @@ button:hover {
 
 .page-header__item_text {
   max-width: 700px;
+  grid-column: 1 / 4;
 }
 
 .page-header__item:last-child {
@@ -2222,7 +2227,7 @@ button:hover {
 .work-bottom-contact {
   padding: 20px;
 }
-
+/* 
 .livelinks {
   display: flex;
   gap: 4%;
@@ -2230,7 +2235,7 @@ button:hover {
   flex-direction: row;
   align-items: flex-start;
   flex-wrap: nowrap;
-}
+} */
 
 .livelinks a {
   color: var(--highlight);
@@ -2412,10 +2417,12 @@ button:hover {
 
 .project-picture-wrapper {
   height: 273px;
+  grid-column: 4 / 6;
+
   position: relative;
   justify-content: center;
   /* display: flex; */
-  flex-basis: 29vw;
+  /* flex-basis: 29vw; */
   max-width: 100%;
   /* height: 400px; */
   border-radius: 8px;
