@@ -524,6 +524,11 @@ button:hover {
   transition: all 0.1s ease-in-out;
 }
 
+.project-images:hover {
+  scale: 1.1;
+  transition: ease-in-out 0.1s;
+}
+
 .sub-heading-class {
   line-height: 1.15;
   font-family: GeistVariable, sans-serif;
@@ -1253,10 +1258,6 @@ button:hover {
   text-decoration: none;
 }
 
-.page-header__item_heading {
-  margin-bottom: 14px;
-}
-
 .page-header__item_heading h4 {
   color: var(--highlight);
 }
@@ -1715,10 +1716,6 @@ button:hover {
   box-shadow: 0px 737px 450px #70707030;
 }
 
-.project-list__item_text-content {
-  padding-top: 10px;
-}
-
 .animated__item {
   opacity: 0;
   transform: translateX(-100%);
@@ -1960,6 +1957,7 @@ button:hover {
   color: var(--main-black);
   font-family: GeistVariable, sans-serif;
   margin: 0;
+  letter-spacing: -1px;
 }
 
 .myname h1:hover,
@@ -2157,6 +2155,7 @@ button:hover {
   padding-top: 7vh;
   position: relative;
   top: 22.5px;
+  letter-spacing: -1px;
   /* filter: blur(0.2px);
   letter-spacing: 0.05vw;
   font-weight: 500; */
@@ -2423,7 +2422,7 @@ button:hover {
 }
 
 .project-picture-wrapper {
-  height: 273px;
+  height: 194px;
   grid-column: 4 / 6;
 
   position: relative;

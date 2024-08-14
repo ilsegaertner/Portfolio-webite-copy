@@ -565,6 +565,13 @@ button:hover {
   transition: all 0.1s ease-in-out;
 }
 
+.project-images:hover {
+  scale: 1.1;
+  -webkit-transition: ease-in-out 0.1s;
+  -o-transition: ease-in-out 0.1s;
+  transition: ease-in-out 0.1s;
+}
+
 .sub-heading-class {
   line-height: 1.15;
   font-family: GeistVariable, sans-serif;
@@ -1500,10 +1507,6 @@ button:hover {
   text-decoration: none;
 }
 
-.page-header__item_heading {
-  margin-bottom: 14px;
-}
-
 .page-header__item_heading h4 {
   color: #3d315b;
 }
@@ -2089,10 +2092,6 @@ button:hover {
   box-shadow: 0px 737px 450px #70707030;
 }
 
-.project-list__item_text-content {
-  padding-top: 10px;
-}
-
 .animated__item {
   opacity: 0;
   -webkit-transform: translateX(-100%);
@@ -2388,6 +2387,7 @@ button:hover {
   color: #141414;
   font-family: GeistVariable, sans-serif;
   margin: 0;
+  letter-spacing: -1px;
 }
 
 .myname h1:hover {
@@ -2638,6 +2638,7 @@ button:hover {
   padding-top: 7vh;
   position: relative;
   top: 22.5px;
+  letter-spacing: -1px;
   /* filter: blur(0.2px);
   letter-spacing: 0.05vw;
   font-weight: 500; */
@@ -2957,7 +2958,7 @@ button:hover {
 }
 
 .project-picture-wrapper {
-  height: 273px;
+  height: 194px;
   -ms-grid-column: 4;
   -ms-grid-column-span: 2;
   grid-column: 4 / 6;
