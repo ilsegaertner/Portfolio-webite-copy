@@ -948,8 +948,7 @@ button:hover {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
   /* background-color: var(--color-variant1); */
-  background: -o-linear-gradient(45deg, #bdc0db, #f1f1f1);
-  background: linear-gradient(45deg, #bdc0db, #f1f1f1);
+  /* background: linear-gradient(45deg, var(--color-variant1), #f1f1f1); */
   padding: 20px;
   gap: 2vw;
   /* justify-content: space-between;
@@ -1800,16 +1799,18 @@ button:hover {
 }
 
 .project-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4vw 1fr 4vw 1fr 4vw 1fr 4vw 1fr 4vw 1fr 4vw 1fr 4vw 1fr
+    4vw 1fr 4vw 1fr 4vw 1fr 4vw 1fr 4vw 1fr 4vw 1fr 4vw 1fr 4vw 1fr 4vw 1fr 4vw
+    1fr;
+  grid-template-columns: repeat(18, 1fr);
+
   border-radius: 30px;
   gap: 4vw;
-  margin: 70px 0;
+  margin: 100px 0;
   padding-bottom: 230px;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   -webkit-transition: opacity 1s ease;
   -o-transition: opacity 1s ease;
   transition: opacity 1s ease;
@@ -1827,6 +1828,46 @@ button:hover {
 
 .project-list-expanded {
   justify-items: start;
+}
+
+#Weather-App {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 9;
+  grid-column: 1 / 10;
+}
+
+#Angular-App {
+  -ms-grid-column: 10;
+  -ms-grid-column-span: 9;
+  grid-column: 10/19;
+}
+
+#Meet-App {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1 / 7;
+}
+
+#Chat-App {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 6;
+  grid-column: 7/13;
+}
+
+#React-App {
+  -ms-grid-column: 13;
+  -ms-grid-column-span: 6;
+  grid-column: 13/19;
+}
+
+#React-App-Details,
+#Chat-App-Details,
+#Meet-App-Details,
+#Angular-App-Details,
+#Weather-App-Details {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 18;
+  grid-column: 1/19;
 }
 
 .opacity-2 {
@@ -2056,7 +2097,6 @@ button:hover {
 
 .project-list__item {
   display: inline-block;
-  width: 33%;
 }
 
 /* end grid fallback */
@@ -2085,11 +2125,6 @@ button:hover {
   box-shadow: rgba(0, 0, 0, 0.05) 0 2px 2px, rgba(0, 0, 0, 0.05) 0 4px 4px,
     rgba(0, 0, 0, 0.05) 0 8px 8px, rgba(0, 0, 0, 0.05) 0 16px 16px,
     rgba(0, 0, 0, 0.05) 0 32px 32px, rgba(0, 0, 0, 0) 0 64px 64px;
-}
-
-.project-list__item:last-child {
-  -webkit-box-shadow: 0px 737px 450px #70707030;
-  box-shadow: 0px 737px 450px #70707030;
 }
 
 .animated__item {
@@ -3543,12 +3578,26 @@ button:hover {
     color: #141414;
   }
 
-  .project-list:last-child {
-    grid-gap: 4rem;
-  }
-
   .profile__portrait {
     margin-bottom: -63px;
+  }
+
+  #Meet-App {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 9;
+    grid-column: 1/10;
+  }
+
+  #Chat-App {
+    -ms-grid-column: 10;
+    -ms-grid-column-span: 9;
+    grid-column: 10/19;
+  }
+
+  #React-App {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 18;
+    grid-column: 1/19;
   }
 
   .mainpage {
@@ -3779,6 +3828,21 @@ button:hover {
 }
 
 @media all and (max-width: 500px) {
+  #Weather-App,
+  #Meet-App,
+  #React-App {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 17;
+    grid-column: 1/18;
+  }
+
+  #Angular-App,
+  #Chat-App {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 17;
+    grid-column: 2/19;
+  }
+
   .card-container {
     display: block;
   }

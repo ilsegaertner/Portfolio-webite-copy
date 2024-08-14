@@ -844,7 +844,7 @@ button:hover {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
   /* background-color: var(--color-variant1); */
-  background: linear-gradient(45deg, var(--color-variant1), #f1f1f1);
+  /* background: linear-gradient(45deg, var(--color-variant1), #f1f1f1); */
   padding: 20px;
   gap: 2vw;
   /* justify-content: space-between;
@@ -1500,12 +1500,14 @@ button:hover {
 }
 
 .project-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+
   border-radius: 30px;
   gap: 4vw;
-  margin: 70px 0;
+  margin: 100px 0;
   padding-bottom: 230px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   transition: opacity 1s ease;
   transition: filter 1s ease;
   position: relative;
@@ -1515,6 +1517,26 @@ button:hover {
 
 .project-list-expanded {
   justify-items: start;
+}
+
+#Weather-App {
+  grid-column: 1 / 10;
+}
+
+#Angular-App {
+  grid-column: 10/19;
+}
+
+#Meet-App {
+  grid-column: 1 / 7;
+}
+
+#Chat-App {
+  grid-column: 7/13;
+}
+
+#React-App {
+  grid-column: 13/19;
 }
 
 .opacity-2 {
@@ -1692,7 +1714,6 @@ button:hover {
 
 .project-list__item {
   display: inline-block;
-  width: 33%;
 }
 
 /* end grid fallback */
@@ -1710,10 +1731,6 @@ button:hover {
   box-shadow: rgba(0, 0, 0, 0.05) 0 2px 2px, rgba(0, 0, 0, 0.05) 0 4px 4px,
     rgba(0, 0, 0, 0.05) 0 8px 8px, rgba(0, 0, 0, 0.05) 0 16px 16px,
     rgba(0, 0, 0, 0.05) 0 32px 32px, rgba(0, 0, 0, 0) 0 64px 64px;
-}
-
-.project-list__item:last-child {
-  box-shadow: 0px 737px 450px #70707030;
 }
 
 .animated__item {
@@ -2907,12 +2924,20 @@ button:hover {
     color: var(--main-black);
   }
 
-  .project-list:last-child {
-    grid-gap: 4rem;
-  }
-
   .profile__portrait {
     margin-bottom: -63px;
+  }
+
+  #Meet-App {
+    grid-column: 1/10;
+  }
+
+  #Chat-App {
+    grid-column: 10/19;
+  }
+
+  #React-App {
+    grid-column: 1/19;
   }
 
   .mainpage,
@@ -3115,6 +3140,17 @@ button:hover {
 }
 
 @media all and (max-width: 500px) {
+  #Weather-App,
+  #Meet-App,
+  #React-App {
+    grid-column: 1/18;
+  }
+
+  #Angular-App,
+  #Chat-App {
+    grid-column: 2/19;
+  }
+
   .card-container {
     display: block;
   }
