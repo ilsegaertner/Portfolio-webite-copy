@@ -3441,6 +3441,10 @@ button:hover {
     margin: 0 20px;
   }
 
+  .h1-padding-top h1 {
+    font-size: 1.44rem;
+  }
+
   .reach-out {
     padding: 20px;
   }
