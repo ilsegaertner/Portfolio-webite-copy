@@ -69,6 +69,62 @@
       <h1 class="h1-padding-top">Contact</h1>
       <hr class="hr_skills" />
       <section class="contact-section_contactpage_wrapper">
+        <div class="formpart_contactpage animated__item">
+          <h2 class="h-inline font-weight-500">Leave me a message</h2>
+          <hr class="hr_skills" />
+
+          <form
+            id="fs-frm"
+            name="simple-contact-form"
+            accept-charset="utf-8"
+            action="https://formspree.io/f/mqkrpwlr"
+            method="post"
+            class="form-action"
+          >
+            <fieldset id="fs-frm-inputs">
+              <label for="full-name" class="standard-label">Full Name</label>
+              <input
+                type="text"
+                name="name"
+                id="full-name"
+                placeholder="First and Last"
+                required=""
+              />
+              <label for="email-address" class="standard-label"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                name="_replyto"
+                id="email-address"
+                placeholder="Your Email"
+                required=""
+              />
+              <label
+                for="message"
+                class="standard-label"
+                style="margin-top: 20px"
+                >Message</label
+              >
+              <textarea
+                rows="10"
+                col="10"
+                name="message"
+                id="message"
+                maxlength="240"
+                placeholder="Your Message...."
+                required=""
+              ></textarea>
+              <input
+                type="hidden"
+                name="_subject"
+                id="email-subject"
+                value="Contact Form Submission"
+              />
+            </fieldset>
+            <input type="submit" value="Submit" class="button1" />
+          </form>
+        </div>
         <section class="address-wrapper animated__item_from-right">
           <h2 class="font-weight-600">Get in touch!</h2>
           <hr class="hr_skills" />
@@ -139,63 +195,6 @@
             </ul>
           </div>
         </section>
-
-        <div class="formpart_contactpage animated__item">
-          <h2 class="h-inline font-weight-500">Leave me a message</h2>
-          <hr class="hr_skills" />
-
-          <form
-            id="fs-frm"
-            name="simple-contact-form"
-            accept-charset="utf-8"
-            action="https://formspree.io/f/mqkrpwlr"
-            method="post"
-            class="form-action"
-          >
-            <fieldset id="fs-frm-inputs">
-              <label for="full-name" class="standard-label">Full Name</label>
-              <input
-                type="text"
-                name="name"
-                id="full-name"
-                placeholder="First and Last"
-                required=""
-              />
-              <label for="email-address" class="standard-label"
-                >Email Address</label
-              >
-              <input
-                type="email"
-                name="_replyto"
-                id="email-address"
-                placeholder="Your Email"
-                required=""
-              />
-              <label
-                for="message"
-                class="standard-label"
-                style="margin-top: 20px"
-                >Message</label
-              >
-              <textarea
-                rows="10"
-                col="10"
-                name="message"
-                id="message"
-                maxlength="240"
-                placeholder="Your Message...."
-                required=""
-              ></textarea>
-              <input
-                type="hidden"
-                name="_subject"
-                id="email-subject"
-                value="Contact Form Submission"
-              />
-            </fieldset>
-            <input type="submit" value="Submit" class="button1" />
-          </form>
-        </div>
       </section>
     </section>
 
