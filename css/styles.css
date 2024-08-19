@@ -689,7 +689,7 @@ button:hover {
 }
 
 .legal-info-body-wrapper::after {
-  content: "";
+  /* content: ""; */
   position: absolute;
   right: 0;
   left: -7%;
@@ -1646,7 +1646,7 @@ button:hover {
 }
 
 .stack-images-skillicons::after {
-  content: "";
+  /* content: ""; */
   position: absolute;
   right: 0;
   left: -7%;
@@ -1794,10 +1794,10 @@ button:hover {
   top: -100px; */
 
   width: 100%;
-  height: 140px;
-  rotate: -10deg;
+  height: 80px;
+  /* rotate: -10deg;
   top: -84px;
-  left: -33px;
+  left: -33px; */
   /* left: -363px; */
   background: var(--color-variant1);
   opacity: 0.5;
@@ -2224,7 +2224,7 @@ button:hover {
 }
 
 .contact-section_contactpage::after {
-  content: "";
+  /* content: ""; */
   position: absolute;
   right: 0;
   left: -7%;
@@ -2328,7 +2328,7 @@ button:hover {
 }
 
 .about-content::after {
-  content: "";
+  /* content: ""; */
   position: absolute;
   right: 0;
   padding-top: 366px;
@@ -2402,7 +2402,7 @@ button:hover {
 }
 
 .reach-out::after {
-  content: "";
+  /* content: ""; */
   position: absolute;
   right: 0;
   left: -7%;
@@ -2819,8 +2819,6 @@ button:hover {
     display: flex;
   }
 
-
-
   .menu-toggle {
     display: none; /* Hide the hamburger icon */
   }
@@ -3164,7 +3162,7 @@ button:hover {
   }
 
   .about-content::after {
-    content: "";
+    /* content: ""; */
     position: absolute;
     right: 0;
     padding-top: 0;
