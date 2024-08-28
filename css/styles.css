@@ -2986,6 +2986,25 @@ button:hover {
     margin-bottom: 20vh;
   }
 
+  #Weather-App-Details .project-picture-wrapper {
+    height: 470px;
+  }
+  #Angular-App-Details .project-picture-wrapper {
+    height: 470px;
+  }
+  #React-App-Details .project-picture-wrapper {
+    height: 470px;
+  }
+  #Chat-App-Details .project-picture-wrapper {
+    height: 470px;
+  }
+  #Meet-App-Details .project-picture-wrapper {
+    height: 470px;
+  }
+  #Meet-App-Details .project-picture-wrapper {
+    height: 470px;
+  }
+
   .mainpage,
   .contactpage,
   .workpage {
