@@ -11,11 +11,6 @@
   font-family: GeistVariable, sans-serif;
 }
 
-:root {
-  /* --border-radius-small: 10px;
-  --border-radius-large: 31px; */
-}
-
 html {
   font-size: 18px;
 }
@@ -2683,7 +2678,6 @@ button:hover {
   display: grid;
   -ms-grid-columns: (1fr) [8];
   grid-template-columns: repeat(8, 1fr);
-
   margin: 27vh 0;
 }
 
@@ -4091,9 +4085,6 @@ button:hover {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-  }
-
-  #work-bottom-section {
   }
 
   .profile__portrait {
