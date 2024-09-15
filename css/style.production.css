@@ -2854,6 +2854,12 @@ button:hover {
   background-position: 0 0;
 }
 
+.case-study-content {
+  background-color: #fcfcfc;
+  position: relative;
+  padding: 20px;
+}
+
 .body {
   background-color: #181817;
 }

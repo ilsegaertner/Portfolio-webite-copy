@@ -23,7 +23,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
 
-    <link rel="stylesheet" href="css/style.production.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="css/style.production.css" type="text/css" /> -->
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+
     <title>Case Study CUB Film Data (React) | Full Stack Developer</title>
   </head>
 
@@ -64,7 +66,7 @@
     </header>
 
     <div class="shadow-div"></div>
-    <main class="about-content">
+    <main class="case-study-content">
       <section class="top">
         <article class="case-study">
           <div class="case-study_text">
@@ -90,16 +92,44 @@
           </div>
 
           <div class="case-study-image-wrapper">
-            <img
-              src="img/documentation/cub_react_client/cub_film_data_screenshot1.png"
-              alt="Picture of a screenshot of the Application CUB Film Data (React)"
-              width="100%"
-            />
-            <img
-              src="img/documentation/cub_react_client/cub_film_data_screenshot7.png"
-              alt="Picture of a screenshot of the Application CUB Film Data (React)"
-              width="100%"
-            />
+            <picture>
+              <source
+                srcset="
+                  img/documentation/cub_react_client/cub_film_data_screenshot1.webp
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  img/documentation/cub_react_client/cub_film_data_screenshot1.png
+                "
+                type="image/png"
+              />
+              <img
+                src="img/documentation/cub_react_client/cub_film_data_screenshot1.png"
+                alt="Picture1 of a screenshot of the Application CUB Film Data (React)"
+                width="100%"
+              />
+            </picture>
+            <picture>
+              <source
+                srcset="
+                  img/documentation/cub_react_client/cub_film_data_screenshot7.webp
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  img/documentation/cub_react_client/cub_film_data_screenshot7.png
+                "
+                type="image/png"
+              />
+              <img
+                src="img/documentation/cub_react_client/cub_film_data_screenshot7.png"
+                alt="Picture of a screenshot of the Application CUB Film Data (React)"
+                width="100%"
+              />
+            </picture>
           </div>
         </article>
 
@@ -115,17 +145,36 @@
         </section>
 
         <div class="case-study-image-wrapper_middle">
-          <img
-            src="img/documentation/postman/01.JPG"
-            alt=""
-            width="100%"
-            alt="Picture1 of the Postman documentation of the API endpoints"
-          />
-          <img
-            src="img/documentation/postman/03.JPG"
-            alt="Picture of querying the Terminal"
-            width="100%"
-          />
+          <picture>
+            <source
+              srcset="img/documentation/postman/01.webp"
+              type="image/webp"
+            />
+            <source
+              srcset="img/documentation/postman/01.JPG"
+              type="image/jpg"
+            />
+            <img
+              src="img/documentation/postman/01.JPG"
+              width="100%"
+              alt="Picture1 of the Postman documentation of the API endpoints"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="img/documentation/postman/03.webp"
+              type="image/webp"
+            />
+            <source
+              srcset="img/documentation/postman/03.JPG"
+              type="image/jpg"
+            />
+            <img
+              src="img/documentation/postman/03.JPG"
+              alt="Picture of querying the Terminal"
+              width="100%"
+            />
+          </picture>
         </div>
 
         <section class="case-study_approach">
@@ -160,12 +209,40 @@
             </p>
           </div>
           <div class="case-study_approach_wrapper-image-container">
-            <img
-              src="img/documentation/cub_react_client/cub_film_data_screenshot6.png"
-            />
-            <img
-              src="img/documentation/cub_react_client/cub_film_data_screenshot8.png"
-            />
+            <picture>
+              <source
+                srcset="
+                  img/documentation/cub_react_client/cub_film_data_screenshot6.webp
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  img/documentation/cub_react_client/cub_film_data_screenshot6.png
+                "
+                type="image/png"
+              />
+              <img
+                src="img/documentation/cub_react_client/cub_film_data_screenshot6.png"
+              />
+            </picture>
+            <picture>
+              <source
+                srcset="
+                  img/documentation/cub_react_client/cub_film_data_screenshot8.webp
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  img/documentation/cub_react_client/cub_film_data_screenshot8.png
+                "
+                type="image/png"
+              />
+              <img
+                src="img/documentation/cub_react_client/cub_film_data_screenshot8.png"
+              />
+            </picture>
           </div>
         </section>
 
