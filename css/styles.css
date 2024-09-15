@@ -18,11 +18,14 @@
   --color-variant2: #d4d4d4;
 
   /* --alt-white: #fcfcfc; */
-  --alt-white: #cfcfcf;
+  /* --alt-white: #cfcfcf; */
+  --alt-white: var(--main-white);
+
   --alt-grey: #707070;
   /* --highlight: #3d315b; */
   --highlight: #3a3a3a;
 
+  --main-gray: #cfcfcf;
   /* --border-radius-small: 10px;
   --border-radius-large: 31px; */
   --border-radius-small: 8px;
@@ -2246,6 +2249,7 @@ button:hover {
 .contact-section_contactpage {
   position: relative;
   /* margin: 20.5vh; */
+  border-radius: var(--border-radius-large);
   display: flex;
   margin: 0 12.5vw;
   margin-top: 100px;
@@ -2329,7 +2333,7 @@ button:hover {
   position: relative;
   display: flex;
   align-items: center;
-  background-color: #cfcfcf;
+  background-color: var(--alt-white);
 }
 
 .workpage .page-header {
@@ -3063,10 +3067,6 @@ button:hover {
     font-size: inherit;
   }
 
-  .findme {
-    font-size: 1rem;
-  }
-
   .project-list h1 {
     font-size: var(--font-size-lg);
   }
@@ -3089,14 +3089,6 @@ button:hover {
 
   .profile__portrait {
     margin-bottom: -63px;
-  }
-
-  #Meet-App {
-    grid-column: 1/10;
-  }
-
-  #Chat-App {
-    grid-column: 10/19;
   }
 
   #React-App {
@@ -3333,17 +3325,6 @@ button:hover {
 }
 
 @media all and (max-width: 500px) {
-  #Weather-App,
-  #Meet-App,
-  #React-App {
-    grid-column: 1/18;
-  }
-
-  #Angular-App,
-  #Chat-App {
-    grid-column: 2/19;
-  }
-
   .card-container {
     display: block;
   }
@@ -3561,6 +3542,8 @@ button:hover {
 
   .footer-container {
     flex-direction: column;
+    gap: 20px;
+    margin: 40px 20px;
   }
 
   .footer-container_right {
