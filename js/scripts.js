@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   menuToggle.addEventListener("click", function () {
     console.log("Menu toggle clicked"); // Debugging statement
+    menuToggle.classList.toggle("menu-open");
+
     navigationList.classList.toggle("menu-open");
   });
 });
