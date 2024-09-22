@@ -23,119 +23,114 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
 
-    <link rel="stylesheet" href="css/style.production.css" type="text/css" />
-    <!-- <link rel="stylesheet" href="css/styles.css" type="text/css" /> -->
+    <!-- <link rel="stylesheet" href="css/style.production.css" type="text/css" /> -->
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
 
     <title>Joachim Prügl's Portfolio - Web Development Projects</title>
   </head>
 
   <body>
-    <div class="divider"></div>
-
-    <header class="page-header">
-      <div class="header-container">
-        <a href="index.html" class="headingclass_contact">Joachim Prügl </a>
-        <button class="menu-toggle" aria-label="Toggle Menu">
+    <header class="page-header menu-container">
+      <div class="page-header__item header-wrap">
+        <a href="index.html" class="title page-header__item">Joachim Prügl</a>
+        <button class="menu-toggle page-header__item" aria-label="Toggle Menu">
           <span class="hamburger"></span>
         </button>
-
-        <nav class="main navigation page-header__item">
-          <ul role="menubar" class="navigation-list">
-            <li role="presentation">
-              <a href="about.html" role="menuitem" class="navigation-list__item"
-                >About</a
-              >
-            </li>
-            <li role="presentation">
-              <a
-                href="work.html"
-                role="menuitem"
-                class="navigation-list__item--active work-navigation-link"
-                >Work</a
-              >
-            </li>
-            <li role="presentation">
-              <a
-                href="contact.html"
-                role="menuitem"
-                class="navigation-list__item contact-navigation-link"
-                id="contactbutton"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </nav>
       </div>
+
+      <nav class="page-header__item nav-class">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="work.html"
+              role="menuitem"
+              class="navigation-list__item--active work-navigation-link"
+              >Work</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="contact.html"
+              role="menuitem"
+              class="navigation-list__item contact-navigation-link"
+              id="contactbutton"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-      <div class="shadow-div"></div>
-      <div class="div1"></div>
-      <div class="h1-padding-top"><h1>What I've been working on</h1></div>
-      <hr class="hr_skills" />
-      <section class="workpage">
-        <div class="project-list__heading">
-          <h1>
-            <a href="#" class="project-list__heading__item1">Recent Work</a>
-          </h1>
-          <h3 class="project-list__heading__item2">
-            Development Portfolio 2024
-          </h3>
-        </div>
-        <section class="project-section">
-          <div class="project-list">
-            <div id="Weather-App" class="project-list__item animated__item">
-              <div class="card-container">
-                <div class="page-header__item_text">
-                  <div class="page-header__item_heading">
-                    <h2>World Weather App<br /></h2>
-                    <h4>A Weather Web App displaying global weather data</h4>
-                    <div class="links-wrapper">
-                      <div class="livelinks">
-                        <a
-                          href="https://github.com/ilsegaertner/world-weather"
-                          target="_blank"
-                          >Github</a
-                        >
-                        <a
-                          href="https://global-weather-info.netlify.app/"
-                          target="_blank"
-                          >Live</a
-                        >
-                      </div>
+      <div class="h1-wrap"><h1>What I've been working on</h1></div>
+      <hr />
 
-                      <a class="button2" href="weather-app.html">View</a>
-                    </div>
+      <section class="project-list">
+        <div id="Weather-App" class="project-list__item animated__item">
+          <div class="project-list__item-container">
+            <div class="page-header__item_text">
+              <div class="page-header__item_heading">
+                <h2>World Weather App<br /></h2>
+                <h3>A Weather Web App displaying global weather data</h3>
+                <div class="links-wrapper">
+                  <div class="livelinks">
+                    <a
+                      href="https://github.com/ilsegaertner/world-weather"
+                      target="_blank"
+                      ><img
+                        src="./img/icons/github.svg"
+                        width="24px"
+                        alt="Github link to weather app project"
+                    /></a>
+                    <a
+                      href="https://global-weather-info.netlify.app/"
+                      target="_blank"
+                      ><img
+                        src="./img/icons/link-01-stroke-rounded.svg"
+                        width="24px"
+                        alt="link to angular project"
+                    /></a>
                   </div>
-                  <div class="project-list__item_text-content">
-                    <div class="text_none">
-                      <p>
-                        <span class="font-weight-600">Weather Application</span
-                        >, a React-based project, provides users with real-time
-                        weather updates for cities around the world through a
-                        dynamic and responsive interface. Users can search for
-                        any city to view current weather conditions, a five-day
-                        forecast, and live weather icons. The app also features
-                        a browser extension for quick access to weather data and
-                        maps directly from the browser. Additionally, the
-                        application adapts its background gradient to match
-                        current weather conditions, such as sunny, cloudy, or
-                        nighttime settings, creating a visually immersive
-                        experience.<br /><br />
-                        This project enhanced my skills in
-                        <span class="font-weight-600">React</span>, allowed me
-                        to integrate the
-                        <span class="font-weight-600">OpenWeatherMap API</span>,
-                        and taught me how to create smooth animations with
-                        <span class="font-weight-600">Framer Motion</span>. The
-                        interactive maps are powered by
-                        <span class="font-weight-600">Leaflet</span>, further
-                        enriching the user experience.
-                      </p>
-                    </div>
-                  </div>
+
+                  <a class="button2" href="weather-app.html">
+                    <div class="livelinks-view-wrap">
+                      <img
+                        src="./img/icons/arrow-right-03-stroke-rounded.svg"
+                      />View
+                    </div></a
+                  >
                 </div>
-
+              </div>
+              <div class="project-list__item_text-content">
+                <div class="text_none">
+                  <p>
+                    <span class="font-weight-600">Weather Application</span>, a
+                    React-based project, provides users with real-time weather
+                    updates for cities around the world through a dynamic and
+                    responsive interface. Users can search for any city to view
+                    current weather conditions, a five-day forecast, and live
+                    weather icons. The app also features a browser extension for
+                    quick access to weather data and maps directly from the
+                    browser. Additionally, the application adapts its background
+                    gradient to match current weather conditions, such as sunny,
+                    cloudy, or nighttime settings, creating a visually immersive
+                    experience.<br /><br />
+                    This project enhanced my skills in
+                    <span class="font-weight-600">React</span>, allowed me to
+                    integrate the
+                    <span class="font-weight-600">OpenWeatherMap API</span>, and
+                    taught me how to create smooth animations with
+                    <span class="font-weight-600">Framer Motion</span>. The
+                    interactive maps are powered by
+                    <span class="font-weight-600">Leaflet</span>, further
+                    enriching the user experience.
+                  </p>
+                </div>
                 <picture class="project-picture-wrapper">
                   <source
                     srcset="
@@ -152,66 +147,73 @@
                 </picture>
               </div>
             </div>
+          </div>
+        </div>
 
-            <div id="Angular-App" class="project-list__item animated__item">
-              <div class="card-container">
-                <div class="page-header__item_text">
-                  <div class="page-header__item_heading">
-                    <h2>Film Data Angular<br /></h2>
-                    <h4>
-                      An Angular Application For An Arthouse Movie Database
-                    </h4>
-                    <div class="links-wrapper">
-                      <div class="livelinks">
-                        <a
-                          href="https://github.com/ilsegaertner/CUB-Film-Angular-client"
-                          target="_blank"
-                          >Github</a
-                        >
-                        <a
-                          href="https://ilsegaertner.github.io/CUB-Film-Angular-client/"
-                          target="_blank"
-                          >Live</a
-                        >
-                      </div>
-
-                      <a class="button2" href="cub-angular.html">View</a>
-                    </div>
+        <div id="Angular-App" class="project-list__item animated__item">
+          <div class="project-list__item-container">
+            <div class="page-header__item_text">
+              <div class="page-header__item_heading">
+                <h2>Film Data Angular<br /></h2>
+                <h3>An Angular Application For An Arthouse Movie Database</h3>
+                <div class="links-wrapper">
+                  <div class="livelinks">
+                    <a
+                      href="https://github.com/ilsegaertner/CUB-Film-Angular-client"
+                      target="_blank"
+                      ><img
+                        src="./img/icons/github-01-stroke-rounded.svg"
+                        width="24px"
+                        alt="Github link to chat Angular project"
+                    /></a>
+                    <a
+                      href="https://ilsegaertner.github.io/CUB-Film-Angular-client/"
+                      target="_blank"
+                      ><img
+                        src="./img/icons/link-01-stroke-rounded.svg"
+                        width="24px"
+                        alt="link to angular project"
+                    /></a>
                   </div>
-                  <div class="project-list__item_text-content">
-                    <div class="text_none">
-                      <p>
-                        <span class="font-weight-600"
-                          >CUB Film Data (Angular)</span
-                        >, an Angular-based project, stands as the frontend
-                        interface of a movie database (which I built previously
-                        as
-                        <a href="#Rest-Api">REST-Api</a>
-                        for the backend).<br /><br />
-                        Users can browse through movies, get data about
-                        directors and genres, or edit their profile.
-                        <br /><br />
 
-                        For the project I learnt
-                        <span class="font-weight-600">Typescript</span> and
-                        <span class="font-weight-600">Angular</span> which I
-                        found easier than React, generally structured and
-                        pleasant to work with. <br /><br />
-                        Prior to implementation,
-                        <a
-                          href="https://github.com/ilsegaertner/CUB-Film-Angular-client#user-content-user-storiesuser-flow-created-prior"
-                          target="_blank"
-                          class="Geist"
-                          >user stories</a
-                        >
-                        helped me to visualize necessary interfaces and routes
-                        (see link), aiding in the understanding of required
-                        operations and serving as a helpful visualization tool.
-                      </p>
+                  <a class="button2" href="cub-angular.html">
+                    <div class="livelinks-view-wrap">
+                      <img
+                        src="./img/icons/arrow-right-03-stroke-rounded.svg"
+                      />View
                     </div>
-                  </div>
+                  </a>
                 </div>
+              </div>
+              <div class="project-list__item_text-content">
+                <div class="text_none">
+                  <p>
+                    <span class="font-weight-600">CUB Film Data (Angular)</span
+                    >, an Angular-based project, stands as the frontend
+                    interface of a movie database (which I built previously as
+                    <a href="#Rest-Api">REST-Api</a>
+                    for the backend).<br /><br />
+                    Users can browse through movies, get data about directors
+                    and genres, or edit their profile.
+                    <br /><br />
 
+                    For the project I learnt
+                    <span class="font-weight-600">Typescript</span> and
+                    <span class="font-weight-600">Angular</span> which I found
+                    easier than React, generally structured and pleasant to work
+                    with. <br /><br />
+                    Prior to implementation,
+                    <a
+                      href="https://github.com/ilsegaertner/CUB-Film-Angular-client#user-content-user-storiesuser-flow-created-prior"
+                      target="_blank"
+                      class="Geist"
+                      >user stories</a
+                    >
+                    helped me to visualize necessary interfaces and routes (see
+                    link), aiding in the understanding of required operations
+                    and serving as a helpful visualization tool.
+                  </p>
+                </div>
                 <picture class="project-picture-wrapper">
                   <source
                     srcset="
@@ -235,59 +237,60 @@
                 </picture>
               </div>
             </div>
+          </div>
+        </div>
 
-            <div
-              id="Meet-App"
-              class="project-list__item animated__item_from-right"
-            >
-              <div class="card-container">
-                <div class="div_colorblur"></div>
-                <div class="page-header__item_text">
-                  <div class="page-header__item_heading">
-                    <h2>Meet App<br /></h2>
-                    <h4>
-                      A React App For Developer Events In Different Cities
-                    </h4>
-                    <div class="links-wrapper">
-                      <div class="livelinks">
-                        <a
-                          href="https://github.com/ilsegaertner/Meet-app"
-                          target="_blank"
-                          >Github</a
-                        >
-                        <a
-                          href="https://joachimpruegl.me/Meet-app/"
-                          target="_blank"
-                          >live</a
-                        >
-                      </div>
+        <div id="Meet-App" class="project-list__item animated__item_from-right">
+          <div class="project-list__item-container">
+            <div class="div_colorblur"></div>
+            <div class="page-header__item_text">
+              <div class="page-header__item_heading">
+                <h2>Meet App<br /></h2>
+                <h3>A React App For Developer Events In Different Cities</h3>
+                <div class="links-wrapper">
+                  <div class="livelinks">
+                    <a
+                      href="https://github.com/ilsegaertner/Meet-app"
+                      target="_blank"
+                      ><img
+                        src="./img/icons/github-01-stroke-rounded.svg"
+                        width="24px"
+                        alt="Github link to chat Meet App project"
+                    /></a>
+                    <a href="https://joachimpruegl.me/Meet-app/" target="_blank"
+                      ><img
+                        src="./img/icons/link-01-stroke-rounded.svg"
+                        width="24px"
+                        alt="link to Meet App project"
+                    /></a>
+                  </div>
 
-                      <a class="button2" href="./meet.html">View</a>
-                    </div>
-                  </div>
-                  <div class="project-list__item_text-content">
-                    <div class="text_none">
-                      <p>
-                        <span class="font-weight-600">Meet App</span> is a PWA
-                        (Progressive Web Application) built in React. The
-                        application gathers and displays upcoming
-                        developer-centric events in different cities worldwide
-                        by connecting to a Google Calendar API using OAuth
-                        authorization. <br /><br />Designed to function across
-                        browsers, it also offers desktop installation and
-                        offline functionality providing users with a dynamic and
-                        accessible event exploration experience. <br /><br />
-                        This project was written in TDD (Test-Driven
-                        Development), prioritizing test-writing before code
-                        implementation to ensure robustness and reliability.
-                        <!-- <br />Learning these concepts to
-                  approach larger projects with more people involved helped me to
-                  slow down the process and split -->
-                      </p>
-                    </div>
-                  </div>
+                  <a class="button2" href="./meet.html">
+                    <div class="livelinks-view-wrap">
+                      <img
+                        src="./img/icons/arrow-right-03-stroke-rounded.svg"
+                      />View
+                    </div></a
+                  >
                 </div>
-
+              </div>
+              <div class="project-list__item_text-content">
+                <div class="text_none">
+                  <p>
+                    <span class="font-weight-600">Meet App</span> is a PWA
+                    (Progressive Web Application) built in React. The
+                    application gathers and displays upcoming developer-centric
+                    events in different cities worldwide by connecting to a
+                    Google Calendar API using OAuth authorization.
+                    <br /><br />Designed to function across browsers, it also
+                    offers desktop installation and offline functionality
+                    providing users with a dynamic and accessible event
+                    exploration experience. <br /><br />
+                    This project was written in TDD (Test-Driven Development),
+                    prioritizing test-writing before code implementation to
+                    ensure robustness and reliability.
+                  </p>
+                </div>
                 <picture class="project-picture-wrapper">
                   <source
                     srcset="
@@ -304,42 +307,49 @@
                 </picture>
               </div>
             </div>
+          </div>
+        </div>
 
-            <div id="Chat-App" class="project-list__item animated__item">
-              <div class="card-container">
-                <div class="page-header__item_text">
-                  <div class="page-header__item_heading">
-                    <h2>Mobile Chat App <br /></h2>
-                    <h4>
-                      A Chat App For Mobile Devices, Built In React Native
-                    </h4>
-                    <div class="links-wrapper">
-                      <div class="livelinks">
-                        <a
-                          href="https://github.com/ilsegaertner/chat-app"
-                          target="_blank"
-                          >Github</a
-                        >
-                      </div>
+        <div id="Chat-App" class="project-list__item animated__item">
+          <div class="project-list__item-container">
+            <div class="page-header__item_text">
+              <div class="page-header__item_heading">
+                <h2>Mobile Chat App <br /></h2>
+                <h3>A Chat App For Mobile Devices, Built In React Native</h3>
+                <div class="links-wrapper">
+                  <div class="livelinks">
+                    <a
+                      href="https://github.com/ilsegaertner/chat-app"
+                      target="_blank"
+                      ><img
+                        src="./img/icons/github-01-stroke-rounded.svg"
+                        width="24px"
+                        alt="Github link to chat App project"
+                      />
+                    </a>
+                  </div>
 
-                      <a class="button2" href="./mobile-chat-app.html">View</a>
-                    </div>
-                  </div>
-                  <div class="project-list__item_text-content">
-                    <div class="text_none">
-                      <p>
-                        <span class="font-weight-600">Mobile Chat App</span> is
-                        an intuitive mobile chat application developed with
-                        React Native. <br /><br />Users can interact in a chat
-                        interface, share real-time messages and have options to
-                        access the camera, send images and their location,
-                        fostering interactive and engaging communication within
-                        a mobile environment.
-                      </p>
-                    </div>
-                  </div>
+                  <a class="button2" href="./mobile-chat-app.html">
+                    <div class="livelinks-view-wrap">
+                      <img
+                        src="./img/icons/arrow-right-03-stroke-rounded.svg"
+                      />View
+                    </div></a
+                  >
                 </div>
-
+              </div>
+              <div class="project-list__item_text-content">
+                <div class="text_none">
+                  <p>
+                    <span class="font-weight-600">Mobile Chat App</span> is an
+                    intuitive mobile chat application developed with React
+                    Native. <br /><br />Users can interact in a chat interface,
+                    share real-time messages and have options to access the
+                    camera, send images and their location, fostering
+                    interactive and engaging communication within a mobile
+                    environment.
+                  </p>
+                </div>
                 <picture
                   class="project-picture-wrapper"
                   style="justify-content: start"
@@ -352,71 +362,76 @@
                 </picture>
               </div>
             </div>
+          </div>
+        </div>
 
-            <div
-              id="React-App"
-              class="project-list__item animated__item_from-right"
-            >
-              <div class="card-container">
-                <div class="page-header__item_text">
-                  <div class="page-header__item_heading">
-                    <h2>CUB Film Data React<br /></h2>
-                    <h4>A React Application For An Arthouse Movie Database</h4>
-                    <div class="links-wrapper">
-                      <div class="livelinks">
-                        <a
-                          href="https://github.com/ilsegaertner/CUB-film-data-client"
-                          target="_blank"
-                          >Github</a
-                        >
-                        <a
-                          href="https://cub-film-data.netlify.app/"
-                          target="_blank"
-                          >live</a
-                        >
+        <div
+          id="React-App"
+          class="project-list__item animated__item_from-right"
+        >
+          <div class="project-list__item-container">
+            <div class="page-header__item_text">
+              <div class="page-header__item_heading">
+                <h2>CUB Film Data React<br /></h2>
+                <h3>A React Application For An Arthouse Movie Database</h3>
+                <div class="links-wrapper">
+                  <div class="livelinks">
+                    <a
+                      href="https://github.com/ilsegaertner/CUB-film-data-client"
+                      target="_blank"
+                      ><img
+                        src="./img/icons/github-01-stroke-rounded.svg"
+                        width="24px"
+                        alt="Github link to React app project"
+                    /></a>
+                    <a href="https://cub-film-data.netlify.app/" target="_blank"
+                      ><img
+                        src="./img/icons/link-01-stroke-rounded.svg"
+                        width="24px"
+                        alt="link to react project"
+                    /></a>
 
-                        <a href="cub-casestudy.html" target="_blank"
-                          >case study</a
-                        >
-                      </div>
-
-                      <a class="button2" href="./cub-react.html">View</a>
-                    </div>
-                    <!-- <hr /> -->
+                    <a href="cub-casestudy.html" target="_blank">case study</a>
                   </div>
-                  <div class="project-list__item_text-content">
-                    <div class="text_none">
-                      <p class="text-class">
-                        <span class="font-weight-600"
-                          >CUB Film Data (React)</span
-                        >, a React-based project, stands as the frontend
-                        interface of a movie database (which I built previously
-                        as
-                        <a href="#Rest-Api">REST-Api</a>
-                        for the backend).<br /><br />
 
-                        Users are able to create and edit a profile, browse and
-                        filter through all movies, get detailed information on a
-                        movie, and add movies to their list of favorites.
-
-                        <br />
-                        <br />
-                        This Full-Stack Project comprehends the communication
-                        between both client-side and server-side components
-                        showcasing proficiency in APIs, web server frameworks,
-                        databases, business logic, authentication, and data
-                        security.
-                        <br />
-                        <br />
-                        This is a sister-project to
-                        <a href="#Angular-App" class="font-weight-500"
-                          >CUB Film Data, Angular</a
-                        >.
-                      </p>
-                    </div>
-                  </div>
+                  <a class="button2" href="./cub-react.html">
+                    <div class="livelinks-view-wrap">
+                      <img
+                        src="./img/icons/arrow-right-03-stroke-rounded.svg"
+                      />View
+                    </div></a
+                  >
                 </div>
+                <!-- <hr /> -->
+              </div>
+              <div class="project-list__item_text-content">
+                <div class="text_none">
+                  <p class="text-class">
+                    <span class="font-weight-600">CUB Film Data (React)</span>,
+                    a React-based project, stands as the frontend interface of a
+                    movie database (which I built previously as
+                    <a href="#Rest-Api">REST-Api</a>
+                    for the backend).<br /><br />
 
+                    Users are able to create and edit a profile, browse and
+                    filter through all movies, get detailed information on a
+                    movie, and add movies to their list of favorites.
+
+                    <br />
+                    <br />
+                    This Full-Stack Project comprehends the communication
+                    between both client-side and server-side components
+                    showcasing proficiency in APIs, web server frameworks,
+                    databases, business logic, authentication, and data
+                    security.
+                    <br />
+                    <br />
+                    This is a sister-project to
+                    <a href="#Angular-App" class="font-weight-500"
+                      >CUB Film Data, Angular</a
+                    >.
+                  </p>
+                </div>
                 <picture class="project-picture-wrapper">
                   <source
                     srcset="
@@ -440,394 +455,12 @@
                 </picture>
               </div>
             </div>
-
-            <!-- <div id="Pokemon-App" class="project-list__item">
-            <div class="card-container">
-              <div class="page-header__item_text">
-                <div class="page-header__item_heading">
-                  <h2>Parallelograms</h2>
-                  <h4>A Pokemon Web Application</h4>
-                  <hr />
-                </div>
-                <div class="project-list__item_text-content">
-                  <div class="text">
-                    <p>
-                      Parallelograms is a Pokemon web application, a project
-                      using fundamental web technologies such as vanilla
-                      JavaScript, HTML and CSS.
-                      <br />
-                      <br />
-                      The application leverages data from the Pokeapi external
-                      API, displaying each Pokémon object on a separate button
-                      and providing further details in a modal.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-           
-              <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <picture>
-                      <source
-                        srcset="
-                          img/documentation/pokedex/pokedex_documentation_01.png
-                        "
-                        type="image/png"
-                        class="project-images"
-                      />
-                      <img
-                        src="img/documentation/pokedex/pokedex_documentation_01.png"
-                        alt="Image of the project called Appsource"
-                        class="project-images"
-                      />
-                    </picture>
-                  </div>
-                  <div class="swiper-slide">
-                    <picture>
-                      <source
-                        srcset="
-                          img/documentation/pokedex/pokedex_documentation_02.png
-                        "
-                        type="image/png"
-                        class="project-images"
-                      />
-                      <img
-                        src="img/documentation/pokedex/pokedex_documentation_02.png"
-                        alt="Image of the project called Appsource"
-                        class="project-images"
-                      />
-                    </picture>
-                  </div>
-                  <div class="swiper-slide">
-                    <picture>
-                      <source
-                        srcset="
-                          img/documentation/pokedex/pokedex_documentation_05.png
-                        "
-                        type="image/png"
-                        class="project-images"
-                      />
-                      <img
-                        src="img/documentation/pokedex/pokedex_documentation_05.png"
-                        alt="Image of the project called Appsource"
-                        class="project-images"
-                      />
-                    </picture>
-                  </div>
-                  <div class="swiper-slide">
-                    <picture>
-                      <source
-                        srcset="
-                          img/documentation/pokedex/pokedex_documentation_04.png
-                        "
-                        type="image/png"
-                        class="project-images"
-                      />
-                      <img
-                        src="img/documentation/pokedex/pokedex_documentation_04.png"
-                        alt="Image of the project called Appsource"
-                        class="project-images"
-                      />
-                    </picture>
-                  </div>
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
-            </div>
-            <div class="project-list__footer">
-              <span class="stack-images">
-                <h4>Technologies</h4>
-
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-                />
-
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original-wordmark.svg"
-                />
-
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
-                />
-
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-                />
-
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-                />
-              </span>
-              <div class="livelinks">
-                <a
-                  href="https://ilsegaertner.github.io/Parallelogram_Pokemon_App/"
-                  target="_blank"
-                  >See project live</a
-                >
-               
-                <a
-                  href="https://github.com/ilsegaertner/parallelogram"
-                  target="_blank"
-                  >See project on Github</a
-                >
-              </div>
-            </div>
-          </div> -->
-
-            <!-- <div id="Rest-Api" class="project-list__item">
-            <div class="card-container">
-              <div class="page-header__item_text">
-                <div class="page-header__item_heading">
-                  <h2>CUB REST-Api</h2>
-                  <h4>RESTful Api For A Movie Database</h4>
-                  <hr />
-                </div>
-                <div class="project-list__item_text-content">
-                  <div class="text">
-                    <p>
-                      This project's objective was to build a RESTful API using
-                      <span class="font-weight-600">Node.js </span>and
-                      <span class="font-weight-600">Express.</span>
-                      Serving as the backbone, this API forms the base of both
-                      of my client-side movie database application,
-                      <a href="#React-App" class="Geist"
-                        >CUB Film Data (React)</a
-                      >
-                      and
-                      <a href="#Angular-App" class="Geist"
-                        >CUB Film Data (Angular). </a
-                      ><br /><br />Integrating backend reliability with frontend
-                      innovation, this project showcases a symbiotic
-                      relationship between different technology stacks.
-                      <br />
-                      <br />Developing the server-side of the application posed
-                      challenges, particularly in understanding backend
-                      processes and database management. I built this app from
-                      the ground up while learning the key concepts of backend
-                      programming. Being new to backend processes this task was
-                      challenging, and at the same time very enriching,
-                      resulting in a deeper understanding of backend programming
-                      and a newfound appreciation for database management.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-        
-              <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <picture>
-                      <source
-                        srcset="img/mongosh.png"
-                        type="image/png"
-                        class="project-images"
-                      />
-                      <img
-                        src="img/mongosh.png"
-                        alt="Image of the project called Appsource"
-                        class="project-images"
-                      />
-                    </picture>
-                  </div>
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
-            </div>
-            <div class="project-list__footer">
-              <span class="stack-images">
-                <h4>Technologies</h4>
-
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/heroku/heroku-original.svg"
-                />
-
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
-                />
-
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
-                />
-
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/powershell/powershell-original.svg"
-                />
-
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-                />
-
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
-                />
-              </span>
-              <div class="livelinks">
-                <a
-                  href="https://github.com/ilsegaertner/CUB_Film_data"
-                  target="_blank"
-                  >See project on Github</a
-                >
-              </div>
-            </div>
-          </div> -->
-
-            <!-- <div id="Portfolio" class="project-list__item">
-            <div class="card-container">
-              <div class="page-header__item_text">
-                <div class="page-header__item_heading">
-                  <h2>Portfolio Website</h2>
-                  <h4>Online Portfolio for Full Stack Development</h4>
-                  <hr />
-                </div>
-
-                <div class="project-list__item_text-content">
-                  <div class="text">
-                    <p>
-                      A responsive website using HTML and CSS that showcases my
-                      own professional portfolio and the Full-Stack Development
-                      projects that I built so far.
-                      <br /><br />
-                      The goal of this poject was to create a working portfolio
-                      website, complete with subpages, that features key
-                      information about me as a developer, relevant work
-                      examples, as well as my contact details.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-           
-              <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <picture>
-                      <source
-                        srcset="
-                          img/documentation/portfolio_new/portfolio_doc_01.png
-                        "
-                        type="image/png"
-                        class="project-images"
-                      />
-                      <img
-                        src="img/documentation/portfolio_new/portfolio_doc_01.png"
-                        alt="Image of the project called Appsource"
-                        class="project-images"
-                      />
-                    </picture>
-                  </div>
-                  <div class="swiper-slide">
-                    <picture>
-                      <source
-                        srcset="
-                          img/documentation/portfolio_new/portfolio_doc_02.png
-                        "
-                        type="image/png"
-                        class="project-images"
-                      />
-                      <img
-                        src="img/documentation/portfolio_new/portfolio_doc_02.png"
-                        alt="Image of the Portfolio project"
-                        class="project-images"
-                      />
-                    </picture>
-                  </div>
-                  <div class="swiper-slide">
-                    <picture>
-                      <source
-                        srcset="
-                          img/documentation/portfolio_new/portfolio_doc_03.png
-                        "
-                        type="image/png"
-                        class="project-images"
-                      />
-                      <img
-                        src="img/documentation/portfolio_new/portfolio_doc_03.png"
-                        alt="Image of the Portfolio project"
-                        class="project-images"
-                      />
-                    </picture>
-                  </div>
-                  <div class="swiper-slide">
-                    <picture>
-                      <source
-                        srcset="
-                          img/documentation/portfolio_new/portfolio_doc_04.png
-                        "
-                        type="image/png"
-                        class="project-images"
-                      />
-                      <img
-                        src="img/documentation/portfolio_new/portfolio_doc_04.png"
-                        alt="Image of the Portfolio project"
-                        class="project-images"
-                      />
-                    </picture>
-                  </div>
-                  <div class="swiper-slide">
-                    <picture>
-                      <source
-                        srcset="
-                          img/documentation/portfolio_new/portfolio_doc_05.png
-                        "
-                        type="image/png"
-                        class="project-images"
-                      />
-                      <img
-                        src="img/documentation/portfolio_new/portfolio_doc_05.png"
-                        alt="Image of the Portfolio project"
-                        class="project-images"
-                      />
-                    </picture>
-                  </div>
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
-            </div>
-            <div class="project-list__footer">
-              <span class="stack-images">
-                <h4>Technologies</h4>
-
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-                />
-
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-                />
-
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-                />
-              </span>
-              <div class="livelinks">
-                <a
-                  href="https://github.com/ilsegaertner/Portfolio-website-copy"
-                  target="_blank"
-                  >See project on Github</a
-                >
-                <a href="https://joachimpruegl.me" target="_blank"
-                  >See project live</a
-                >
-              </div>
-            </div>
-          </div> -->
           </div>
-        </section>
+        </div>
       </section>
 
-      <section id="work-bottom-section">
+      <section class="work-bottom-section">
         <div class="reach-out">
-          <img
-            class="dev-icon_work"
-            src="img/icons/dev-icon-276.svg"
-            alt="image of a message icon"
-            width="80px
-      "
-            height="80px"
-          />
           <span>Interested in working together? </span>
           <a href="mailto:joachimpruegl@gmail.com" class="button1"
             >Send me a mail</a
@@ -855,14 +488,14 @@
           <div class="social-media">
             <a href="https://github.com/ilsegaertner" target="_blank"
               ><img
-                src="img/github-mark-white.svg"
+                src="img/icons/github-01-stroke-rounded.svg"
                 alt="Logo and Link for the Github platform"
                 width="25"
                 height="25" /></a
             ><span
               ><a href="https://twitter.com/JoachimPrugl" target="_blank"
                 ><img
-                  src="img/x_logo.svg"
+                  src="img/icons/new-twitter-ellipse-stroke-rounded.svg"
                   alt="Logo and Link for the Twitter platform"
                   width="25"
                   height="25" /></a></span
@@ -871,7 +504,7 @@
                 href="https://www.linkedin.com/in/joachim-pr%C3%BCgl/"
                 target="_blank"
                 ><img
-                  src="img/icons8-linkedin-128.svg"
+                  src="img/icons/linkedin-01-stroke-rounded.svg"
                   alt="Logo and Link for the LinkedIn platform"
                   width="25"
                   height="25" /></a

@@ -2,13 +2,13 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.querySelector(".menu-toggle");
-  const navigationList = document.querySelector(".navigation-list");
+  const menuContainer = document.querySelector(".page-header");
 
   menuToggle.addEventListener("click", function () {
-    console.log("Menu toggle clicked"); // Debugging statement
-    menuToggle.classList.toggle("menu-open");
+    // console.log("Menu toggle clicked"); // Debugging statement
+    // menuToggle.classList.toggle("menu-open");
 
-    navigationList.classList.toggle("menu-open");
+    menuContainer.classList.toggle("menu-open");
   });
 });
 
