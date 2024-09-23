@@ -33,29 +33,34 @@
 
     <!-- header -->
     <header class="page-header menu-container">
-      <a
-        href="index.html"
-        class="headingclass_contact navigation-list__item--active"
-        >Joachim Prügl
-      </a>
-      <button class="menu-toggle" aria-label="Toggle Menu">
-        <span class="hamburger"></span>
-      </button>
+      <div class="page-header__item header-wrap">
+        <a href="index.html" class="title page-header__item">Joachim Prügl</a>
+        <button class="menu-toggle page-header__item" aria-label="Toggle Menu">
+          <span class="hamburger"></span>
+        </button>
+      </div>
 
-      <nav class="main navigation page-header__item">
+      <nav class="page-header__item nav-class">
         <ul role="menubar" class="navigation-list">
           <li role="presentation">
             <a href="about.html" role="menuitem" class="navigation-list__item"
-              >About
-            </a>
+              >About</a
+            >
           </li>
           <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item"
+            <a
+              href="work.html"
+              role="menuitem"
+              class="navigation-list__item--active work-navigation-link"
               >Work</a
             >
           </li>
           <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item"
+            <a
+              href="contact.html"
+              role="menuitem"
+              class="navigation-list__item contact-navigation-link"
+              id="contactbutton"
               >Contact</a
             >
           </li>
@@ -63,70 +68,73 @@
       </nav>
     </header>
 
-    <div class="shadow-div"></div>
     <!-- main -->
     <main>
-      <div class="profile">
-        <div class="profile_container">
-          <div class="image-container-intro">
-            <img
-              src="img/me4.webp"
-              alt="Profile picture of Joachim Prügl"
-              class="profile__portrait"
-            />
-          </div>
-          <div class="intro-text">
-            <div class="myname">
-              <div class="myname_heading">
-                <!-- <img src="img/icons/dev-icon-87.svg" height="50px" width="50px" /> -->
-                <!-- <img
+      <section class="main-wrapper">
+        <div class="profile">
+          <div class="profile_container">
+            <div class="image-container-intro">
+              <div class="shadow-div"></div>
+              <img
+                src="img/me4.webp"
+                alt="Profile picture of Joachim Prügl"
+                class="profile__portrait"
+              />
+            </div>
+            <div class="intro-text">
+              <div class="myname">
+                <div class="myname_heading">
+                  <!-- <img src="img/icons/dev-icon-87.svg" height="50px" width="50px" /> -->
+                  <!-- <img
                 src="../Portfolio-website-copy/assets/icons/dev-icon-174.svg"
                 width="30px"
                 height="30px"
               /> -->
-                <h1>Welcome!</h1>
-              </div>
-              <hr class="hr_skills" />
+                  <h1>Welcome!</h1>
+                </div>
+                <hr class="hr_skills" />
 
-              <h2 class="intro">
-                I am <span class="joachim-pruegl">Joachim Prügl</span>, <br />a
-                Full-Stack Developer from Berlin, Germany.
-                <!-- <br />I enjoy building sites and apps. -->
-              </h2>
+                <h2 class="intro">
+                  I am <span class="joachim-pruegl">Joachim Prügl</span>,
+                  <br />a Full-Stack Developer from Berlin, Germany.
+                  <!-- <br />I enjoy building sites and apps. -->
+                </h2>
+              </div>
+            </div>
+
+            <div class="home-action-wrapper">
+              <a href="work.html" class="button1">See my projects</a>
+              <ul class="social-media-icons">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/joachim-pruegl/"
+                    target="_blank"
+                  >
+                    <img
+                      src="./img/icons/linkedin-01-stroke-rounded.svg"
+                      width="30px"
+                      height="30px"
+                      alt="social-media-icon of linkedin"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/ilsegaertner" target="_blank">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                      width="30px"
+                      height="30px"
+                      alt="social-media-icon of GitHub"
+                    />
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="get-in-touch">
-            <a href="work.html" class="button1">See my projects</a>
-          </div>
-          <ul class="social-media-icons">
-            <li>
-              <a
-                href="https://www.linkedin.com/in/joachim-pruegl/"
-                target="_blank"
-              >
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
-                  width="30px"
-                  height="30px"
-                  alt="social-media-icon of linkedin"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/ilsegaertner" target="_blank">
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
-                  width="30px"
-                  height="30px"
-                  alt="social-media-icon of GitHub"
-                />
-              </a>
-            </li>
-          </ul>
         </div>
-      </div>
+      </section>
       <div class="stack-images-skillicons">
-        <p>Tech Stack</p>
+        <p>I build projects in</p>
         <div class="technologies-wrapper">
           <div class="technologies-item">
             <span class="technologies-span invisible-item">HTML5</span>
@@ -216,25 +224,26 @@
           >
           <a
             class="font-weight-500"
-            href="assets/Pruegl-Joachim-Resume.pdf"
+            href="assets/Prügl-Joachim-CV.pdf"
             download
             target="_blank"
             >Download Resume</a
           >
         </div>
         <div class="footer-container_right">
-          <p class="findme font-weight-500">Find me on</p>
+          <p class="findme">Find me on</p>
+
           <div class="social-media">
             <a href="https://github.com/ilsegaertner" target="_blank"
               ><img
-                src="img/github-mark-white.svg"
+                src="img/icons/github-01-stroke-rounded.svg"
                 alt="Logo and Link for the Github platform"
                 width="25"
                 height="25" /></a
             ><span
               ><a href="https://twitter.com/JoachimPrugl" target="_blank"
                 ><img
-                  src="img/x_logo.svg"
+                  src="img/icons/new-twitter-ellipse-stroke-rounded.svg"
                   alt="Logo and Link for the Twitter platform"
                   width="25"
                   height="25" /></a></span
@@ -243,7 +252,7 @@
                 href="https://www.linkedin.com/in/joachim-pr%C3%BCgl/"
                 target="_blank"
                 ><img
-                  src="img/icons8-linkedin-128.svg"
+                  src="img/icons/linkedin-01-stroke-rounded.svg"
                   alt="Logo and Link for the LinkedIn platform"
                   width="25"
                   height="25" /></a
@@ -251,7 +260,12 @@
           </div>
         </div>
       </div>
-      <p class="copyright">© Copyright 2024 | joachimpruegl.me</p>
+      <p class="copyright">
+        <!-- © -->
+
+        <img src="./img/icons/copyright-stroke-rounded.svg" width="20px" />
+        Copyright 2024 | joachimpruegl.me
+      </p>
     </footer>
     <!-- <script src="js/tota11y.min.js"></script> -->
 

@@ -29,440 +29,434 @@
   </head>
 
   <body class="aboutpage">
-    <header class="page-header">
-      <div class="header-container">
-        <a href="index.html" class="headingclass_contact">Joachim Prügl </a>
-        <button class="menu-toggle" aria-label="Toggle Menu">
+    <header class="page-header menu-container">
+      <div class="page-header__item header-wrap">
+        <a href="index.html" class="title page-header__item">Joachim Prügl</a>
+        <button class="menu-toggle page-header__item" aria-label="Toggle Menu">
           <span class="hamburger"></span>
         </button>
+      </div>
 
-        <nav class="main navigation page-header__item">
-          <ul role="menubar" class="navigation-list">
-            <li role="presentation">
-              <a
-                href="about.html"
-                role="menuitem"
-                class="navigation-list__item--active"
-                >About</a
-              >
-            </li>
-            <li role="presentation">
-              <a href="work.html" role="menuitem" class="navigation-list__item"
-                >Work</a
-              >
-            </li>
-            <li role="presentation">
+      <nav class="page-header__item nav-class">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="work.html"
+              role="menuitem"
+              class="navigation-list__item--active work-navigation-link"
+              >Work</a
+            >
+          </li>
+          <li role="presentation">
+            <a
+              href="contact.html"
+              role="menuitem"
+              class="navigation-list__item contact-navigation-link"
+              id="contactbutton"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="about-me-wrapper">
+      <section class="about-me">
+        <h1>About Me</h1>
+        <hr />
+        <article class="me">
+          <div class="me_text">
+            <p>
+              Hey, I'm Joachim, a web developer driven by a thirst for learning
+              and a passion for the arts.
+            </p>
+
+            <p>
+              With a diverse background spanning over 15 years in electronic
+              music, art, and education, I've honed an obsessive eye for detail
+              that guides me in every new challenge I tackle. From crafting
+              immersive room installations for exhibitions to sharing my music
+              on international labels, I've mastered combining the technical and
+              creative work processes of collaborative and individual projects.
+              Each project has instilled in me a sense of flexibility with new
+              work settings, adaptability, and self-reliance, which I mastered
+              in my previous mentoring and artist roles.
+            </p>
+
+            <p>
+              By completing a Full Stack Web Development Bootcamp I honed my
+              skills in UI design, backend development, and database management.
+              Its diverse technological combinations offer a perfect opportunity
+              to blend my creative stance with detail-oriented planning to craft
+              unique web applications.
+            </p>
+            <p>
+              In my personal life, I thrive on connections and understanding. I
+              have a natural curiosity about other cultures and people, and how
+              their modes of living together differ from that of my culture.
+              Whether it's mentoring language classes in Kenya and Germany or
+              facilitating communication mediations, I relish being in diverse
+              and heterogeneous environments, listening, observing, and
+              uncovering nuances to strengthen the dynamics of social settings.
+            </p>
+            <p>
+              I'm excited to explore collaborations and opportunities where I
+              can intersect UI with collaborative web development, particularly
+              in aesthetic, social, or sustainable environments.
+            </p>
+            <p>
+              I'm open to new collaborations and opportunities. <br />Don't
+              hesitate to
               <a
                 href="contact.html"
-                role="menuitem"
-                class="navigation-list__item"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <div class="shadow-div"></div>
-
-    <main>
-      <section class="about-content">
-        <div class="div1"></div>
-        <h1 class="h1-padding-top">About Me</h1>
-        <hr class="hr_skills" />
-        <section class="top">
-          <article class="me">
-            <div class="me_text">
-              <p>
-                Hey, I'm Joachim, a web developer driven by a thirst for
-                learning and a passion for the arts.
-              </p>
-
-              <p>
-                With a diverse background spanning over 15 years in electronic
-                music, art, and education, I've honed an obsessive eye for
-                detail that guides me in every new challenge I tackle. From
-                crafting immersive room installations for exhibitions to sharing
-                my music on international labels, I've mastered combining the
-                technical and creative work processes of collaborative and
-                individual projects. Each project has instilled in me a sense of
-                flexibility with new work settings, adaptability, and
-                self-reliance, which I mastered in my previous mentoring and
-                artist roles.
-              </p>
-
-              <p>
-                By completing a Full Stack Web Development Bootcamp I honed my
-                skills in UI design, backend development, and database
-                management. Its diverse technological combinations offer a
-                perfect opportunity to blend my creative stance with
-                detail-oriented planning to craft unique web applications.
-              </p>
-              <p>
-                In my personal life, I thrive on connections and understanding.
-                I have a natural curiosity about other cultures and people, and
-                how their modes of living together differ from that of my
-                culture. Whether it's mentoring language classes in Kenya and
-                Germany or facilitating communication mediations, I relish being
-                in diverse and heterogeneous environments, listening, observing,
-                and uncovering nuances to strengthen the dynamics of social
-                settings.
-              </p>
-              <p>
-                I'm excited to explore collaborations and opportunities where I
-                can intersect UI with collaborative web development,
-                particularly in aesthetic, social, or sustainable environments.
-              </p>
-              <p>
-                I'm open to new collaborations and opportunities. <br />Don't
-                hesitate to
-                <a
-                  href="contact.html"
-                  target="_blank"
-                  style="color: var(--main-red)"
-                  >reach out</a
-                >
-                to me to discuss potential projects together.
-              </p>
-            </div>
-            <div class="about-image-wrapper animated__item">
-              <img
-                src="img/me4.webp"
-                alt="Picture of a drawing of Joachim Pruegl"
-                width="100%"
-              />
-            </div>
-          </article>
-          <div class="cv">
-            <div class="cv_wrapper">
-              <a
-                href="assets/Pruegl-Joachim-Resume.pdf"
                 target="_blank"
-                class="button1 animated__item"
-                download
-                >Download my CV</a
+                style="color: var(--main-red)"
+                >reach out</a
               >
-              <a href="work.html" class="button1 animated__item_from-right"
-                >See my projects</a
-              >
-            </div>
+              to me to discuss potential projects together.
+            </p>
           </div>
-        </section>
+          <div class="about-image-wrapper animated__item">
+            <img
+              src="img/me4.webp"
+              alt="Picture of a drawing of Joachim Pruegl"
+              width="100%"
+            />
+          </div>
+        </article>
+        <div class="cv">
+          <div class="cv_wrapper">
+            <a
+              href="assets/Pruegl-Joachim-Resume.pdf"
+              target="_blank"
+              class="button1 animated__item"
+              download
+              >Download my CV</a
+            >
+            <a href="work.html" class="button1 animated__item_from-right"
+              >See my projects</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="skills">
         <h1 class="h1_skills">Skills</h1>
-        <hr class="hr_skills" />
-        <section class="bottom">
-          <div class="bottom-container">
-            <section id="front-end-development" class="animated-section active">
-              <h2>Frontend Development</h2>
-              <div class="education-container">
-                <!-- Education Item 1 (Front End Development) -->
-                <div class="education-item animated__item">
-                  <h3>Languages</h3>
-                  <hr class="hr_skills" />
-                  <ul>
-                    <li>
-                      <div class="skill-flex-container">
-                        <img
-                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-                          width="20px"
-                          height="20px"
-                        />
-                        HTML
-                        <!-- <img src="img/icons/devicons/html5-original.svg" /> -->
-                      </div>
-                    </li>
-                    <li>
-                      <div class="skill-flex-container">
-                        <img
-                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-                          width="20px"
-                          height="20px"
-                        />
-                        CSS
-                        <!-- <img src="img/icons/devicons/css3-original.svg" /> -->
-                      </div>
-                    </li>
-                    <li>
-                      <div class="skill-flex-container">
-                        <img
-                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-                          width="20px"
-                          height="20px"
-                        />
-                        JavaScript
-                        <!-- <img src="img/icons/devicons/javascript-original.svg" /> -->
-                      </div>
-                    </li>
-                    <li>
-                      <div class="skill-flex-container">
-                        <img
-                          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-                          width="20px"
-                          height="20px"
-                        />
-                        TypeScript
-                        <!-- <img src="img/icons/devicons/typescript-original.svg" /> -->
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- Education Item 2 (Front End Development) -->
-                <div class="education-item animated__item">
-                  <h3>Libraries/Frameworks</h3>
-                  <hr class="hr_skills" />
-                  <ul>
-                    <li class="skill-flex-container">
+        <hr />
+        <div class="skills-container">
+          <section class="frontend-dev-skills">
+            <h2>Frontend Development</h2>
+            <div class="education-container">
+              <div class="education-item animated__item">
+                <h3>Languages</h3>
+                <hr class="hr_skills" />
+                <ul>
+                  <li>
+                    <div class="skill-flex-container">
                       <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
                         width="20px"
                         height="20px"
                       />
-                      React
-                    </li>
-                    <li class="skill-flex-container">
+                      HTML
+                      <!-- <img src="img/icons/devicons/html5-original.svg" /> -->
+                    </div>
+                  </li>
+                  <li>
+                    <div class="skill-flex-container">
                       <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
                         width="20px"
                         height="20px"
                       />
-                      Redux
-                    </li>
-                    <li class="skill-flex-container">
+                      CSS
+                      <!-- <img src="img/icons/devicons/css3-original.svg" /> -->
+                    </div>
+                  </li>
+                  <li>
+                    <div class="skill-flex-container">
                       <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
                         width="20px"
                         height="20px"
                       />
-                      Angular
-                    </li>
-
-                    <li class="skill-flex-container">
+                      JavaScript
+                      <!-- <img src="img/icons/devicons/javascript-original.svg" /> -->
+                    </div>
+                  </li>
+                  <li>
+                    <div class="skill-flex-container">
                       <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
                         width="20px"
                         height="20px"
                       />
-                      jQuery
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- Education Item 3 (Front End Development) -->
-                <div class="education-item animated__item">
-                  <h3>Design</h3>
-                  <hr class="hr_skills" />
-                  <ul>
-                    <!-- <li>Responsive layouts</li> -->
-                    <li class="skill-flex-container">
-                      <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularmaterial/angularmaterial-original.svg"
-                        width="20px"
-                        height="20px"
-                      />
-                      Material
-                    </li>
-                    <li class="skill-flex-container">
-                      <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
-                        width="20px"
-                        height="20px"
-                      />
-                      Bootstrap
-                    </li>
-                    <li class="skill-flex-container">
-                      <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-                        width="20px"
-                        height="20px"
-                      />
-
-                      Tailwind
-                    </li>
-                    <li class="skill-flex-container">
-                      <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"
-                        width="20px"
-                        height="20px"
-                      />
-                      SASS/SCSS
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="education-item animated__item">
-                  <h3>Data Handling</h3>
-                  <hr class="hr_skills" />
-                  <ul>
-                    <li>AJAX, JSON</li>
-                  </ul>
-                </div>
-
-                <div class="education-item animated__item">
-                  <h3>Testing TDD/BDD</h3>
-                  <hr class="hr_skills" />
-                  <ul>
-                    <li class="skill-flex-container">
-                      <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg"
-                        width="20px"
-                        height="20px"
-                      />
-                      Unit
-                    </li>
-                    <li class="skill-flex-container">
-                      <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg"
-                        width="20px"
-                        height="20px"
-                      />Integration
-                    </li>
-                    <li>
-                      <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cucumber/cucumber-plain.svg"
-                        width="20px"
-                        height="20px"
-                      />
-                      Acceptance
-                    </li>
-                    <li class="skill-flex-container">
-                      <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/puppeteer/puppeteer-original.svg"
-                        width="20px"
-                        height="20px"
-                      />
-                      E2E
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="education-item animated__item">
-                  <h3>Mobile</h3>
-                  <hr class="hr_skills" />
-                  <ul>
-                    <li>React Native</li>
-                    <li>Expo</li>
-                    <li>PWA</li>
-                  </ul>
-                </div>
+                      TypeScript
+                      <!-- <img src="img/icons/devicons/typescript-original.svg" /> -->
+                    </div>
+                  </li>
+                </ul>
               </div>
-            </section>
-            <section id="back-end-development" class="animated-section active">
-              <h2>Backend Development</h2>
-              <div class="education-container">
-                <!-- Education Item 1 (Back End Development) -->
-                <div class="education-item animated__item_from-right">
-                  <h3>Scalable Backend</h3>
-                  <hr class="hr_skills" />
-                  <ul>
-                    <li class="skill-flex-container">
-                      <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
-                        width="20px"
-                        height="20px"
-                      />
-                      NodeJS
-                    </li>
-                    <li class="skill-flex-container">
-                      <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
-                        width="20px"
-                        height="20px"
-                      />
 
-                      Express
-                    </li>
-                  </ul>
-                </div>
+              <!-- Education Item 2 (Front End Development) -->
+              <div class="education-item animated__item">
+                <h3>Libraries/Frameworks</h3>
+                <hr class="hr_skills" />
+                <ul>
+                  <li class="skill-flex-container">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                      width="20px"
+                      height="20px"
+                    />
+                    React
+                  </li>
+                  <li class="skill-flex-container">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg"
+                      width="20px"
+                      height="20px"
+                    />
+                    Redux
+                  </li>
+                  <li class="skill-flex-container">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"
+                      width="20px"
+                      height="20px"
+                    />
+                    Angular
+                  </li>
 
-                <!-- Education Item 2 (Back End Development) -->
-                <div class="education-item animated__item_from-right">
-                  <h3>APIs</h3>
-                  <hr class="hr_skills" />
-                  <ul>
-                    <li class="skill-flex-container">
-                      <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-original.svg"
-                        width="20px"
-                        height="20px"
-                      />
-                      JSON, RESTful
-                    </li>
-                    <li class="skill-flex-container">
-                      <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
-                        width="20px"
-                        height="20px"
-                      />
-                      Postman
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- Education Item 3 (Back End Development) -->
-                <div class="education-item animated__item_from-right">
-                  <h3>Hosting</h3>
-                  <hr class="hr_skills" />
-                  <ul>
-                    <li class="skill-flex-container">
-                      <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
-                        width="20px"
-                        height="20px"
-                      />AWS
-                    </li>
-                    <li class="skill-flex-container">
-                      <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg"
-                        width="20px"
-                        height="20px"
-                      />Firestore
-                    </li>
-                    <li class="skill-flex-container">
-                      <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/heroku/heroku-original.svg"
-                        width="20px"
-                        height="20px"
-                      />Heroku
-                    </li>
-                    <li class="skill-flex-container">
-                      <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg"
-                        width="20px"
-                        height="20px"
-                      />
-                      Netlify
-                    </li>
-                  </ul>
-                </div>
-
-                <!-- Education Item 4 (Back End Development) -->
-                <div class="education-item animated__item_from-right">
-                  <h3>Databases</h3>
-                  <hr class="hr_skills" />
-                  <ul>
-                    <li class="skill-flex-container">
-                      <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
-                        width="20px"
-                        height="20px"
-                      />
-                      PostgreSQL
-                    </li>
-                    <li class="skill-flex-container">
-                      <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
-                        width="20px"
-                        height="20px"
-                      />
-                      MongoDB
-                    </li>
-                  </ul>
-                </div>
+                  <li class="skill-flex-container">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg"
+                      width="20px"
+                      height="20px"
+                    />
+                    jQuery
+                  </li>
+                </ul>
               </div>
-            </section>
-          </div>
-        </section>
+
+              <!-- Education Item 3 (Front End Development) -->
+              <div class="education-item animated__item">
+                <h3>Design</h3>
+                <hr class="hr_skills" />
+                <ul>
+                  <!-- <li>Responsive layouts</li> -->
+                  <li class="skill-flex-container">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularmaterial/angularmaterial-original.svg"
+                      width="20px"
+                      height="20px"
+                    />
+                    Material
+                  </li>
+                  <li class="skill-flex-container">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+                      width="20px"
+                      height="20px"
+                    />
+                    Bootstrap
+                  </li>
+                  <li class="skill-flex-container">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                      width="20px"
+                      height="20px"
+                    />
+
+                    Tailwind
+                  </li>
+                  <li class="skill-flex-container">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg"
+                      width="20px"
+                      height="20px"
+                    />
+                    SASS/SCSS
+                  </li>
+                </ul>
+              </div>
+
+              <div class="education-item animated__item">
+                <h3>Data Handling</h3>
+                <hr class="hr_skills" />
+                <ul>
+                  <li>AJAX, JSON</li>
+                </ul>
+              </div>
+
+              <div class="education-item animated__item">
+                <h3>Testing TDD/BDD</h3>
+                <hr class="hr_skills" />
+                <ul>
+                  <li class="skill-flex-container">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg"
+                      width="20px"
+                      height="20px"
+                    />
+                    Unit
+                  </li>
+                  <li class="skill-flex-container">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg"
+                      width="20px"
+                      height="20px"
+                    />Integration
+                  </li>
+                  <li>
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cucumber/cucumber-plain.svg"
+                      width="20px"
+                      height="20px"
+                    />
+                    Acceptance
+                  </li>
+                  <li class="skill-flex-container">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/puppeteer/puppeteer-original.svg"
+                      width="20px"
+                      height="20px"
+                    />
+                    E2E
+                  </li>
+                </ul>
+              </div>
+
+              <div class="education-item animated__item">
+                <h3>Mobile</h3>
+                <hr class="hr_skills" />
+                <ul>
+                  <li>React Native</li>
+                  <li>Expo</li>
+                  <li>PWA</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="backend-dev-skills">
+            <h2>Backend Development</h2>
+            <div class="education-container">
+              <div class="education-item animated__item_from-right">
+                <h3>Scalable Backend</h3>
+                <hr class="hr_skills" />
+                <ul>
+                  <li class="skill-flex-container">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                      width="20px"
+                      height="20px"
+                    />
+                    NodeJS
+                  </li>
+                  <li class="skill-flex-container">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+                      width="20px"
+                      height="20px"
+                    />
+
+                    Express
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Education Item 2 (Back End Development) -->
+              <div class="education-item animated__item_from-right">
+                <h3>APIs</h3>
+                <hr class="hr_skills" />
+                <ul>
+                  <li class="skill-flex-container">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-original.svg"
+                      width="20px"
+                      height="20px"
+                    />
+                    JSON, RESTful
+                  </li>
+                  <li class="skill-flex-container">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
+                      width="20px"
+                      height="20px"
+                    />
+                    Postman
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Education Item 3 (Back End Development) -->
+              <div class="education-item animated__item_from-right">
+                <h3>Hosting</h3>
+                <hr class="hr_skills" />
+                <ul>
+                  <li class="skill-flex-container">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                      width="20px"
+                      height="20px"
+                    />AWS
+                  </li>
+                  <li class="skill-flex-container">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg"
+                      width="20px"
+                      height="20px"
+                    />Firestore
+                  </li>
+                  <li class="skill-flex-container">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/heroku/heroku-original.svg"
+                      width="20px"
+                      height="20px"
+                    />Heroku
+                  </li>
+                  <li class="skill-flex-container">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg"
+                      width="20px"
+                      height="20px"
+                    />
+                    Netlify
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Education Item 4 (Back End Development) -->
+              <div class="education-item animated__item_from-right">
+                <h3>Databases</h3>
+                <hr class="hr_skills" />
+                <ul>
+                  <li class="skill-flex-container">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+                      width="20px"
+                      height="20px"
+                    />
+                    PostgreSQL
+                  </li>
+                  <li class="skill-flex-container">
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+                      width="20px"
+                      height="20px"
+                    />
+                    MongoDB
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
       </section>
     </main>
 
@@ -474,26 +468,26 @@
           >
           <a
             class="font-weight-500"
-            href="assets/Pruegl-Joachim-Resume.pdf"
+            href="assets/Prügl-Joachim-CV.pdf"
             download
             target="_blank"
             >Download Resume</a
           >
         </div>
         <div class="footer-container_right">
-          <p class="findme font-weight-500">Find me on</p>
+          <p class="findme">Find me on</p>
 
           <div class="social-media">
             <a href="https://github.com/ilsegaertner" target="_blank"
               ><img
-                src="img/github-mark-white.svg"
+                src="img/icons/github-01-stroke-rounded.svg"
                 alt="Logo and Link for the Github platform"
                 width="25"
                 height="25" /></a
             ><span
               ><a href="https://twitter.com/JoachimPrugl" target="_blank"
                 ><img
-                  src="img/x_logo.svg"
+                  src="img/icons/new-twitter-ellipse-stroke-rounded.svg"
                   alt="Logo and Link for the Twitter platform"
                   width="25"
                   height="25" /></a></span
@@ -502,7 +496,7 @@
                 href="https://www.linkedin.com/in/joachim-pr%C3%BCgl/"
                 target="_blank"
                 ><img
-                  src="img/icons8-linkedin-128.svg"
+                  src="img/icons/linkedin-01-stroke-rounded.svg"
                   alt="Logo and Link for the LinkedIn platform"
                   width="25"
                   height="25" /></a
@@ -510,7 +504,12 @@
           </div>
         </div>
       </div>
-      <p class="copyright">© Copyright 2024 | joachimpruegl.me</p>
+      <p class="copyright">
+        <!-- © -->
+
+        <img src="./img/icons/copyright-stroke-rounded.svg" width="20px" />
+        Copyright 2024 | joachimpruegl.me
+      </p>
     </footer>
     <script src="js/scripts.js" defer></script>
     <!-- <script src="js/tota11y.min.js"></script> -->
