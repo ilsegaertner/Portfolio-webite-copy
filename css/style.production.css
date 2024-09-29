@@ -2223,6 +2223,24 @@ button:hover {
   /* z-index: -1000; */
 }
 
+.thank-you {
+  margin-top: 20vh;
+}
+
+.thank-you h1 {
+  margin-top: 12vh;
+}
+
+.thank-you h2 {
+  margin-inline: 12.5vw 0;
+}
+
+@media all and (max-width: 750px) {
+  .thank-you h2 {
+    margin-inline: 20px;
+  }
+}
+
 .div_colorblur {
   width: 300px;
   display: none;
