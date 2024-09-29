@@ -2222,11 +2222,11 @@ button:hover {
 }
 
 .thank-you h1 {
-  margin-top: 12vh;
+  margin-top: 12vh !important;
 }
 
 .thank-you h2 {
-  margin-inline: 12.5vw 0;
+  margin-inline: 12.5vw 0 !important;
 }
 
 .div_colorblur {
