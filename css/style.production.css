@@ -2226,11 +2226,17 @@ button:hover {
 }
 
 .thank-you h1 {
-  margin-top: 12vh !important;
+  margin-top: 12vh;
 }
 
 .thank-you h2 {
-  margin-inline: 12.5vw 0 !important;
+  margin-inline: 12.5vw 0;
+}
+
+@media all and (max-width: 750px) {
+  .thank-you h2 {
+    margin-inline: 20px;
+  }
 }
 
 .div_colorblur {
